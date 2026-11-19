@@ -254,6 +254,76 @@ take("ns_clean_prim_hi", NS, "secondary_leak_controlled", "D1_vs_CBIG6", "ci95",
 FH = "FBERT_HOLDOUT_1117.json"
 take("ns_fbert_r", FH, "holdout_r", "FBERT_best", nd=4)
 take("ns_d1_vs_fbert_d", FH, "paired_vs_FBERT_best", "D1", "diff", nd=3)
+
+# ---------------------------------------------------------------- independent cohort (AABC Release 2, pre-registered)
+EX, EXS, EXN = "EXT_AABC_1119.json", "EXT_AABC_SAMPLE_1119.json", "EXT_AABC_NULLCHECK_1119.json"
+_ex = load(EX)
+assert _ex["verdict"] == "CONFIRMED" and _ex["info"]["mode"] == "unblinded"
+assert load(EXS)["n"] == _ex["info"]["n"] and load(EXS)["sites"] == _ex["info"]["sites"]      # the sample file applies the same rule
+assert load(EXS)["fc_sha16"] == _ex["info"]["fc_sha16"] and load(EXS)["pheno_sha16"] == _ex["info"]["pheno_sha16"]
+take("ext_v1", EX, "info", "visits_V1")
+take("ext_n", EX, "info", "n")
+take("ext_excl", EX, "info", "excluded", "missing_target_or_covariate")
+take("ext_fam", EX, "info", "families")
+put("ext_sites", len(_ex["info"]["sites"]), EX, "len($.info.sites)")
+take("ext_parcels", EXS, "parcels")
+take("ext_edges", EXS, "edges")
+take("ext_age_min", EXS, "age_min", nd=0)
+take("ext_age_max", EXS, "age_max", nd=0)
+take("ext_age_mean", EXS, "age_mean", nd=1)
+take("ext_age_sd", EXS, "age_sd", nd=1)
+take("ext_female_pct", EXS, "female_share", scale=100.0, nd=1)
+_st = _ex["settings"]
+take("ext_reps", EX, "settings", "N_REP")
+take("ext_folds", EX, "settings", "N_FOLD")
+take("ext_inner", EX, "settings", "INNER")
+put("ext_g_n", len(_st["G_GRID"]), EX, "len($.settings.G_GRID)")
+take("ext_g_lo", EX, "settings", "G_GRID", 0)
+take("ext_g_hi", EX, "settings", "G_GRID", len(_st["G_GRID"]) - 1)
+put("ext_lam_n", len(_st["LAMBDAS"]), EX, "len($.settings.LAMBDAS)")
+take("ext_lam_lo", EX, "settings", "LAMBDAS", 0)
+take("ext_lam_hi", EX, "settings", "LAMBDAS", len(_st["LAMBDAS"]) - 1)
+take("ext_ratio", EX, "test_train_ratio", nd=4)
+put("ext_n_fold_scores", _st["N_REP"] * _st["N_FOLD"], EX, "N_REP x N_FOLD")
+put("ext_tcrit", round(float(stats.t.ppf(0.975, _st["N_REP"] * _st["N_FOLD"] - 1)), 3), EX, "two-sided 5% critical t, df = folds - 1 (pre-registered 1.972)")
+assert abs(stats.t.ppf(0.975, _st["N_REP"] * _st["N_FOLD"] - 1) - 1.972) < 5e-4    # the value written in the pre-registration
+for a, k in [("CBIG", "cbig"), ("PLAIN_I", "plain"), ("D0_I", "d0"), ("D1_I", "d1i"), ("D1_T", "d1t")]:
+    take(f"ext_r_{k}", EX, "mean_perfold_r", a, nd=4)
+    assert abs(np.mean(_ex["per_fold"][a]) - _ex["mean_perfold_r"][a]) < 6e-5, a
+_ef = {a: np.asarray(_ex["per_fold"][a], dtype=float) for a in _ex["per_fold"]}
+for key, (a, b), src in [("ext_d0_cbig", ("D0_I", "CBIG"), ["primary", "D0_I_vs_CBIG"]),
+                         ("ext_d0_plain", ("D0_I", "PLAIN_I"), ["secondary", "D0_I_vs_PLAIN_I"]),
+                         ("ext_d1i_d0", ("D1_I", "D0_I"), ["secondary", "D1_I_vs_D0_I"]),
+                         ("ext_d1t_d0", ("D1_T", "D0_I"), ["secondary", "D1_T_vs_D0_I"]),
+                         ("ext_d1t_cbig", ("D1_T", "CBIG"), ["secondary", "D1_T_vs_CBIG"])]:
+    d_, t_, p_, m_ = nb(_ef[a], _ef[b], _ex["test_train_ratio"])
+    rec = dig(EX, src)
+    assert m_ == rec["folds"] and abs(t_ - rec["corrected_t"]) < 2e-3 and abs(d_ - rec["diff"]) < 6e-5, (key, t_, rec)
+    put(key + "_d", round(d_, 4), EX, "$." + ".".join(src) + ".diff (recomputed from per_fold)")
+    put(key + "_t", round(t_, 2), EX, "$." + ".".join(src) + ".corrected_t (recomputed from per_fold)")
+    put(key + "_p", p_, EX, "two-sided p of the corrected t, df = folds - 1")
+    put(key + "_pos", int(((_ef[a] - _ef[b]).mean(1) > 0).sum()), EX, "repeats with a positive mean difference")
+    assert ((_ef[a] - _ef[b]).mean(1) > 0).sum() == rec["splits_positive"], key
+_cv = {r["key"]: r["value"] for r in ROWS}
+assert (_st["ALPHA"], _st["W_FULL"], _st["TAU"], _st["KEEP"]) == (_cv["c_alpha"], _cv["c_wfull"], _cv["c_tau"], _cv["c_keep"]), "AABC settings differ from the pipeline"
+assert _st["INNER"] == _cv["c_inner"]
+_gc = _ex["g_chosen"]["D0_I"]
+put("ext_d0_g_edge_folds", int(_gc[str(_st["G_GRID"][0])]), EX, "$.g_chosen.D0_I['0.8'] (lowest grid value)")
+put("ext_d0_g_next_folds", int(_gc[str(_st["G_GRID"][1])]), EX, "$.g_chosen.D0_I['0.85']")
+assert sum(_gc.values()) == _st["N_REP"] * _st["N_FOLD"]
+_nm = load(EXN)["null_check"]["mean_over_seeds"]
+put("ext_null_lo", min(_nm.values()), EXN, "min over arms of the mean over synthetic targets")
+put("ext_null_hi", max(_nm.values()), EXN, "max over arms of the mean over synthetic targets")
+put("ext_null_seeds", len([k for k in load(EXN)["null_check"] if k != "mean_over_seeds"]), EXN, "synthetic targets")
+_pt = [v for k, arms in load(EXN)["null_check"].items() if k != "mean_over_seeds" for v in arms.values()]
+put("ext_null_tgt_lo", min(_pt), EXN, "min over synthetic targets and arms (one repeat of 10 folds each: run_null calls run_rep(0))")
+put("ext_null_tgt_hi", max(_pt), EXN, "max over synthetic targets and arms")
+EXD = "EXT_AABC_DRYRUN_SYNTHETIC_1119.json"
+assert load(EXD)["info"]["mode"].startswith("synthetic")
+put("ext_dry_lo", min(load(EXD)["mean_perfold_r"].values()), EXD, "min over arms, full analysis with one synthetic target")
+put("ext_dry_hi", max(load(EXD)["mean_perfold_r"].values()), EXD, "max over arms, full analysis with one synthetic target")
+take("ext_g_second", EX, "settings", "G_GRID", 1)
+put("ext_d0_g_cg_folds", int(_gc[str(_cv["c_g"])]), EX, "$.g_chosen.D0_I at the benchmark's fixed shrinkage")
 take("ns_d1_vs_fbert_lo", FH, "paired_vs_FBERT_best", "D1", "ci95", 0, nd=3)
 take("ns_d1_vs_fbert_hi", FH, "paired_vs_FBERT_best", "D1", "ci95", 1, nd=3)
 take("ns_d0_vs_fbert_d", FH, "paired_vs_FBERT_best", "D0", "diff", nd=3)
@@ -629,6 +699,10 @@ put("lev_neg_sig", neg_sig, "RANKLAM_1118B.json", "rows with corrected t < -1.96
 PR = []
 
 
+def ROWS_BY_KEY(k):
+    return next(r["value"] for r in ROWS if r["key"] == k)
+
+
 def pr_row(key, label, met, rule, observed_keys, group="single"):
     put(f"pr_{key}_met", bool(met), observed_keys[0][0] if observed_keys else NS, "decision rule applied to stored values")
     PR.append((key, label, rule, group))
@@ -683,6 +757,9 @@ pr_p("s", "dropping the motor task, held-out subjects, D0 (S)", "FBERT_S_MOTOR_H
 pr_seeds("t", "adding the RELATIONAL task, D1, benchmark splits (T)", "FBERT_T_INFOLD_1117.json", ["PRIMARY_D1_rel_vs_six", "positive"], ["PRIMARY_D1_rel_vs_six", "of"], 57)
 pr_p("t2", "adding the RELATIONAL task, D1, held-out subjects (T)", "FBERT_T_HOLDOUT_1117.json", ["COPRIMARY_D1_rel_vs_six"])
 pr_ci("ns", "held-out subjects, D1 vs the benchmark kernel (this paper)", NS, ["primary_D1_vs_CBIG6"])
+put("pr_ext_t", V_ext_t := ROWS_BY_KEY("ext_d0_cbig_t"), EX, "corrected t of the primary contrast")
+pr_row("ext", "independent cohort (AABC), inductive conditioned kernel vs the benchmark kernel (this paper)",
+       ROWS_BY_KEY("ext_d0_cbig_d") > 0 and V_ext_t >= ROWS_BY_KEY("ext_tcrit"), "t", [(EX,)])
 
 # multi-cell contrasts
 UN = "FBERT_UNION_SUMMARY_1117.json"
@@ -781,6 +858,16 @@ put("pr_sec_n", len(sec), FS, "secondary rows")
 put("pr_sec_met", sum(1 for k in sec if V[f"pr_{k}_met"]), FS, "secondary rows met")
 put("pr_multi_n", sum(1 for *_, g in PR if g == "multi"), NS, "multi-cell rows")
 
+# D0 against F-BERT-8M over the eight settings of Table 4 (a descriptive count: the HCP settings share subjects)
+V = {r["key"]: r["value"] for r in ROWS}
+_FM = [("fe_rest_m_d0", "fe_rest_m_fbert8", V["fe_rest_d0_fbert_t"] > 1.96), ("fe_six_m_d0", "fe_six_m_fbert_cat", V["fe_six_d0_fbert_t"] > 1.96),
+       ("ns_d0_r", "ns_fbert_r", V["ns_d0_vs_fbert_lo"] > 0), ("fe_aomic_m_d0", "fe_aomic_m_fbert", V["fe_aomic_d0_fbert_t"] > 1.96),
+       ("fe_abide_m_d0", "fe_abide_m_fbert", V["fe_abide_d0_fbert_t"] > 1.96), ("fe_abide_fiq_m_d0", "fe_abide_fiq_m_fbert", V["fe_abide_fiq_d0_fbert_t"] > 1.96),
+       ("adhd_d0", "adhd_fbert", V["adhd_lo"] > 0), ("adhd_iq_d0", "adhd_iq_fbert", V["adhd_iq_lo"] > 0)]
+put("fm_n", len(_FM), FH, "rows of Table 4")
+put("fm_ahead", sum(1 for a_, b_, _ in _FM if V[a_] > V[b_]), FH, "rows of Table 4 where D0's score exceeds F-BERT-8M's")
+put("fm_sig", sum(1 for a_, b_, sg in _FM if V[a_] > V[b_] and sg), FH, "rows where D0 is ahead with corrected t > 1.96 or a 95% interval above zero")
+
 os.makedirs(os.path.join(HERE, "ledger"), exist_ok=True)
 json.dump({"note": "built by build_numbers.py from ../results; do not edit by hand", "rows": ROWS},
           open(os.path.join(HERE, "ledger", "numbers_index.json"), "w"), indent=1)
@@ -805,6 +892,9 @@ SCRIPTS = {
     "CLIP_HOLDOUT_VALID_1119.json": "code/clip_holdout_valid.py", "TARGET_TRANSFORM_1118B.json": "code/target_transform.py",
     "KTA_STRUCT_PRIOR_1118B.json": "code/kta_struct_prior.py", "AUX_TARGET_1118B.json": "code/aux_target.py",
     "EXTRA_SUBJECTS_1118B.json": "code/extra_subjects.py", "ALPHA_ON_TOP_1119.json": "code/alpha_on_top.py",
+    "EXT_AABC_1119.json": "code/external/ext_eval.py", "EXT_AABC_SAMPLE_1119.json": "code/external/aabc_sample.py",
+    "EXT_AABC_NULLCHECK_1119.json": "code/external/ext_eval.py (--synthetic, DRY_NULL_SEEDS)",
+    "EXT_AABC_DRYRUN_SYNTHETIC_1119.json": "code/external/ext_eval.py (--synthetic)",
 }
 for f, sc in SCRIPTS.items():
     assert os.path.exists(os.path.join(HERE, "..", sc.split(" ")[0])), sc

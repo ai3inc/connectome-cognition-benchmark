@@ -1,0 +1,22 @@
+{
+ "fc_file": "aabc_rest_fc_v1.npz",
+ "fc_sha16": "998aea06ac58cddd",
+ "pheno_file": "pheno_varnames.csv",
+ "pheno_sha16": "9b6e867f9685db2d",
+ "rule": "ext_eval.py inclusion rule",
+ "parcels": 379,
+ "edges": 71631,
+ "n": 1290,
+ "families": 1271,
+ "sites": {
+  "MGH": 284,
+  "UCLA": 310,
+  "UMinn": 308,
+  "WashU": 388
+ },
+ "age_min": 36.0,
+ "age_max": 89.0,
+ "age_mean": 60.2,
+ "age_sd": 15.2,
+ "female_share": 0.574
+}

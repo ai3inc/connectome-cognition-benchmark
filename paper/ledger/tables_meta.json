@@ -189,6 +189,12 @@
    "single"
   ],
   [
+   "ext",
+   "independent cohort (AABC), inductive conditioned kernel vs the benchmark kernel (this paper)",
+   "t",
+   "single"
+  ],
+  [
    "k",
    "D0 and its pre-training target chosen in-fold vs F-BERT-8M, per cohort (K)",
    "cells",
@@ -350,7 +356,11 @@
   "KTA_STRUCT_PRIOR_1118B.json": "code/kta_struct_prior.py",
   "AUX_TARGET_1118B.json": "code/aux_target.py",
   "EXTRA_SUBJECTS_1118B.json": "code/extra_subjects.py",
-  "ALPHA_ON_TOP_1119.json": "code/alpha_on_top.py"
+  "ALPHA_ON_TOP_1119.json": "code/alpha_on_top.py",
+  "EXT_AABC_1119.json": "code/external/ext_eval.py",
+  "EXT_AABC_SAMPLE_1119.json": "code/external/aabc_sample.py",
+  "EXT_AABC_NULLCHECK_1119.json": "code/external/ext_eval.py (--synthetic, DRY_NULL_SEEDS)",
+  "EXT_AABC_DRYRUN_SYNTHETIC_1119.json": "code/external/ext_eval.py (--synthetic)"
  },
  "files_read": {
   "ADDITIVE_CHAIN_RESIDUALISED_1118.json": "7bfc4ba57bc7c857",
@@ -377,6 +387,10 @@
   "DIMENSION_WEIGHTED_ENSEMBLE_1115.json": "ad45bd8def679033",
   "EXTRACTION_PAIR_FOLD_INTERNAL_HOLDOUT_1117.json": "581fd7980058d217",
   "EXTRA_SUBJECTS_1118B.json": "f244b8039a7af518",
+  "EXT_AABC_1119.json": "bd1a7324d65f2e98",
+  "EXT_AABC_DRYRUN_SYNTHETIC_1119.json": "46f933d1809bd087",
+  "EXT_AABC_NULLCHECK_1119.json": "d00c0b4b57b6fa78",
+  "EXT_AABC_SAMPLE_1119.json": "eef08306611d2756",
   "FAMILY_DETECTOR_SENSITIVITY_1117.json": "ad719d1335468f0c",
   "FBERT_ABIDE_1117.json": "76bea37c12650896",
   "FBERT_ABIDE_FOLDS_1119.json": "3c58ae76536afd1f",

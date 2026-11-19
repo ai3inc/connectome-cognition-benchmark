@@ -1,0 +1,51 @@
+{"fc_file": "aabc_rest_fc_v1.npz", "fc_sha16": "998aea06ac58cddd", "visits_V1": 1390, "fc_complete": 1390, "mode": "unblinded", "pheno_file": "pheno_varnames.csv", "pheno_sha16": "9b6e867f9685db2d", "n": 1290, "excluded": {"no_phenotype_row": 0, "fc_incomplete": 0, "missing_target_or_covariate": 100}, "families": 1271, "sites": {"MGH": 284, "UCLA": 310, "UMinn": 308, "WashU": 388}, "kernels_seconds": 67}
+{
+ "mean_perfold_r": {
+  "CBIG": 0.5257,
+  "PLAIN_I": 0.5334,
+  "D0_I": 0.5861,
+  "D1_I": 0.577,
+  "D1_T": 0.5884
+ },
+ "primary": {
+  "D0_I_vs_CBIG": {
+   "diff": 0.0604,
+   "folds": 200,
+   "corrected_t": 5.47,
+   "p_two_sided": 1.34e-07,
+   "splits_positive": 20
+  }
+ },
+ "secondary": {
+  "D0_I_vs_PLAIN_I": {
+   "diff": 0.0527,
+   "folds": 200,
+   "corrected_t": 5.526,
+   "p_two_sided": 1.02e-07,
+   "splits_positive": 20
+  },
+  "D1_I_vs_D0_I": {
+   "diff": -0.0091,
+   "folds": 200,
+   "corrected_t": -1.214,
+   "p_two_sided": 0.226,
+   "splits_positive": 1
+  },
+  "D1_T_vs_D0_I": {
+   "diff": 0.0024,
+   "folds": 200,
+   "corrected_t": 0.323,
+   "p_two_sided": 0.747,
+   "splits_positive": 14
+  },
+  "D1_T_vs_CBIG": {
+   "diff": 0.0628,
+   "folds": 200,
+   "corrected_t": 4.889,
+   "p_two_sided": 2.08e-06,
+   "splits_positive": 20
+  }
+ },
+ "verdict": "CONFIRMED",
+ "seconds": 609
+}

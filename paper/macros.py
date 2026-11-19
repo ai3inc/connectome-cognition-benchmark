@@ -66,6 +66,26 @@ def levers_table(V, used):
     return "\n".join(out)
 
 
+def ext_table(V, used):
+    pf = lambda k: "{{ext_%s_p:sci}}" % k if V["ext_%s_p" % k] < 0.001 else "{{ext_%s_p:.3f}}" % k
+    c = lambda k: "{{ext_%s_d:.4f}} | {{ext_%s_t:.2f}} | " % (k, k) + pf(k) + " | {{ext_%s_pos}} of {{ext_reps}}" % k
+    return "\n".join([
+        "| Arm | Mean per-fold r |", "|---|---|",
+        "| Benchmark kernel (CBIG correlation kernel) | {{ext_r_cbig:.4f}} |",
+        "| Plain correlation kernel, training-only centring | {{ext_r_plain:.4f}} |",
+        "| **Conditioned, training-only centring (D0-I)** | **{{ext_r_d0:.4f}}** |",
+        "| Conditioned, filter from training subjects only (D1-I) | {{ext_r_d1i:.4f}} |",
+        "| Conditioned, filter from all subjects (D1-T, transductive) | {{ext_r_d1t:.4f}} |",
+        "",
+        "| Contrast | Difference in r | Corrected t | p | Repeats positive |", "|---|---|---|---|---|",
+        "| **D0-I − benchmark kernel (primary)** | " + c("d0_cbig") + " |",
+        "| D0-I − plain kernel (conditioning) | " + c("d0_plain") + " |",
+        "| D1-I − D0-I (filter, inductive) | " + c("d1i_d0") + " |",
+        "| D1-T − D0-I (filter and all-subject centring) | " + c("d1t_d0") + " |",
+        "| D1-T − benchmark kernel | " + c("d1t_cbig") + " |",
+    ])
+
+
 def filter_table(V, used):
     return "\n".join([
         "| Kernel | Without the filter | Filter from all subjects | Filter from training subjects only |",
@@ -79,7 +99,8 @@ def filter_table(V, used):
 def prereg_table(V, used):
     rules = {"seeds": "positive in at least {{pr_%s_need}} of {{pr_%s_of}} repeats",
              "p": "bootstrap P(difference > 0) at least 0.95",
-             "ci": "95% interval above zero", "cells": "the addendum's rule in every cell"}
+             "ci": "95% interval above zero", "cells": "the addendum's rule in every cell",
+             "t": "difference above zero and corrected t at least {{ext_tcrit:.3f}}"}
     out = ["| Pre-registered contrast | Rule as written | Observed | Met |", "|---|---|---|---|"]
     heads = {"single": "**Single-decision contrasts**", "multi": "**Contrasts with a rule per cell**",
              "secondary": "**Secondary contrasts declared with the main rule**", "status": "**Registered, not decided**"}
@@ -106,6 +127,8 @@ def prereg_table(V, used):
                 o = f"P = {{{{pr_{key}_p:.3f}}}}"
             elif rule == "ci":
                 o = f"{{{{pr_{key}_lo:.3f}}}} to {{{{pr_{key}_hi:.3f}}}}"
+            elif rule == "t":
+                o = f"t = {{{{pr_{key}_t:.2f}}}}"
             elif key == "cbert":
                 o = "behind F-BERT-8M by mean in {{pr_cbert_behind}} of {{pr_cbert_cells}} cells (per-repeat counts not stored)"
             else:

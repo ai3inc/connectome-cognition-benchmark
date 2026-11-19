@@ -591,7 +591,7 @@
   },
   {
    "key": "n_result_files",
-   "value": 540,
+   "value": 544,
    "source_file": "results/",
    "sha16": "-",
    "locator": "count of results/*.json in the private repository"
@@ -1162,6 +1162,426 @@
    "source_file": "results/FBERT_HOLDOUT_1117.json",
    "sha16": "b0831b710fac7da2",
    "locator": "$.paired_vs_FBERT_best.D1.diff"
+  },
+  {
+   "key": "ext_v1",
+   "value": 1390,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.info.visits_V1"
+  },
+  {
+   "key": "ext_n",
+   "value": 1290,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.info.n"
+  },
+  {
+   "key": "ext_excl",
+   "value": 100,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.info.excluded.missing_target_or_covariate"
+  },
+  {
+   "key": "ext_fam",
+   "value": 1271,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.info.families"
+  },
+  {
+   "key": "ext_sites",
+   "value": 4,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "len($.info.sites)"
+  },
+  {
+   "key": "ext_parcels",
+   "value": 379,
+   "source_file": "results/EXT_AABC_SAMPLE_1119.json",
+   "sha16": "eef08306611d2756",
+   "locator": "$.parcels"
+  },
+  {
+   "key": "ext_edges",
+   "value": 71631,
+   "source_file": "results/EXT_AABC_SAMPLE_1119.json",
+   "sha16": "eef08306611d2756",
+   "locator": "$.edges"
+  },
+  {
+   "key": "ext_age_min",
+   "value": 36.0,
+   "source_file": "results/EXT_AABC_SAMPLE_1119.json",
+   "sha16": "eef08306611d2756",
+   "locator": "$.age_min"
+  },
+  {
+   "key": "ext_age_max",
+   "value": 89.0,
+   "source_file": "results/EXT_AABC_SAMPLE_1119.json",
+   "sha16": "eef08306611d2756",
+   "locator": "$.age_max"
+  },
+  {
+   "key": "ext_age_mean",
+   "value": 60.2,
+   "source_file": "results/EXT_AABC_SAMPLE_1119.json",
+   "sha16": "eef08306611d2756",
+   "locator": "$.age_mean"
+  },
+  {
+   "key": "ext_age_sd",
+   "value": 15.2,
+   "source_file": "results/EXT_AABC_SAMPLE_1119.json",
+   "sha16": "eef08306611d2756",
+   "locator": "$.age_sd"
+  },
+  {
+   "key": "ext_female_pct",
+   "value": 57.4,
+   "source_file": "results/EXT_AABC_SAMPLE_1119.json",
+   "sha16": "eef08306611d2756",
+   "locator": "$.female_share"
+  },
+  {
+   "key": "ext_reps",
+   "value": 20,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.settings.N_REP"
+  },
+  {
+   "key": "ext_folds",
+   "value": 10,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.settings.N_FOLD"
+  },
+  {
+   "key": "ext_inner",
+   "value": 4,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.settings.INNER"
+  },
+  {
+   "key": "ext_g_n",
+   "value": 7,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "len($.settings.G_GRID)"
+  },
+  {
+   "key": "ext_g_lo",
+   "value": 0.8,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.settings.G_GRID.0"
+  },
+  {
+   "key": "ext_g_hi",
+   "value": 0.99,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.settings.G_GRID.6"
+  },
+  {
+   "key": "ext_lam_n",
+   "value": 14,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "len($.settings.LAMBDAS)"
+  },
+  {
+   "key": "ext_lam_lo",
+   "value": 1e-12,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.settings.LAMBDAS.0"
+  },
+  {
+   "key": "ext_lam_hi",
+   "value": 10.0,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.settings.LAMBDAS.13"
+  },
+  {
+   "key": "ext_ratio",
+   "value": 0.1111,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.test_train_ratio"
+  },
+  {
+   "key": "ext_n_fold_scores",
+   "value": 200,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "N_REP x N_FOLD"
+  },
+  {
+   "key": "ext_tcrit",
+   "value": 1.972,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "two-sided 5% critical t, df = folds - 1 (pre-registered 1.972)"
+  },
+  {
+   "key": "ext_r_cbig",
+   "value": 0.5257,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.mean_perfold_r.CBIG"
+  },
+  {
+   "key": "ext_r_plain",
+   "value": 0.5334,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.mean_perfold_r.PLAIN_I"
+  },
+  {
+   "key": "ext_r_d0",
+   "value": 0.5861,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.mean_perfold_r.D0_I"
+  },
+  {
+   "key": "ext_r_d1i",
+   "value": 0.577,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.mean_perfold_r.D1_I"
+  },
+  {
+   "key": "ext_r_d1t",
+   "value": 0.5884,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.mean_perfold_r.D1_T"
+  },
+  {
+   "key": "ext_d0_cbig_d",
+   "value": 0.0604,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.primary.D0_I_vs_CBIG.diff (recomputed from per_fold)"
+  },
+  {
+   "key": "ext_d0_cbig_t",
+   "value": 5.47,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.primary.D0_I_vs_CBIG.corrected_t (recomputed from per_fold)"
+  },
+  {
+   "key": "ext_d0_cbig_p",
+   "value": 1.3419389194686435e-07,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "two-sided p of the corrected t, df = folds - 1"
+  },
+  {
+   "key": "ext_d0_cbig_pos",
+   "value": 20,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "repeats with a positive mean difference"
+  },
+  {
+   "key": "ext_d0_plain_d",
+   "value": 0.0527,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.secondary.D0_I_vs_PLAIN_I.diff (recomputed from per_fold)"
+  },
+  {
+   "key": "ext_d0_plain_t",
+   "value": 5.53,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.secondary.D0_I_vs_PLAIN_I.corrected_t (recomputed from per_fold)"
+  },
+  {
+   "key": "ext_d0_plain_p",
+   "value": 1.0184165308116485e-07,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "two-sided p of the corrected t, df = folds - 1"
+  },
+  {
+   "key": "ext_d0_plain_pos",
+   "value": 20,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "repeats with a positive mean difference"
+  },
+  {
+   "key": "ext_d1i_d0_d",
+   "value": -0.0091,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.secondary.D1_I_vs_D0_I.diff (recomputed from per_fold)"
+  },
+  {
+   "key": "ext_d1i_d0_t",
+   "value": -1.21,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.secondary.D1_I_vs_D0_I.corrected_t (recomputed from per_fold)"
+  },
+  {
+   "key": "ext_d1i_d0_p",
+   "value": 0.2262730965060812,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "two-sided p of the corrected t, df = folds - 1"
+  },
+  {
+   "key": "ext_d1i_d0_pos",
+   "value": 1,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "repeats with a positive mean difference"
+  },
+  {
+   "key": "ext_d1t_d0_d",
+   "value": 0.0024,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.secondary.D1_T_vs_D0_I.diff (recomputed from per_fold)"
+  },
+  {
+   "key": "ext_d1t_d0_t",
+   "value": 0.32,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.secondary.D1_T_vs_D0_I.corrected_t (recomputed from per_fold)"
+  },
+  {
+   "key": "ext_d1t_d0_p",
+   "value": 0.7470361846491389,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "two-sided p of the corrected t, df = folds - 1"
+  },
+  {
+   "key": "ext_d1t_d0_pos",
+   "value": 14,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "repeats with a positive mean difference"
+  },
+  {
+   "key": "ext_d1t_cbig_d",
+   "value": 0.0628,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.secondary.D1_T_vs_CBIG.diff (recomputed from per_fold)"
+  },
+  {
+   "key": "ext_d1t_cbig_t",
+   "value": 4.89,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.secondary.D1_T_vs_CBIG.corrected_t (recomputed from per_fold)"
+  },
+  {
+   "key": "ext_d1t_cbig_p",
+   "value": 2.0817703930683e-06,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "two-sided p of the corrected t, df = folds - 1"
+  },
+  {
+   "key": "ext_d1t_cbig_pos",
+   "value": 20,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "repeats with a positive mean difference"
+  },
+  {
+   "key": "ext_d0_g_edge_folds",
+   "value": 80,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.g_chosen.D0_I['0.8'] (lowest grid value)"
+  },
+  {
+   "key": "ext_d0_g_next_folds",
+   "value": 100,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.g_chosen.D0_I['0.85']"
+  },
+  {
+   "key": "ext_null_lo",
+   "value": -0.0006,
+   "source_file": "results/EXT_AABC_NULLCHECK_1119.json",
+   "sha16": "d00c0b4b57b6fa78",
+   "locator": "min over arms of the mean over synthetic targets"
+  },
+  {
+   "key": "ext_null_hi",
+   "value": 0.0095,
+   "source_file": "results/EXT_AABC_NULLCHECK_1119.json",
+   "sha16": "d00c0b4b57b6fa78",
+   "locator": "max over arms of the mean over synthetic targets"
+  },
+  {
+   "key": "ext_null_seeds",
+   "value": 8,
+   "source_file": "results/EXT_AABC_NULLCHECK_1119.json",
+   "sha16": "d00c0b4b57b6fa78",
+   "locator": "synthetic targets"
+  },
+  {
+   "key": "ext_null_tgt_lo",
+   "value": -0.0752,
+   "source_file": "results/EXT_AABC_NULLCHECK_1119.json",
+   "sha16": "d00c0b4b57b6fa78",
+   "locator": "min over synthetic targets and arms (one repeat of 10 folds each: run_null calls run_rep(0))"
+  },
+  {
+   "key": "ext_null_tgt_hi",
+   "value": 0.0831,
+   "source_file": "results/EXT_AABC_NULLCHECK_1119.json",
+   "sha16": "d00c0b4b57b6fa78",
+   "locator": "max over synthetic targets and arms"
+  },
+  {
+   "key": "ext_dry_lo",
+   "value": 0.0321,
+   "source_file": "results/EXT_AABC_DRYRUN_SYNTHETIC_1119.json",
+   "sha16": "46f933d1809bd087",
+   "locator": "min over arms, full analysis with one synthetic target"
+  },
+  {
+   "key": "ext_dry_hi",
+   "value": 0.0657,
+   "source_file": "results/EXT_AABC_DRYRUN_SYNTHETIC_1119.json",
+   "sha16": "46f933d1809bd087",
+   "locator": "max over arms, full analysis with one synthetic target"
+  },
+  {
+   "key": "ext_g_second",
+   "value": 0.85,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.settings.G_GRID.1"
+  },
+  {
+   "key": "ext_d0_g_cg_folds",
+   "value": 12,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "$.g_chosen.D0_I at the benchmark's fixed shrinkage"
   },
   {
    "key": "ns_d1_vs_fbert_lo",
@@ -4559,6 +4979,20 @@
    "locator": "decision rule applied to stored values"
   },
   {
+   "key": "pr_ext_t",
+   "value": 5.47,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "corrected t of the primary contrast"
+  },
+  {
+   "key": "pr_ext_met",
+   "value": true,
+   "source_file": "results/EXT_AABC_1119.json",
+   "sha16": "bd1a7324d65f2e98",
+   "locator": "decision rule applied to stored values"
+  },
+  {
    "key": "pr_k_cells",
    "value": 4,
    "source_file": "results/FBERT_UNION_SUMMARY_1117.json",
@@ -5043,14 +5477,14 @@
   },
   {
    "key": "pr_n",
-   "value": 17,
+   "value": 18,
    "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
    "sha16": "8bdfb003dca47fe4",
    "locator": "single-decision rows of Table S2"
   },
   {
    "key": "pr_met",
-   "value": 8,
+   "value": 9,
    "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
    "sha16": "8bdfb003dca47fe4",
    "locator": "single-decision rows met"
@@ -5089,6 +5523,27 @@
    "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
    "sha16": "8bdfb003dca47fe4",
    "locator": "multi-cell rows"
+  },
+  {
+   "key": "fm_n",
+   "value": 8,
+   "source_file": "results/FBERT_HOLDOUT_1117.json",
+   "sha16": "b0831b710fac7da2",
+   "locator": "rows of Table 4"
+  },
+  {
+   "key": "fm_ahead",
+   "value": 7,
+   "source_file": "results/FBERT_HOLDOUT_1117.json",
+   "sha16": "b0831b710fac7da2",
+   "locator": "rows of Table 4 where D0's score exceeds F-BERT-8M's"
+  },
+  {
+   "key": "fm_sig",
+   "value": 4,
+   "source_file": "results/FBERT_HOLDOUT_1117.json",
+   "sha16": "b0831b710fac7da2",
+   "locator": "rows where D0 is ahead with corrected t > 1.96 or a 95% interval above zero"
   }
  ]
 }

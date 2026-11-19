@@ -5,8 +5,8 @@ authors:
   - family-names: Pyo
     given-names: Chulmin
     affiliation: AI3 Discovery
-version: 1.0.0
-doi: 10.5281/zenodo.24355566
+version: 1.1.0
+doi: 10.5281/zenodo.24355565
 license: MIT
 repository-code: "https://github.com/ai3inc/connectome-cognition-benchmark"
 date-released: 2026-11-19
