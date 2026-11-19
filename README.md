@@ -86,7 +86,7 @@ the released ones. The values are unchanged.
 
 ## Citation
 
-Archived at Zenodo: https://doi.org/10.5281/zenodo.24355565 (all versions). See `CITATION.cff`.
+Archived at Zenodo: https://doi.org/10.5281/zenodo.24355565 (all versions); this release: https://doi.org/10.5281/zenodo.24361690. See `CITATION.cff`.
 Please also cite Ooi et al. (2022) for the benchmark.
 
 ## Acknowledgements
