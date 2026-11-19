@@ -1,0 +1,37 @@
+{
+ "addendum": "N (SOTA system)",
+ "cohort": "aomic",
+ "n": 879,
+ "cells": {
+  "ist": {
+   "metric": "r",
+   "mean": {
+    "A8": 0.3675383000603573,
+    "OURS": 0.4117514601404733,
+    "SOTA": 0.4012868208680809,
+    "CB": 0.3485865671920708
+   },
+   "picks": {
+    "A8": 0,
+    "OURS": 152,
+    "HYB": 48
+   },
+   "SOTA_vs_A8": {
+    "mean_diff": 0.03374852080772354,
+    "positive": 20,
+    "of": 20
+   },
+   "SOTA_vs_OURS": {
+    "mean_diff": -0.010464639272392436,
+    "positive": 0,
+    "of": 20
+   },
+   "SOTA_vs_CB": {
+    "mean_diff": 0.0527002536760101,
+    "positive": 20,
+    "of": 20
+   }
+  }
+ },
+ "seconds": 943.1020867824554
+}

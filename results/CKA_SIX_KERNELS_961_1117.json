@@ -1,0 +1,31 @@
+{
+ "date": "2026-11-17",
+ "experiment": "linear CKA between our six modality kernels at n=961",
+ "setting": "g=0.85, w=0.05, alpha=0.10, kernel filter keep 150, tau 0.5 -- the certified six-modality recipe",
+ "cohort": "the 961 subjects with all six modalities (753 analysis set + 208 with task data)",
+ "cka_definition": "linear CKA on double-centred kernels: sum(A*B)/(||A||*||B||) with A,B = H K H, H the centring matrix",
+ "pairs": {
+  "rs_lang": 0.314,
+  "rs_social": 0.3217,
+  "rs_gamb": 0.2904,
+  "rs_motor": 0.2779,
+  "rs_wm": 0.2878,
+  "lang_social": 0.4452,
+  "lang_gamb": 0.3403,
+  "lang_motor": 0.3309,
+  "lang_wm": 0.3631,
+  "social_gamb": 0.3357,
+  "social_motor": 0.3373,
+  "social_wm": 0.3526,
+  "gamb_motor": 0.4178,
+  "gamb_wm": 0.4488,
+  "motor_wm": 0.4379
+ },
+ "mean_cka": 0.3534,
+ "max_cka": 0.4488,
+ "min_cka": 0.2779,
+ "interpretation": "Our six kernels are far less redundant than they could be. Mean CKA 0.353 against 0.68 reported by the parallel F-BERT session for their six kernels, and equal to the 0.34 they measured for a pretrained deep model's features. The highest pair is gamb_wm 0.449; the lowest is rs_motor 0.278. Resting state is the most distinct modality (0.28-0.32 against every task kernel), which matches the fact that it comes from a different scan type rather than a different task.",
+ "cross_session_context": "session measured 0.68 across their six kernels at g=0.97 and found that subtracting the shared component (beta) RAISED their CKA 0.75 -> 0.81, i.e. naive orthogonalisation is not a free lunch. Their atlas is 450 parcels with subcortical (Tian S3) and a different preprocessing; ours is 400 cortical parcels on Ooi's published features.",
+ "caveat": "CKA absolute values depend on the atlas, the number of subjects and the kernel scaling, so 0.353 vs 0.68 is an indication, not a like-for-like test. What is like-for-like is that both are six kernels from different scans, measured the same way.",
+ "source": "/workspace/cka961b.py + CKA961_b.json on <pod>"
+}

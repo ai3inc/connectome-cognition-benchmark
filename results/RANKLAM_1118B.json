@@ -1,0 +1,57 @@
+{
+ "n": 753,
+ "seeds": 60,
+ "baseline_certified": 0.7326,
+ "lambda_bag": {
+  "r": 0.6815,
+  "diff": -0.0511,
+  "wins": "0/60",
+  "NB_t": -75.57,
+  "p": 0.0
+ },
+ "rank_kernel": {
+  "r": 0.7379,
+  "diff": 0.0054,
+  "wins": "58/60",
+  "NB_t": 19.06,
+  "p": 0.0
+ },
+ "certified_plus_rank_mix": {
+  "r": 0.7383,
+  "diff": 0.0057,
+  "wins": "60/60",
+  "NB_t": 38.76,
+  "p": 0.0
+ },
+ "date": "2026-11-18",
+ "experiment": "two axes with no ledger entry: (A) rank (Spearman) kernel -- rank each subject's edges before building the between-subject kernel, so subjects are compared by edge-profile SHAPE; (B) lambda-bag KRR -- average the predictions of six plateau lambdas instead of picking one.",
+ "condition": "published six modalities, g0.92/k150, alpha0.10, w0.05, lambda 1e-6..10 by inner 4-fold, fold-mean r, 60 seeds",
+ "verdict": {
+  "lambda_bag": "CATASTROPHIC: 0.6815 (-0.0511, 0/60). The lambda grid spans 1e-3..0.3 here, which straddles the regime change: standardising and averaging predictions from lambdas whose kernels have very different effective smoothness mixes a well-fit predictor with badly over- and under-regularised ones. Averaging is NOT a safe way to remove the selection step.",
+  "rank_kernel": "POSITIVE: 0.7379 (+0.0054, 58/60, NB t 19.06). Above the 0.003 threshold the ledger sets.",
+  "certified_plus_rank_equal_mix": "STRONGEST: 0.7383 (+0.0057, 60/60, NB t 38.76) -- every seed wins. But the 50/50 weight is hand-set, so it must clear the fold-internal gate before it is called a recipe."
+ },
+ "mechanism": "the edges are heavy-tailed (skew 0.82, excess kurtosis 2.13 on resting-state; |edge| 99.9th percentile 0.64 against a median of 0.07). A kernel built on raw values is dominated by a handful of extreme edges, which differ for reasons that are not individual differences in cognition. Ranking each subject's edges removes that leverage and compares profiles instead.",
+ "gate": "see RANK_KERNEL_GATES.json -- fold-internal 2-way selection between the raw-value and rank kernels. Until that passes, both numbers are fixed-configuration observations, which is exactly the status the ledger gives 0.7382 (RELATIONAL 1/9).",
+ "_NB_T_CORRECTION_1119": {
+  "note": "session found the NB formula was wrong in this file's helper: it divided the variance by m AND multiplied by (1/k + n_te/n_tr), which under-corrects. Correct: var(d)*(1/m + n_te/n_tr). The t values in this file are inflated by 17.9x; the corrected values are below. Deltas and win counts are unaffected. No re-run needed -- the conversion is exact.",
+  "corrected": {
+   "lambda_bag": {
+    "reported_t": -75.57,
+    "NB_t": -4.22,
+    "p_two_sided": 0.0
+   },
+   "rank_kernel": {
+    "reported_t": 19.06,
+    "NB_t": 1.06,
+    "p_two_sided": 0.287
+   },
+   "certified_plus_rank_mix": {
+    "reported_t": 38.76,
+    "NB_t": 2.17,
+    "p_two_sided": 0.0304
+   }
+  },
+  "verdict_change": "clip and rank are NOT significant under the exact NB t. Only the lambda-bag loss and the two hand-set 50/50 mixes survive."
+ }
+}

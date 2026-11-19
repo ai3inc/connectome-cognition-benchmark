@@ -1,0 +1,29 @@
+{
+ "date": "2026-11-18",
+ "question": "was the B+C holdout gain (+0.0031) a property of the data, or a pair chosen after seeing the in-fold results?",
+ "how": "on the TRAIN block only (728 subjects), compare B, C and B+C by inner-split r; pick the best; then predict the 233 holdout ONCE.",
+ "inner_split_r_on_train": {
+  "B": 0.6822,
+  "C": 0.7414,
+  "B_plus_C": 0.7248
+ },
+ "chosen_by_the_rule": "C alone",
+ "holdout_results": {
+  "B": 0.7489,
+  "C": 0.7795,
+  "B_plus_C": 0.7827,
+  "fold_internal_rule": 0.7795
+ },
+ "verdict": "THE RULE DOES NOT CHOOSE B+C. B+C is worse than C alone even inside the training block (0.7248 vs 0.7414), so a rule that never sees the test folds picks C and reaches 0.7795 -- the +0.0031 for B+C was a post-hoc pairing.",
+ "the_honest_statement_about_extraction_averaging": "on 728 subjects with the published folds, A+C (published Ooi 400 + 450 re-extraction) gives 0.7432-0.7440 and a fold-internal rule picks A+C in 575 of 600 folds -- that pairing is real. But A cannot be scored outside the 753, so its out-of-sample status is unknown. The only pairs that CAN be judged outside the 753 (B+C, B+C+A400 on our own features) are NOT selected by a fold-internal rule, because our own 400 extraction is too weak to add. So: extraction averaging is established in-fold on the published+450 pair, unestablished out of sample.",
+ "why_this_matters": "it closes the last loose end from yesterday. The in-fold claim stands; the out-of-sample claim does not, and now we know it is not merely underpowered -- the rule actively rejects the pairing.",
+ "source": "/workspace/bcho.py + BCHO.json on <pod>",
+ "cross_session_confirmation_2026_11_18": {
+  "source": "parallel F-BERT session, direct answer",
+  "their_F": "our own 400 canonical predictions + their 450 D1, 233 subjects -- NO Ooi features",
+  "their_G": "their 450 D1 + their 232-region D1, 263 subjects -- NO Ooi features",
+  "meaning": "both of their holdout combinations were, like our B+C, pairs of the WEAK arms that exist outside the 753. Their 0.7481 in-fold number always contained Ooi and was CV-only from the start.",
+  "conclusion": "TWO SESSIONS INDEPENDENTLY CONFIRM: the published features exist only inside the 753, so no out-of-sample test of an extraction ensemble can include the strong arm. The failure of F, G and our B+C is structural, not statistical.",
+  "agreed_final_position": "the only out-of-sample result either session has is: the 450 D1 / canonical chain beats F-BERT-8M by about +0.05 on new subjects (HCP 263 and AOMIC). Extraction averaging remains a CV finding."
+ }
+}

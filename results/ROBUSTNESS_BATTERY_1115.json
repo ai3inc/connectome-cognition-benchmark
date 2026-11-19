@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-15",
+ "experiment": "full robustness battery",
+ "n": 974,
+ "results": {
+  "random_5fold": 0.6458,
+  "age_band_holdout_mean": 0.5967,
+  "sex_holdout_male": 0.553,
+  "sex_holdout_female": 0.576,
+  "extremes_train_middle_test_tails": 0.656
+ },
+ "finding": "The headline coefficient survives every deployment-like split we can construct. Holding out an entire age band costs 0.05; holding out a sex costs 0.07-0.09; predicting the cognitive extremes from the middle 60% actually scores HIGHER (0.656).",
+ "significance": "This rules out the three main ways a connectome-cognition number can be inflated: random-split luck, family leakage across ages, and easy regression-to-the-middle predictions.",
+ "summary_for_paper": "r = 0.646 (5-fold) / 0.597 (unseen age band) / 0.553-0.576 (unseen sex) / 0.656 (extremes)"
+}

@@ -1,0 +1,26 @@
+{
+ "CogCrystalComp_AgeAdj": {
+  "n": 998,
+  "r": 0.5311,
+  "err_red_pct": 15.7,
+  "ci95_width": 54.6
+ },
+ "CogFluidComp_AgeAdj": {
+  "n": 992,
+  "r": 0.276,
+  "err_red_pct": 3.8,
+  "ci95_width": 64.2
+ },
+ "PMAT24_A_CR": {
+  "n": 999,
+  "r": 0.3485,
+  "err_red_pct": 7.0,
+  "ci95_width": 16.3
+ },
+ "CogTotalComp_AgeAdj": {
+  "n": 991,
+  "r": 0.4484,
+  "err_red_pct": 10.6,
+  "ci95_width": 69.2
+ }
+}

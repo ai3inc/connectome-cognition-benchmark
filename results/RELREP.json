@@ -1,0 +1,15 @@
+{
+ "n_train": 728,
+ "n_holdout": 232,
+ "reps": 20,
+ "five_mean": 0.7657,
+ "rel_no_motor_mean": 0.7741,
+ "diff_mean": 0.0084,
+ "diff_sd": 0.0029,
+ "diff_ci95": [
+  0.0072,
+  0.0096
+ ],
+ "p_gt_0": 1.0,
+ "note": "each rep draws a different random 90% of the training set; holdout always disjoint"
+}

@@ -1,0 +1,14 @@
+{
+ "date": "2026-11-15",
+ "experiment": "does the block-weighting principle transfer to a surface parcellation?",
+ "n": 949,
+ "parcellation": "Schaefer-200 (19,900 edges), target Ooi varimax_cog",
+ "results": {
+  "flat_single_kernel": 0.3432,
+  "edge_block_ensemble_p0": 0.355,
+  "p0.5": 0.355,
+  "p1.0": 0.355
+ },
+ "finding": "Splitting the 19,900 edges into 20 equal blocks and averaging their kernels lifts 0.3432 -> 0.3550 (+0.012) on the surface parcellation. The block-structuring idea transfers. The three exponent values give identical numbers only because my blocks were equal size (995 edges each), so sqrt(size) carries no information within them \u2014 a design flaw for the exponent test, not a bug.",
+ "next": "repeat with UNEQUAL blocks (e.g. Yeo-network sub-blocks) so the sqrt weighting has something to weigh"
+}

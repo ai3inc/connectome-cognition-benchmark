@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software or these results, please cite it as below."
+title: "connectome-cognition-benchmark: code, per-fold results and pre-registrations"
+authors:
+  - family-names: Pyo
+    given-names: Chulmin
+    affiliation: AI3 Discovery
+version: 1.0.0
+doi: 10.5281/zenodo.24355566
+license: MIT
+repository-code: "https://github.com/ai3inc/connectome-cognition-benchmark"
+date-released: 2026-11-19
+references:
+  - type: article
+    title: "Comparison of individualized behavioral predictions across anatomical, diffusion and functional connectivity MRI"
+    authors:
+      - family-names: Ooi
+        given-names: Leon Qi Rong
+    journal: NeuroImage
+    volume: 263
+    year: 2022
+    doi: 10.1016/j.neuroimage.2022.119636

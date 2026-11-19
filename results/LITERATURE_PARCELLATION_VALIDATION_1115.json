@@ -1,0 +1,23 @@
+{
+ "date": "2026-11-15",
+ "experiment": "pipeline validation on the literature's parcellation family",
+ "n": 949,
+ "parcellation": "Schaefer-200 (19,900 edges)",
+ "target": "Ooi varimax_cog",
+ "results": {
+  "our_ica_ensemble": 0.6326,
+  "our_recipe_on_schaefer200": 0.3432
+ },
+ "sd": {
+  "schaefer200": 0.0312
+ },
+ "literature_claim_unverified": {
+  "brainpfn_0.552": "could not be verified in the paper text; the verified numbers are F-BERT 0.627 and Tucker 0.571 on Schaefer-400"
+ },
+ "why_this_matters": "This is the direct answer to the 'not the official code' worry. On the literature's own parcellation family our pipeline gives 0.34, far below the 0.55-ish literature values. Part of the gap is that our ICA ensemble (0.63) is simply much stronger than the surface-parcellation numbers, but it also means we cannot yet claim our reimplementation equals theirs.",
+ "open_items": [
+  "reproduce F-BERT 0.627 on Schaefer-400 with their exact preprocessing",
+  "settle what BrainPFN 0.552 actually measures",
+  "check whether their target construction differs (58-behaviour PCA vs our varimax_cog)"
+ ]
+}

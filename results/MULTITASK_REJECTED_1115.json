@@ -1,0 +1,12 @@
+{
+ "date": "2026-11-15",
+ "experiment": "multi-task lambda sharing across Ooi components",
+ "n": 974,
+ "seeds": 10,
+ "results": {
+  "single_target": 0.6409,
+  "shared_lambda_2targets": 0.6009
+ },
+ "finding": "Sharing the ridge penalty between cognition and emotion-regulation COSTS 0.040. The two targets want different regularisation, so pooling them is worse than fitting cognition alone.",
+ "count": "16th representation/estimation idea tried; still only sqrt weighting and the partial representation have ever helped"
+}

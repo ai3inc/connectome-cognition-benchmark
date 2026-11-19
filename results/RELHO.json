@@ -1,0 +1,30 @@
+{
+ "n_train": 728,
+ "n_holdout": 232,
+ "holdout_ids": {
+  "removed": "subject-level",
+  "n": 232
+ },
+ "y_holdout": {
+  "removed": "subject-level",
+  "n": 232
+ },
+ "five": {
+  "holdout_r": 0.7734,
+  "lam": 0.001,
+  "pred": "<removed: subject-level>"
+ },
+ "six_relational": {
+  "holdout_r": 0.7833,
+  "lam": 0.001,
+  "pred": "<removed: subject-level>"
+ },
+ "six_minus_five": {
+  "diff": 0.0099,
+  "ci95": [
+   -0.0023,
+   0.0234
+  ],
+  "p_gt_0": 0.942
+ }
+}

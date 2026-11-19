@@ -1,0 +1,29 @@
+{
+ "n": 753,
+ "n_extra_labelled": 246,
+ "seeds": 60,
+ "baseline": 0.7326,
+ "extra_label_mean_intercept": {
+  "r": 0.73,
+  "diff": -0.0026,
+  "wins": "8/60",
+  "NB_t": 18.61,
+  "p": 0.0
+ },
+ "date": "2026-11-18",
+ "experiment": "use the 246 labelled subjects outside the benchmark 753 as an intercept prior (shrunk 50/50 with the training-fold mean)",
+ "verdict": "FAILS. 0.7300 vs 0.7326 baseline = -0.0026, winning 8/60. The NB t of 18.6 is large but it is measuring a consistent LOSS, not a gain -- quote the sign, not the t.",
+ "why": "KRR already centres on the training fold, and the cognition composite is already normalised across the cohort, so the group level carries no extra information. The extra subjects would matter for a PRE-TRAINED representation (the F-BERT route), not for an intercept.",
+ "what_this_adds": "It closes the \"the benchmark leaves 221+ subjects on the table\" hypothesis for the cheap uses. The expensive use (pre-training) is what F-BERT already demonstrates.",
+ "_NB_T_CORRECTION_1119": {
+  "note": "session found the NB formula was wrong in this file's helper: it divided the variance by m AND multiplied by (1/k + n_te/n_tr), which under-corrects. Correct: var(d)*(1/m + n_te/n_tr). The t values in this file are inflated by 17.9x; the corrected values are below. Deltas and win counts are unaffected. No re-run needed -- the conversion is exact.",
+  "corrected": {
+   "extra_label_mean_intercept": {
+    "reported_t": 18.61,
+    "NB_t": 1.04,
+    "p_two_sided": 0.2985
+   }
+  },
+  "verdict_change": "clip and rank are NOT significant under the exact NB t. Only the lambda-bag loss and the two hand-set 50/50 mixes survive."
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "n_train": 728,
+ "n_holdout": 232,
+ "reps_bagged": 20,
+ "bagged_five": 0.7718,
+ "bagged_rel_no_motor": 0.7827,
+ "diff": 0.0109,
+ "subject_bootstrap_ci95": {
+  "removed": "subject-level",
+  "n": 2
+ },
+ "p_gt_0": 0.884,
+ "correction": "the earlier [0.0072,0.0096] interval held the 233 holdout fixed across all 20 repeats, so it measured training-set variance only (a pseudo-replicate). This interval bootstraps SUBJECTS on bagged predictions, which is the one that speaks to new subjects."
+}

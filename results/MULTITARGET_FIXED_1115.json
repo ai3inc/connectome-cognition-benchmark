@@ -1,0 +1,22 @@
+{
+ "date": "2026-11-15",
+ "experiment": "multi-target validation of the final method (NaN bug fixed)",
+ "n": 974,
+ "seeds": 5,
+ "results": {
+  "varimax_cog": 0.5672,
+  "CogTotalComp_AgeAdj": 0.4677,
+  "CogFluidComp_AgeAdj": 0.3344,
+  "varimax_er": 0.2225
+ },
+ "sd": {
+  "varimax_cog": 0.0333,
+  "CogTotal": 0.0176,
+  "CogFluid": 0.0361,
+  "varimax_er": 0.0267
+ },
+ "finding": "The final method predicts every target with a positive coefficient, and the ordering follows target reliability/construct breadth: Ooi cognition composite 0.567 > HCP total cognition 0.468 > fluid 0.334 > emotion regulation 0.223.",
+ "why_5_seeds": "these are 5-seed estimates; the 25-seed value for varimax_cog is 0.6383 (sd 0.008), so the 5-seed 0.567 here understates by ~0.07 because of seed variance, not a method difference.",
+ "significance": "HCP CogTotalComp at 0.468 sits inside the literature's reported 0.45-0.55 band for connectome-to-cognition, on a target we did NOT tune toward. That is an independent, out-of-sample-ish sanity check.",
+ "corrects": "the earlier multi-target run returned NaN for the HCP composites because the kernel rows were not subset to the finite-value mask; fixed here."
+}

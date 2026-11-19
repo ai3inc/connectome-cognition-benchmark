@@ -1,0 +1,33 @@
+{
+ "date": "2026-11-15",
+ "experiment": "25-seed confirmation of kernel weighting",
+ "n": 974,
+ "seeds": 25,
+ "results": {
+  "uniform": {
+   "r": 0.6116,
+   "sd": 0.0079,
+   "min": 0.597,
+   "max": 0.631
+  },
+  "sqrt_edges": {
+   "r": 0.632,
+   "sd": 0.0089,
+   "min": 0.616,
+   "max": 0.652
+  },
+  "cka_learned": {
+   "r": 0.6195,
+   "sd": 0.0078,
+   "min": 0.606,
+   "max": 0.639
+  }
+ },
+ "vs_published_0627": {
+  "sqrt": "+0.005 (0.6 SE) \u2014 NOT a defensible SOTA claim",
+  "uniform": "-0.015"
+ },
+ "defensible_finding": "sqrt weighting beats uniform averaging by +0.020 with sd 0.0089 over 25 seeds \u2014 about 2.3 SE. That comparison is internal (same folds, same target, same blocks), so it is a solid result even though the margin over the published number is not.",
+ "secondary": "A closed-form CKA-learned weighting (0.6195) does WORSE than the hand-chosen sqrt rule, so the simple rule wins.",
+ "honest_verdict": "Claim: 'resolution-weighted kernel ensembling is a real, reproducible improvement over uniform ensembling.' Do NOT claim: 'we beat the state of the art.'"
+}

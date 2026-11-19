@@ -1,0 +1,67 @@
+{
+ "n_train_pool": 728,
+ "n_test_outside": 246,
+ "note": "train on a random subset of the 753 benchmark subjects, test on the 221 pool subjects the benchmark never uses; both labelled in the same public file",
+ "cert": {
+  "r_mean": -0.0411,
+  "r_per_seed": [
+   0.0946,
+   -0.0316,
+   -0.0402,
+   -0.1935,
+   -0.0345
+  ],
+  "sd": 0.1022
+ },
+ "rank": {
+  "r_mean": -0.0322,
+  "r_per_seed": [
+   0.0562,
+   -0.0236,
+   0.0205,
+   -0.1767,
+   -0.0376
+  ],
+  "sd": 0.0889
+ },
+ "mix": {
+  "r_mean": -0.0326,
+  "r_per_seed": [
+   0.0699,
+   -0.0286,
+   0.03,
+   -0.1869,
+   -0.0472
+  ],
+  "sd": 0.098
+ },
+ "rank_abs_err_gain": {
+  "mean": -0.0678,
+  "ci95": [
+   -0.1076,
+   -0.0292
+  ],
+  "p_two_sided": 0.0
+ },
+ "mix_abs_err_gain": {
+  "mean": -0.0507,
+  "ci95": [
+   -0.0839,
+   -0.0175
+  ],
+  "p_two_sided": 0.007
+ },
+ "date": "2026-11-18",
+ "experiment": "train on a subset of the 753 with the published features, predict the 246 pool subjects the benchmark never uses",
+ "verdict": "INVALID -- THE TWO ARMS ARE DIFFERENT PIPELINES.",
+ "why_invalid": "pool.npz \"bp\" and the published mod_*.npz features correlate only 0.12-0.24 on the SAME subject (checked on 5 subjects that appear in both). They are two different FC extraction pipelines, so the test trained on one representation and scored on another. Every arm came out near zero or negative (cert -0.0134, rank -0.0058, mix -0.0071 at 30 seeds) because the representation, not the method, changed between train and test.",
+ "the_numbers_that_are_still_meaningful": "Within this flawed setup the rank kernel is still less bad than the certified one (-0.0058 vs -0.0134), but that comparison is confounded by the pipeline mismatch and should not be quoted as evidence for or against the rank kernel.",
+ "what_a_valid_test_needs": "features for the extra subjects from the SAME pipeline as the 753. The ledger notes that our own 400-parcel extraction exists for 233 extra subjects (MOTOR_DROP_HOLDOUT_233_1117) -- that is the route to a valid out-of-sample test, and it cannot use the published features.",
+ "30seed_runs": {
+  "cert": -0.0134,
+  "rank": -0.0058,
+  "mix": -0.0071,
+  "rank_abs_err_gain": -0.0545,
+  "mix_abs_err_gain": -0.0459
+ }
+}

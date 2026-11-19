@@ -1,0 +1,129 @@
+{
+ "date": "2026-11-18",
+ "method": "SOTA-claim review (2026-11-18): seed-count tests vs the corrected resampled t-test.",
+ "factor_k10_J60": 8.23,
+ "from_per_seed": {
+  "rest_D0_vs_FBERT8M": {
+   "diff": 0.0595,
+   "wins": "60/60",
+   "naive_t": 38.22,
+   "corrected_t": 4.65,
+   "p_two_sided": 1.94e-05
+  },
+  "rest_D0_vs_FC035_teacher": {
+   "diff": 0.0001,
+   "wins": "30/60",
+   "naive_t": 0.24,
+   "corrected_t": 0.03,
+   "p_two_sided": 0.977
+  },
+  "six_D1_lang2_vs_FBERT8M_lang2": {
+   "diff": 0.0228,
+   "wins": "60/60",
+   "naive_t": 30.56,
+   "corrected_t": 3.71,
+   "p_two_sided": 0.000454
+  },
+  "six_D1_eq_vs_FBERT8M_eq": {
+   "diff": 0.0221,
+   "wins": "60/60",
+   "naive_t": 31.6,
+   "corrected_t": 3.84,
+   "p_two_sided": 0.000302
+  },
+  "six_D0_eq_vs_FBERT8M_eq_inductive": {
+   "diff": -0.0024,
+   "wins": "27/60",
+   "naive_t": -2.51,
+   "corrected_t": -0.3,
+   "p_two_sided": 0.762
+  },
+  "six_D0_lang2_vs_FBERT8M_lang2_inductive": {
+   "diff": -0.0044,
+   "wins": "16/60",
+   "naive_t": -4.48,
+   "corrected_t": -0.54,
+   "p_two_sided": 0.588
+  },
+  "six_OURS_system_vs_FBERT8M": {
+   "diff": 0.0223,
+   "wins": "60/60",
+   "naive_t": 26.92,
+   "corrected_t": 3.27,
+   "p_two_sided": 0.00179
+  },
+  "six_SOTA_system_incl_FBERT_vs_FBERT8M": {
+   "diff": 0.0315,
+   "wins": "60/60",
+   "naive_t": 55.34,
+   "corrected_t": 6.73,
+   "p_two_sided": 7.82e-09
+  },
+  "rest_OURS_system_vs_FBERT8M": {
+   "diff": 0.058,
+   "wins": "60/60",
+   "naive_t": 36.87,
+   "corrected_t": 4.48,
+   "p_two_sided": 3.46e-05
+  },
+  "joint_0.7481_vs_nested_canonical": {
+   "diff": 0.0133,
+   "wins": "60/60",
+   "naive_t": 30.74,
+   "corrected_t": 3.74,
+   "p_two_sided": 0.000423
+  }
+ },
+ "from_recorded_t": {
+  "REL_1of9_0.7382_vs_0.7357": {
+   "diff": 0.0026,
+   "naive_t": 12.09,
+   "corrected_t": 1.47,
+   "p_two_sided": 0.147,
+   "note": "from the recorded t"
+  },
+  "REL_1of8": {
+   "diff": 0.0022,
+   "naive_t": 9.51,
+   "corrected_t": 1.16,
+   "p_two_sided": 0.252,
+   "note": "from the recorded t"
+  },
+  "REL_1of9_random_splits": {
+   "diff": 0.0013,
+   "naive_t": 8.14,
+   "corrected_t": 0.99,
+   "p_two_sided": 0.326,
+   "note": "from the recorded t"
+  },
+  "REL_satisfaction_random_splits": {
+   "diff": 0.0101,
+   "naive_t": 5.82,
+   "corrected_t": 0.99,
+   "p_two_sided": 0.329,
+   "note": "from the recorded t"
+  },
+  "REL_emotion_random_splits": {
+   "diff": -0.0071,
+   "naive_t": -3.08,
+   "corrected_t": -0.53,
+   "p_two_sided": 0.603,
+   "note": "from the recorded t"
+  },
+  "REL_emotion_recognition_family_folds": {
+   "diff": -0.0113,
+   "naive_t": -11.2,
+   "corrected_t": -1.36,
+   "p_two_sided": 0.179,
+   "note": "from the recorded t"
+  },
+  "REL_satisfaction_family_folds": {
+   "diff": 0.0047,
+   "naive_t": 4.16,
+   "corrected_t": 0.51,
+   "p_two_sided": 0.615,
+   "note": "from the recorded t"
+  }
+ },
+ "reading": "Survive the correction: D0 vs F-BERT-8M on rest, D1 vs F-BERT-8M on six modalities, the joint over the nested canonical. Do not survive: every RELATIONAL share effect (0.7382 included), the target-specificity contrasts, and the inductive six-modality D0 vs F-BERT gap (a tie, not an F-BERT win). Approximate: per-fold scores were not saved."
+}

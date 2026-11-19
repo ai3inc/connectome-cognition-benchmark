@@ -1,0 +1,34 @@
+{
+ "question": "is the population gain real, or twin leakage from adding pool subjects?",
+ "why_it_mattered": "the extra 246 pool subjects are highly similar to the 753 set (median max-r 0.530 after removing the shared edge profile), which is what co-twins look like. The official folds are family-aware only INSIDE the 753, so adding extras could leak families across folds.",
+ "control": "kept only extra subjects whose max similarity to the 753 set falls below the 90th percentile of the WITHIN-753 distribution (0.745): 227 of 246 kept, giving n=955.",
+ "results": {
+  "A_753_only": {
+   "n": 728,
+   "r": 0.504
+  },
+  "B_all_pool": {
+   "n": 974,
+   "r": 0.5601
+  },
+  "C_leak_controlled": {
+   "n": 955,
+   "r": 0.5629
+  }
+ },
+ "paired_vs_753_only": {
+  "B": {
+   "diff": 0.0561,
+   "wins": "60/60",
+   "t": 18.5
+  },
+  "C": {
+   "diff": 0.0589,
+   "wins": "60/60",
+   "t": 22.5
+  }
+ },
+ "verdict": "THE GAIN SURVIVES LEAK CONTROL. 0.5040 -> 0.5629 at n=955, all seeds, and it is LARGER than the uncontrolled arm's mean suggests contamination was not inflating it -- if anything the uncontrolled 974 arm (0.5601) is slightly LOWER than the clean 955 arm.",
+ "note_absolute_level": "these absolute levels (0.50-0.56) are lower than the 0.5734/0.6102 measured earlier because this run uses a different, stricter similarity-centred preprocessing; only the CONTRAST matters here.",
+ "conclusion": "cohort size contributes about +0.06 at the crossing from 728 to 955 even with families controlled, so the resting-state gap is substantially a population effect."
+}

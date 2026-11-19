@@ -1,0 +1,26 @@
+{
+ "date": "2026-11-15",
+ "experiment": "leave-one-age-band-out: deployment-realistic robustness",
+ "n": 974,
+ "seeds": 5,
+ "results": {
+  "random_5fold": 0.6458,
+  "sd_random": 0.0062,
+  "age_band_22_25": {
+   "n": 211,
+   "r": 0.597
+  },
+  "age_band_26_30": {
+   "n": 420,
+   "r": 0.582
+  },
+  "age_band_31_35": {
+   "n": 335,
+   "r": 0.611
+  },
+  "loso_band_mean": 0.5967
+ },
+ "finding": "When an entire age band is held out (a genuinely unseen demographic slice, not a random split), the model still reaches 0.58-0.61. The drop from 0.646 is only about 0.05. This shows the headline number is not a random-split artefact.",
+ "significance": "This is the strongest robustness check in the whole program: the claim survives a deployment-like distribution shift.",
+ "note": "36+ band had fewer than 25 subjects and was excluded."
+}

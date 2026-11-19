@@ -1,0 +1,54 @@
+{
+ "addendum": "N (SOTA system)",
+ "cohort": "adhd_nyu",
+ "n": 256,
+ "cells": {
+  "dx": {
+   "metric": "auc",
+   "mean": {
+    "A8": 0.6221699875466999,
+    "OURS": 0.5466625155666252,
+    "SOTA": 0.6196264009962641
+   },
+   "picks": {
+    "A8": 122,
+    "OURS": 2,
+    "HYB": 76
+   },
+   "SOTA_vs_A8": {
+    "mean_diff": -0.002543586550435878,
+    "positive": 8,
+    "of": 20
+   },
+   "SOTA_vs_OURS": {
+    "mean_diff": 0.07296388542963884,
+    "positive": 20,
+    "of": 20
+   }
+  },
+  "iq": {
+   "metric": "r",
+   "mean": {
+    "A8": 0.32300762338168004,
+    "OURS": 0.34195241218586686,
+    "SOTA": 0.3286158863261266
+   },
+   "picks": {
+    "A8": 11,
+    "OURS": 87,
+    "HYB": 102
+   },
+   "SOTA_vs_A8": {
+    "mean_diff": 0.005608262944446554,
+    "positive": 12,
+    "of": 20
+   },
+   "SOTA_vs_OURS": {
+    "mean_diff": -0.013336525859740277,
+    "positive": 4,
+    "of": 20
+   }
+  }
+ },
+ "seconds": 93.71197509765625
+}

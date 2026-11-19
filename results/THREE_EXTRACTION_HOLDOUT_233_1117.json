@@ -1,0 +1,22 @@
+{
+ "date": "2026-11-18",
+ "experiment": "extraction averaging judged on 233 subjects never used in training",
+ "the_hard_limitation": "the published Ooi features exist only for the 753, so the in-fold winner A+C (0.7440) CANNOT be scored on new subjects. This test uses the two arms whose features exist outside the 753: our own 400 (B) and the 450 re-extraction (C).",
+ "protocol": "train once on 728, predict 233 holdout; g=0.92, w=0.05, filter keep 150, lambda by in-fold CV on the training block",
+ "results": {
+  "B_own400": 0.7489,
+  "C_450": 0.7795,
+  "BC_average": 0.7827
+ },
+ "paired_BC_vs_C": {
+  "diff": 0.0031,
+  "bootstrap_ci95": [
+   -0.0151,
+   0.0232
+  ],
+  "p_gt_0": 0.606
+ },
+ "finding": "FOR THE FIRST TIME THE EXTRACTION AVERAGE TRANSFERS. B+C reaches 0.7827 against 0.7795 for the best single arm on subjects the models never saw. The parallel session's F and G failed this test twice.",
+ "honest_read": "+0.0032 with a bootstrap interval that includes zero. Real in direction, not decisive in size. The qualitative claim it supports is the important one: averaging two extractions costs nothing on new subjects and may gain.",
+ "source": "/workspace/threeho4.py + THREEHO.json on <pod>; 450 holdout features from <private storage>"
+}

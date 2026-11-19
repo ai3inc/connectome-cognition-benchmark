@@ -1,0 +1,23 @@
+{
+ "n": 753,
+ "seeds": 60,
+ "baseline_published_six": 0.7326,
+ "kta_power_1.0": {
+  "r": 0.7309,
+  "diff": -0.001,
+  "wins": "6/40"
+ },
+ "kta_power_2.0": {
+  "r": 0.7309,
+  "diff": -0.001,
+  "wins": "8/40"
+ },
+ "date": "2026-11-18",
+ "experiment": "kernel target alignment as a modality weighting rule (both a freeze and a power-scaled variant), on the certified published-six arm",
+ "verdict": "FAILS. -0.0010 at both powers, winning 6/40 and 8/40 folds. Same wall as every other re-weighting rule: the kernel filter has already removed the modality redundancy (CKA 0.77 -> 0.35 after filtering), so there is nothing left for a weighting rule to exploit. KTA is a different rule from solo-r, and it fails the same way.",
+ "what_this_adds": "The ledger recorded that modality re-weighting fails after the filter. KTA is an independent weight rule (label alignment rather than solo r) and it reproduces the failure, which strengthens the mechanism rather than the coincidence.",
+ "structural_axis": "SKIPPED: sp753.npz (structural FC) was not present on <pod>. The mixture version was already tested in STRUCTURAL_FC_1117 (loses at every weight), so nothing is lost.",
+ "_NB_T_CORRECTION_1119": {
+  "note": "this file reports no paired t (KTA was run at 40 seeds with no NB test), so no t correction applies. The deltas (-0.0010) are unaffected."
+ }
+}

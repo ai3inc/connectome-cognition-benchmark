@@ -1,0 +1,86 @@
+{
+ "date": "2026-11-18",
+ "purpose": "the additive chain on the RESIDUALISED target, 753 subjects, the condition the benchmark actually uses",
+ "conditions": "age band (4 levels, reference 22-25) + sex fitted by OLS on the TRAINING fold and applied to the test fold; lambda 1e-6..10; fold-mean r; 60 seeds",
+ "n": 753,
+ "fold_mean": {
+  "cbig6": 0.6714,
+  "full_w1": 0.6788,
+  "partial_w0": 0.6906,
+  "mix_w05": 0.6948,
+  "filtered": 0.7215
+ },
+ "chain": [
+  {
+   "from": "cbig6",
+   "to": "full_w1",
+   "delta": 0.0074,
+   "naive_t": 32.36,
+   "nb_t": 1.81
+  },
+  {
+   "from": "full_w1",
+   "to": "partial_w0",
+   "delta": 0.0118,
+   "naive_t": 16.3,
+   "nb_t": 0.91
+  },
+  {
+   "from": "partial_w0",
+   "to": "mix_w05",
+   "delta": 0.0042,
+   "naive_t": 37.55,
+   "nb_t": 2.1
+  },
+  {
+   "from": "mix_w05",
+   "to": "filtered",
+   "delta": 0.0267,
+   "naive_t": 45.71,
+   "nb_t": 2.55
+  }
+ ],
+ "total": 0.0501,
+ "sum_of_steps": 0.0501,
+ "checks": {
+  "steps_add_to_total": "yes: sum 0.0501 = total 0.0501",
+  "filtered_arm_matches_parallel_session": "0.7215 here and 0.7215 in METRIC_CHECK_COV753 -- an independent implementation of the residualisation gives the same number",
+  "cbib_row_differs_slightly": "my CBIG6 is 0.6714 against their 0.6798 (kernel normalisation); every other arm is within 0.002"
+ },
+ "the_chain_on_the_target_the_benchmark_uses": [
+  {
+   "step": "their CBIG kernel -> our kernel at w=1, no filter",
+   "delta": 0.0074,
+   "NB_t": 32.4,
+   "what": "kernel construction + language x2"
+  },
+  {
+   "step": "pure full -> pure partial, no filter",
+   "delta": 0.0118,
+   "NB_t": 16.3,
+   "what": "THE INVERSION"
+  },
+  {
+   "step": "w=0 -> w=0.05 full-kernel mix",
+   "delta": 0.0042,
+   "NB_t": 37.5,
+   "what": "the 5% mix"
+  },
+  {
+   "step": "no filter -> filtered",
+   "delta": 0.0267,
+   "NB_t": 45.7,
+   "what": "THE KERNEL SPECTRAL FILTER"
+  }
+ ],
+ "reading": "on the residualised target the four contributions are +0.007 / +0.012 / +0.004 / +0.027, total +0.050. The filter is the largest single step (+0.027), the inversion next (+0.012), and both are highly significant in the fold-paired sense -- but note that the total advantage over their kernel (+0.042 vs their CBIG re-run 0.6798) is 'significant' only for the filtered arm; the unfiltered chain's +0.015 was not (NB t 1.33, parallel measurement).",
+ "data_handling": "covariate CSV is HCP restricted-shaped: used on the pod only and deleted after the run; the repo holds per-fold scores, no subject-level covariates",
+ "source": "/workspace/chres3.py + CHAIN_RESID.json on <pod>; covariate file <private storage>",
+ "_correction": "the stored NB_t column was the PER-SEED NAIVE t (mean(d)/sqrt(var(d)/m) with m counted per seed), not the Nadeau-Bengio corrected value. Per-fold naive t would be 21.0 for the filter step; the exact corrected form mean(d)/sqrt((1/m + n_te/n_tr)*var(d)) with m=600 fold differences and n_te/n_tr=0.1111 gives 2.55. The shrink factor between per-fold naive and corrected is 8.23; between my stored per-seed value and corrected it is 17.9.",
+ "note_on_significance": "after correction: the filter step +0.0267 is NB t 2.55 (borderline, p~0.011); the inversion +0.0118 is NB t 0.91 (not significant); the 5% mix and the kernel-construction step are NB t ~2.1 and ~1.8. So of the four steps, only the filter is individually significant at the conventional level, and even it is borderline once the family of four steps is considered.",
+ "column_names": {
+  "naive_t": "per-seed naive t (as originally stored, inflated)",
+  "nb_t": "Nadeau-Bengio corrected over 600 fold differences"
+ },
+ "_note": "the parallel session recomputed from the same per-fold data and got the identical 2.55 / p 0.011 for the filter step, so the corrected column is confirmed by two implementations."
+}

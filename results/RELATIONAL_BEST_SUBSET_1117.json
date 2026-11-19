@@ -1,0 +1,49 @@
+{
+ "date": "2026-11-18",
+ "experiment": "optimal modality subset with the seventh task, all choices fold-internal",
+ "why": "now known: motor hurts, EMOTION hurts, RELATIONAL helps. The candidate subsets are {+rel}, {+rel, -motor}, and the five. Choose among them inside the training fold.",
+ "in_fold_30seeds": {
+  "five": {
+   "r": 0.6865
+  },
+  "six_plus_relational": {
+   "r": 0.7022,
+   "vs_five": 0.0157,
+   "wins": "30/30",
+   "t": 19.6
+  },
+  "relational_and_no_motor": {
+   "r": 0.7039,
+   "vs_five": 0.0174,
+   "wins": "30/30",
+   "t": 25.5
+  },
+  "fold_internal_choice": {
+   "r": 0.7015,
+   "vs_five": 0.0149,
+   "wins": "30/30",
+   "t": 20.8
+  }
+ },
+ "chosen_by_the_rule": "relational_and_no_motor 225/300, six_plus_relational 73, five 2",
+ "holdout_233": {
+  "five": {
+   "r": 0.7734
+  },
+  "relational_and_no_motor": {
+   "r": 0.782
+  },
+  "diff": {
+   "diff": 0.0086,
+   "ci95": [
+    -0.009,
+    0.0274
+   ],
+   "p_gt_0": 0.822
+  }
+ },
+ "verdict": "THE BEST CONFIGURATION IS RELATIONAL IN, MOTOR OUT: +0.0174 in-fold (30/30, t = 25.5), the largest gain of the round, and a fold-internal rule reaches it on its own (225 of 300 folds). On 233 new subjects it is +0.0086 with CI [-0.009, +0.027] and P = 0.82 -- positive but not significant, and slightly smaller than the six-plus-relational arm's holdout (+0.0099, P = 0.94).",
+ "honest_read": "the holdout cannot separate {+rel} from {+rel, -motor}: +0.0099 vs +0.0086, both inside noise. So the in-fold ranking (rel-no-motor ahead) is not confirmed out of sample, and the safe statement is the shared one: ADDING RELATIONAL HELPS, about +0.01 on new subjects; whether motor should also go is undetermined by this data.",
+ "what_this_means_for_the_config": "choose {+rel, -motor} on in-fold evidence (it is the largest and the rule picks it), but report that the motor part is not confirmed out of sample -- exactly the same status motor had on its own.",
+ "source": "/workspace/best6.py + BEST6.json, relho2.py + RELHO2.json on <pod>"
+}

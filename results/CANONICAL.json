@@ -1,0 +1,62 @@
+{
+ "date": "2026-11-15",
+ "cohort": "HCP S1200, 998 subjects",
+ "method": "12-block ensemble: 6 group-ICA resolutions (d15..d300) x 2 resting-state runs (REST1_LR, REST2_LR), each ridge out-of-fold, z-scored and averaged. No PCA reduction.",
+ "results": {
+  "crystallized": {
+   "r": 0.5904,
+   "per_seed_8": [
+    0.5872,
+    0.5952,
+    0.597,
+    0.6022,
+    0.5904,
+    0.5776,
+    0.5806,
+    0.5931
+   ],
+   "min": 0.5776,
+   "n": 998
+  },
+  "fluid": {
+   "r": 0.3872,
+   "per_seed_8": [
+    0.4015,
+    0.4111,
+    0.3861,
+    0.3854,
+    0.3867,
+    0.3892,
+    0.3708,
+    0.3666
+   ],
+   "min": 0.3666,
+   "n": 992
+  },
+  "pmat": {
+   "r": 0.3699,
+   "sd": 0.0072,
+   "n": 999
+  }
+ },
+ "verification": {
+  "age_partial_crystallized": 0.5882,
+  "age_partial_fluid": 0.404,
+  "seeds_above_target": "8/8 both targets"
+ },
+ "literature": {
+  "fluid_SOTA": 0.331,
+  "fluid_SOTA_method": "CRAM-Wasserstein, PMC12633399, HCP N=515",
+  "crystallized_typical": "r about 0.16 (R^2 2.5 percent)"
+ },
+ "margins": {
+  "fluid_over_SOTA": "+0.056 at mean, +0.036 at worst seed",
+  "crystallized_over_literature": "+0.43"
+ },
+ "limits": [
+  "single cohort (HCP) - no independent replication",
+  "all 12 blocks derive from HCP group-ICA; independent atlas (Schaefer) inconclusive",
+  "N differs from literature (998 vs 515)",
+  "the two-run trick found 2026-11-15, not yet tested by others"
+ ]
+}

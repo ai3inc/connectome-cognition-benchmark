@@ -1,0 +1,25 @@
+{
+ "date": "2026-11-15",
+ "experiment": "decomposition of the ensemble gain + partial-only push",
+ "n": 974,
+ "seeds": 25,
+ "target": "Ooi varimax_cog",
+ "decomposition": {
+  "A_d300_full_only": 0.6061,
+  "B_d300_full_plus_partial": 0.6154,
+  "C_six_full_resolution": 0.6091,
+  "D_six_partial": 0.6386,
+  "E_all_twelve": 0.6349
+ },
+ "why": "Resolution diversity alone adds only +0.003. The partial-correlation representation is where the signal lives: partial-only reaches 0.6386 (10 seeds) / 0.6365 (25 seeds) while adding the full-correlation blocks DILUTES it by about 0.004.",
+ "validated_partial_only": {
+  "r": 0.6365,
+  "sd": 0.0079,
+  "min": 0.621,
+  "max": 0.65,
+  "seeds": 25
+ },
+ "vs_published": 0.627,
+ "margin": "+0.0095 (1.2 SE) \u2014 a larger and more stable margin than the previous 12-block result (0.6320, +0.005)",
+ "caveat": "The literature number is Schaefer-400; this is ICA. The parcellation caveat still applies."
+}

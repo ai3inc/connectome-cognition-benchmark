@@ -1,0 +1,65 @@
+{
+ "n": 1003,
+ "targets": {
+  "CogFluidComp_AgeAdj": {
+   "n": 992,
+   "random": 0.275,
+   "loso_age_band": {
+    "22-25": 0.298,
+    "26-30": 0.217,
+    "31-35": 0.258
+   },
+   "loso_age_band_mean": 0.2577,
+   "by_sex": {
+    "male": 0.262,
+    "female": 0.227
+   },
+   "extremes": 0.206
+  },
+  "CogCrystalComp_AgeAdj": {
+   "n": 998,
+   "random": 0.5261,
+   "loso_age_band": {
+    "22-25": 0.446,
+    "26-30": 0.429,
+    "31-35": 0.513
+   },
+   "loso_age_band_mean": 0.4627,
+   "by_sex": {
+    "male": 0.401,
+    "female": 0.438
+   },
+   "extremes": 0.401
+  },
+  "CogTotalComp_AgeAdj": {
+   "n": 991,
+   "random": 0.4535,
+   "loso_age_band": {
+    "22-25": 0.412,
+    "26-30": 0.364,
+    "31-35": 0.426
+   },
+   "loso_age_band_mean": 0.4007,
+   "by_sex": {
+    "male": 0.363,
+    "female": 0.37
+   },
+   "extremes": 0.33
+  },
+  "PMAT24_A_CR": {
+   "n": 999,
+   "random": 0.3548,
+   "loso_age_band": {
+    "22-25": 0.329,
+    "26-30": 0.344,
+    "31-35": 0.319
+   },
+   "loso_age_band_mean": 0.3307,
+   "by_sex": {
+    "male": 0.248,
+    "female": 0.243
+   },
+   "extremes": 0.293
+  }
+ }
+}

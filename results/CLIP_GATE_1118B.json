@@ -1,0 +1,51 @@
+{
+ "n": 753,
+ "seeds": 60,
+ "question": "is the clip variant a fold-recoverable recipe? 2-way choice raw vs clip1.5",
+ "baseline_raw_value_kernel": 0.7326,
+ "clip1.5_kernel": {
+  "r": 0.7388,
+  "diff": 0.0062,
+  "wins": "58/60",
+  "NB_t": 22.77,
+  "p": 0.0
+ },
+ "fold_internal_2way": {
+  "r": 0.7375,
+  "diff": 0.005,
+  "wins": "56/60",
+  "NB_t": 19.24,
+  "p": 0.0,
+  "picks_clip": 561,
+  "picks_raw": 39,
+  "note": "picks counted over 600 fold-decisions"
+ },
+ "fixed_equal_mix": {
+  "r": 0.7385,
+  "diff": 0.006,
+  "wins": "60/60",
+  "NB_t": 41.74,
+  "p": 0.0
+ },
+ "_NB_T_CORRECTION_1119": {
+  "note": "session found the NB formula was wrong in this file's helper: it divided the variance by m AND multiplied by (1/k + n_te/n_tr), which under-corrects. Correct: var(d)*(1/m + n_te/n_tr). The t values in this file are inflated by 17.9x; the corrected values are below. Deltas and win counts are unaffected. No re-run needed -- the conversion is exact.",
+  "corrected": {
+   "clip1.5_kernel": {
+    "reported_t": 22.77,
+    "NB_t": 1.27,
+    "p_two_sided": 0.2034
+   },
+   "fold_internal_2way": {
+    "reported_t": 19.24,
+    "NB_t": 1.07,
+    "p_two_sided": 0.2825
+   },
+   "fixed_equal_mix": {
+    "reported_t": 41.74,
+    "NB_t": 2.33,
+    "p_two_sided": 0.0197
+   }
+  },
+  "verdict_change": "clip and rank are NOT significant under the exact NB t. Only the lambda-bag loss and the two hand-set 50/50 mixes survive."
+ }
+}

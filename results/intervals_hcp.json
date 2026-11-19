@@ -1,0 +1,53 @@
+{
+ "n": 1003,
+ "targets": {
+  "CogFluidComp_AgeAdj": {
+   "n": 992,
+   "r": 0.276,
+   "sd_target": 17.04,
+   "mae_model": 13.59,
+   "mae_baseline": 14.13,
+   "error_reduction_pct": 3.8,
+   "rmse_model": 16.81,
+   "rmse_baseline": 17.04,
+   "ci95_width": 64.15,
+   "ci95_coverage": 0.95
+  },
+  "CogTotalComp_AgeAdj": {
+   "n": 991,
+   "r": 0.4484,
+   "sd_target": 20.2,
+   "mae_model": 14.73,
+   "mae_baseline": 16.47,
+   "error_reduction_pct": 10.6,
+   "rmse_model": 18.17,
+   "rmse_baseline": 20.2,
+   "ci95_width": 69.22,
+   "ci95_coverage": 0.95
+  },
+  "PMAT24_A_CR": {
+   "n": 999,
+   "r": 0.3485,
+   "sd_target": 4.7,
+   "mae_model": 3.68,
+   "mae_baseline": 3.95,
+   "error_reduction_pct": 7.0,
+   "rmse_model": 4.49,
+   "rmse_baseline": 4.7,
+   "ci95_width": 16.32,
+   "ci95_coverage": 0.95
+  },
+  "CogCrystalComp_AgeAdj": {
+   "n": 998,
+   "r": 0.5311,
+   "sd_target": 16.9,
+   "mae_model": 11.65,
+   "mae_baseline": 13.81,
+   "error_reduction_pct": 15.7,
+   "rmse_model": 14.33,
+   "rmse_baseline": 16.9,
+   "ci95_width": 54.63,
+   "ci95_coverage": 0.95
+  }
+ }
+}

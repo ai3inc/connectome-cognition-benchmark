@@ -1,0 +1,42 @@
+{
+ "date": "2026-11-15",
+ "experiment": "dimension-weighted kernel ensemble",
+ "target": "Ooi-2022 varimax_cog",
+ "n": 974,
+ "method": "12 ICA kernels (6 dimensionalities x {full, partial correlation}), each alpha-0.35 recalibrated and trace-normalised, then averaged with weight = edges^p, KRR with nested lambda",
+ "curve": {
+  "p=0.00": 0.6169,
+  "p=0.15": 0.6294,
+  "p=0.25": 0.636,
+  "p=0.35": 0.6401,
+  "p=0.50": 0.6417,
+  "p=0.75": 0.6383,
+  "p=1.00": 0.6335
+ },
+ "curve_sd_at_0.5": 0.0066,
+ "best_5seed": {
+  "p": 0.5,
+  "r": 0.6417,
+  "sd": 0.0066
+ },
+ "stability_10seed": {
+  "p": 0.5,
+  "r": 0.6349,
+  "sd": 0.0093,
+  "per_seed": [
+   0.635,
+   0.635,
+   0.652,
+   0.645,
+   0.641,
+   0.616,
+   0.634,
+   0.631,
+   0.629,
+   0.63
+  ]
+ },
+ "published_sota": 0.627,
+ "verdict": "A clean unimodal curve peaking at p=0.5 (sqrt of edge count). With 10 CV seeds the estimate settles at 0.6349 +/- 0.0093, which is +0.008 over the published 0.627 (about 0.9 SE). Every one of the 10 seeds lands at or near 0.627; 9 of 10 exceed 0.62. This is the first configuration that edges past the literature, but the margin is inside one standard deviation, so the honest claim is 'equal or slightly better', not 'clearly better'.",
+ "why_it_works": "Uniform averaging gave a 105-edge block the same vote as a 44,850-edge block. Weighting by sqrt(edges) lets resolution carry weight without letting the largest block dominate."
+}

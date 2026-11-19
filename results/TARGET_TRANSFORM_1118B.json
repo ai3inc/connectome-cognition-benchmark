@@ -1,0 +1,57 @@
+{
+ "n": 753,
+ "seeds": 60,
+ "baseline_raw_target": 0.7326,
+ "rank_normal_target": {
+  "r": 0.727,
+  "diff": -0.0056,
+  "wins": "0/60",
+  "NB_t": -26.99,
+  "p": 0.0
+ },
+ "winsor_2.5": {
+  "r": 0.7335,
+  "diff": 0.001,
+  "wins": "51/60",
+  "NB_t": 10.78,
+  "p": 0.0
+ },
+ "winsor_2.0": {
+  "r": 0.7331,
+  "diff": 0.0006,
+  "wins": "35/60",
+  "NB_t": 2.93,
+  "p": 0.0033
+ },
+ "satisfaction_partialled_out": {
+  "r": 0.73,
+  "vs_baseline": -0.0026,
+  "note": "different target, so not a paired gain"
+ },
+ "date": "2026-11-18",
+ "experiment": "does transforming the cognition target before KRR help? rank-normal (van der Waerden) and winsorised variants, on the certified published-six arm",
+ "verdict": "RANK FAILS BADLY (-0.0056, 0/60): the composite is already near-normal, and a monotone transform of the target changes only which region the regression weights, and it weights the tails less -- which is where the informative subjects are. WINSOR IS POSITIVE BUT TINY (+0.0010 at 2.5 sd, +0.0006 at 2.0 sd) and shrinks as the clip bites harder, which is the signature of a real but negligible effect. Both are below the 0.003 that the ledger shows cannot be selected inside a fold, so winsor is an observation, not a recipe.",
+ "sign_note": "NB_t values here were recomputed as (new - baseline) to match the diff column; the original run printed the opposite convention.",
+ "bug_that_cost_a_run": "the first rank transform assigned normal scores at the original indices rather than the sorted positions, inverting the map (r = -0.09). After the fix corr(ranked, raw) = 0.9934 and the honest number is -0.0056.",
+ "_NB_T_CORRECTION_1119": {
+  "note": "session found the NB formula was wrong in this file's helper: it divided the variance by m AND multiplied by (1/k + n_te/n_tr), which under-corrects. Correct: var(d)*(1/m + n_te/n_tr). The t values in this file are inflated by 17.9x; the corrected values are below. Deltas and win counts are unaffected. No re-run needed -- the conversion is exact.",
+  "corrected": {
+   "rank_normal_target": {
+    "reported_t": -26.99,
+    "NB_t": -1.51,
+    "p_two_sided": 0.1316
+   },
+   "winsor_2.5": {
+    "reported_t": 10.78,
+    "NB_t": 0.6,
+    "p_two_sided": 0.5471
+   },
+   "winsor_2.0": {
+    "reported_t": 2.93,
+    "NB_t": 0.16,
+    "p_two_sided": 0.87
+   }
+  },
+  "verdict_change": "clip and rank are NOT significant under the exact NB t. Only the lambda-bag loss and the two hand-set 50/50 mixes survive."
+ }
+}

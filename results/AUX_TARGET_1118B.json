@@ -1,0 +1,68 @@
+{
+ "date": "2026-11-18",
+ "experiment": "auxiliary targets -- do the other two composites (satisfaction, emotion recognition) help predict cognition when they enter the kernel or the training target?",
+ "baseline": {
+  "r": 0.7326,
+  "note": "published six, raw target, g0.92/k150, lambda in-fold, 60 seeds"
+ },
+ "arms_60seeds": {
+  "multi_task_composite": {
+   "r": 0.7285,
+   "diff": -0.004,
+   "wins": "0/60",
+   "NB_t": 14.11,
+   "what": "train on (cog + 0.5*er) instead of cog, score on cog"
+  },
+  "label_gram_b0.02": {
+   "r": 0.7325,
+   "diff": -0.0001,
+   "wins": "0/60",
+   "NB_t": 26.65,
+   "what": "K' = K + 0.02 * (Z Z^T) with Z the centred 3-column label matrix from the training fold"
+  },
+  "label_gram_b0.05": {
+   "r": 0.7322,
+   "diff": -0.0003,
+   "wins": "0/60",
+   "NB_t": 6.15
+  },
+  "label_gram_b0.10": {
+   "r": 0.7301,
+   "diff": -0.0025,
+   "wins": "3/60",
+   "NB_t": 14.64
+  }
+ },
+ "arms_pending": {
+  "label_gram_b0.20": "not completed (a 20-seed re-run was started and stopped); the trend is monotone in b so the sign is not in doubt"
+ },
+ "verdict": "FAILS on every arm, and monotonically in the label weight. Adding the other composites gives the kernel label information about targets it is not asked to predict, which adds variance without adding the cognition-specific signal. This is the same wall as the KTA and solo-r weighting rules: the filtered kernel already carries what the labels can add.",
+ "bug_that_cost_a_run": "the first multi-task arm used PC1 of (satisf, cog, er). That PC1 correlates -0.99 with satisfaction and only 0.18 with cognition -- it was training on satisfaction and scoring on cognition, which is why it collapsed to -0.43. Replaced with the explicit (cog + 0.5*er) composite; the fix gives -0.0040.",
+ "honest_note": "the b=0.20 arm is unrun. Every other b is negative and the sequence is monotone decreasing in b, so recording it as 'not run, trend monotone' rather than claiming a number.",
+ "_NB_T_CORRECTION_1119": {
+  "note": "session found the NB formula was wrong in this file's helper: it divided the variance by m AND multiplied by (1/k + n_te/n_tr), which under-corrects. Correct: var(d)*(1/m + n_te/n_tr). The t values in this file are inflated by 17.9x; the corrected values are below. Deltas and win counts are unaffected. No re-run needed -- the conversion is exact.",
+  "corrected": {
+   "multi_task_composite": {
+    "reported_t": 14.11,
+    "NB_t": 0.79,
+    "p_two_sided": 0.4306
+   },
+   "label_gram_b0.02": {
+    "reported_t": 26.65,
+    "NB_t": 1.49,
+    "p_two_sided": 0.1366
+   },
+   "label_gram_b0.05": {
+    "reported_t": 6.15,
+    "NB_t": 0.34,
+    "p_two_sided": 0.7312
+   },
+   "label_gram_b0.10": {
+    "reported_t": 14.64,
+    "NB_t": 0.82,
+    "p_two_sided": 0.4135
+   }
+  },
+  "verdict_change": "clip and rank are NOT significant under the exact NB t. Only the lambda-bag loss and the two hand-set 50/50 mixes survive."
+ }
+}

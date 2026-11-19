@@ -1,0 +1,25 @@
+{
+ "date": "2026-11-15",
+ "experiment": "paired Nadeau-Bengio test, F-BERT method vs ours, identical folds",
+ "n": 974,
+ "seeds": 20,
+ "target": "Ooi-2022 varimax_cog",
+ "results": {
+  "fbert_method_single_d300_alpha035": {
+   "r": 0.6147,
+   "sd": 0.0084
+  },
+  "ours_12block_sqrtweighted": {
+   "r": 0.6326,
+   "sd": 0.0094
+  }
+ },
+ "paired": {
+  "mean_diff": 0.018,
+  "wins": "20/20",
+  "t_nadeau_bengio": 9.51,
+  "p": "<0.0001"
+ },
+ "interpretation": "This is the defensible SOTA statement. When both methods are run on identical subjects and identical folds, our resolution-weighted ensemble beats the published method by 0.018 with a corrected paired t of 9.51 (p<1e-4) and a 20/20 win rate. The weaker '0.6326 vs 0.627 point estimate' framing understates the result because it compares across different studies; the paired test is the one both SOTA papers themselves use (Ooi 2022 protocol).",
+ "caveat": "A is a faithful reimplementation of the F-BERT recipe on OUR pipeline (alpha 0.35, correlation-kernel KRR, d300), not their exact code; their official 0.627 comes from Schaefer-400 and N=955. So the claim is 'our ensemble beats the same-recipe single-parcellation baseline', which is the apples-to-apples comparison."
+}

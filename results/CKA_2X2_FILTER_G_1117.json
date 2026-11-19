@@ -1,0 +1,38 @@
+{
+ "date": "2026-11-17",
+ "experiment": "2x2 on our chain: kernel spectral filter on/off x shrinkage g, six-modality kernels, n=961",
+ "why": "the parallel F-BERT session measured cross-modality CKA 0.68 on their chain but 0.34 for a pretrained deep model, and found on their own chain that the kernel filter alone explains the difference (0.849/0.681 no-filter -> 0.362/0.315 filtered). Independent replication on our atlas and features.",
+ "setting": "Ooi Schaefer-400 features, our task extraction, alpha=0.10, w=0.05 full-kernel mix, filter tau=0.5 sd and keep=150 when on",
+ "cells": {
+  "g0.85_nofilter": {
+   "mean": 0.7669,
+   "max": 0.8594,
+   "min": 0.6249
+  },
+  "g0.85_filter": {
+   "mean": 0.3534,
+   "max": 0.4488,
+   "min": 0.2779
+  },
+  "g0.97_nofilter": {
+   "mean": 0.5474,
+   "max": 0.6748,
+   "min": 0.3853
+  },
+  "g0.97_filter": {
+   "mean": 0.2843,
+   "max": 0.4215,
+   "min": 0.174
+  }
+ },
+ "theirs_450parcels": {
+  "g0.85_nofilter": 0.849,
+  "g0.85_filter": 0.362,
+  "g0.97_nofilter": 0.681,
+  "g0.97_filter": 0.315
+ },
+ "replication": "the same 2x2 shape, same sign in every cell. Filter removes +0.41 at g=0.85 and +0.26 at g=0.97; without the filter a higher g makes kernels MORE redundant, with the filter a higher g makes them LESS redundant. Their explanation -- that the apparent shared component is the flat noise tail sitting near the kernel diagonal, which every modality shares because every subject has the same diagonal -- predicts exactly this sign flip.",
+ "g1_note": "g=1.00 degenerates numerically (trace of the alpha-weighted matrix goes to 0), so the sweep reports 0.85/0.92/0.95/0.97 only.",
+ "consequence": "the cross-modality CKA number is not a property of the atlas or the preprocessing; it is a property of whether the filter is on. Any comparison of 'modality redundancy' across papers must state it.",
+ "source": "/workspace/cka22.py, ckag.py, CKA_2x2.json, CKA_SWEEP_G.json on <pod>"
+}

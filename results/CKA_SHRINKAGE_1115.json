@@ -1,0 +1,14 @@
+{
+ "date": "2026-11-15",
+ "experiment": "CKA weight shrinkage toward the sqrt prior",
+ "seeds": 25,
+ "n": 974,
+ "curve": {
+  "t=0.00_sqrt_only": 0.632,
+  "t=0.25": 0.6315,
+  "t=0.50": 0.6284,
+  "t=0.75": 0.6242,
+  "t=1.00_cka_only": 0.6195
+ },
+ "finding": "Monotone decrease as the learned CKA weight enters. The hand-chosen sqrt(edges) rule is the best of everything tried: kernel ensemble with alpha-0.35 recalibration, uniform / sqrt / CKA / CKA x sqrt / shrunk combinations, top-k selection, geometric averaging. Final honest number: 0.6320 +/- 0.0089 over 25 seeds vs published 0.627."
+}

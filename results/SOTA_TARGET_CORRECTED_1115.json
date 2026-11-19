@@ -1,0 +1,55 @@
+{
+ "date": "2026-11-15",
+ "headline": "The literature SOTA we were chasing was misread. Target is Ooi-2022 varimax_cog, not CogTotalComp.",
+ "corrections": [
+  {
+   "what": "0.552 attributed to BrainPFN",
+   "truth": "not verifiable; the real published SOTA on HCP-YA cognition is 0.627 (F-BERT, arXiv 2609.37642) and 0.571 (co-skewness Tucker, arXiv 2606.04010)",
+   "how_checked": "arXiv abstract+full text of both papers"
+  },
+  {
+   "what": "target = CogTotalComp_AgeAdj",
+   "truth": "both papers use the Ooi-2022 varimax_cog composite (PC1 of 58 behavioural measures). Different construct.",
+   "fix": "downloaded MMP_HCP_componentscores.csv from ThomasYeoLab/Ooi2022_MMP_HCP and joined on subject id"
+  }
+ ],
+ "our_baseline_on_the_correct_target": {
+  "n": 974,
+  "raw_fc_ridge_alpha100": {
+   "d100": 0.5042,
+   "d200": 0.5109,
+   "d300": 0.524
+  },
+  "note": "literature FC-full Schaefer-400 (correlation-kernel KRR) = 0.543"
+ },
+ "fbert_replication": {
+  "estimator": "correlation-kernel KRR, doubly-centred train kernel, lambda fixed per row (no test-fold selection)",
+  "alpha_star_reported_by_paper": 0.35,
+  "results_d300": {
+   "a1.00_lam0.01": 0.5623,
+   "a1.00_lam0.1": 0.5696,
+   "a1.00_lam1": 0.5664,
+   "a0.50_lam0.01": 0.6094,
+   "a0.50_lam0.1": 0.6105,
+   "a0.50_lam1": 0.5984,
+   "a0.35_lam0.01": 0.6133,
+   "a0.35_lam0.1": 0.613,
+   "a0.35_lam1": 0.596,
+   "a0.20_lam0.01": 0.5962,
+   "a0.20_lam0.1": 0.5953,
+   "a0.20_lam1": 0.5751
+  },
+  "results_d200": {
+   "a1.00_lam1": 0.5645,
+   "a0.50_lam1": 0.5924,
+   "a0.35_lam1": 0.5951,
+   "a0.35_lam0.1": 0.5929
+  },
+  "verdict": "the eigenvalue-power transform reproduces (+0.044 over raw at alpha 0.35). alpha*=0.35 reproduced independently. Best 0.6133 vs SOTA 0.627 = gap 0.014, sd 0.010 = 1.4 SE. NOT YET A WIN."
+ },
+ "next": [
+  "12-block alpha ensemble (running)",
+  "F-BERT x Tucker combination (running)",
+  "Schaefer-400 FC at n=500 (running, axis bug fixed)"
+ ]
+}

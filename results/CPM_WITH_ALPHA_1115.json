@@ -1,0 +1,17 @@
+{
+ "date": "2026-11-15",
+ "experiment": "CPM with and without the alpha recalibration",
+ "n": 974,
+ "target": "Ooi-2022 varimax_cog",
+ "seeds": 3,
+ "results": {
+  "cpm_raw": 0.3258,
+  "cpm_alpha0.35": 0.4122,
+  "our_sqrt_weighted_ensemble": 0.6349
+ },
+ "finding": "The eigenvalue recalibration transfers: it lifts CPM by +0.086 (0.326 -> 0.412), which is independent evidence that alpha=0.35 is a real, method-agnostic improvement rather than something specific to kernel regression. Our ensemble is still +0.22 above the best CPM.",
+ "sd": {
+  "cpm_raw": 0.0051,
+  "cpm_alpha0.35": 0.0016
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "D1": {
+  "r": 0.6372623851969701,
+  "lam": 0.1,
+  "cv_r": 0.5629505942903759,
+  "pred": "<removed: subject-level>"
+ },
+ "D0": {
+  "r": 0.5860927314723166,
+  "lam": 0.1,
+  "cv_r": 0.4026798920731481,
+  "pred": "<removed: subject-level>"
+ },
+ "n_train": 728,
+ "n_holdout": 233,
+ "holdout_ids": {
+  "removed": "subject-level",
+  "n": 233
+ },
+ "y_holdout": {
+  "removed": "subject-level",
+  "n": 233
+ }
+}

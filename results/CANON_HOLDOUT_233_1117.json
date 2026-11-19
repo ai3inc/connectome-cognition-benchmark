@@ -1,0 +1,33 @@
+{
+ "date": "2026-11-17",
+ "experiment": "canonical chain on the 233-subject new-subject holdout (prereg Addendum F, corrected)",
+ "protocol": "train once on the 728 subjects with all six modalities, predict the holdout subjects never used. g and w fixed at the 753-tuned values; lambda chosen by 10-fold CV inside the 728.",
+ "features_IMPORTANT": "OUR OWN Schaefer-400 extraction (pool.npz resting-state + task_merged task FC), NOT the published Ooi matrices. The Ooi file has no task FC outside the 753, so the published-feature chain cannot be run on this holdout at all. The 728-subject CV here (0.7165) is the internal reference for this feature set, not the 0.7344 published-feature number.",
+ "cohort": "233 of the parallel session's 263 holdout ids that have all six modalities in our pool and a varimax_cog score",
+ "arms": {
+  "D1_benchmark_protocol": {
+   "r": 0.7721,
+   "lam": 0.001,
+   "train_cv": 0.7165,
+   "definition": "kernel built over train+holdout together with no labels (transductive, as the benchmark does), filter included"
+  },
+  "D0_strict_inductive": {
+   "r": 0.7298,
+   "lam": 0.0001,
+   "train_cv": 0.6743,
+   "definition": "rows centred on the train mean, norms and double centring from the train block only, no filter"
+  }
+ },
+ "result": "D1 0.7721, D0 0.7298 on 233 new subjects.",
+ "correction": "earlier runs of this script used a lambda grid whose lower edge (0.03) was selected, costing ~0.10; widened to 1e-4..30 and the result moved 0.6741 -> 0.7721. The D0 arm had a broadcasting bug in the reference-block centring, fixed.",
+ "note": "this is the canonical pipeline applied to our own extraction. It is the right comparison for the parallel session's 450-parcel re-extraction (their D1), not for the published-feature 0.7344.",
+ "predictions": "<removed: subject-level>",
+ "holdout_ids": {
+  "removed": "subject-level",
+  "n": 233
+ },
+ "y_holdout": {
+  "removed": "subject-level",
+  "n": 233
+ }
+}

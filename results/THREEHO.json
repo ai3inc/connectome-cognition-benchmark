@@ -1,0 +1,28 @@
+{
+ "n_train": 728,
+ "n_holdout": 233,
+ "holdout_ids": {
+  "removed": "subject-level",
+  "n": 233
+ },
+ "y_holdout": {
+  "removed": "subject-level",
+  "n": 233
+ },
+ "limitation": "the published Ooi features exist only for the 753, so the A+C average (in-fold 0.7440) cannot be scored on new subjects at all.",
+ "B_own400": {
+  "holdout_r": 0.7489077087209232,
+  "lam": 0.001,
+  "pred": "<removed: subject-level>"
+ },
+ "C_450": {
+  "holdout_r": 0.7795445172832465,
+  "lam": 0.001,
+  "pred": "<removed: subject-level>"
+ },
+ "BC": {
+  "holdout_r": 0.7826511911455127,
+  "lam": 0.001,
+  "pred": "<removed: subject-level>"
+ }
+}

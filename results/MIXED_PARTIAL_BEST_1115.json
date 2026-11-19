@@ -1,0 +1,14 @@
+{
+ "date": "2026-11-15",
+ "experiment": "partial-only + small full mix, new best",
+ "n": 974,
+ "seeds": 10,
+ "results": {
+  "partial_only_p0.35": 0.6373,
+  "partial_only_p0.5": 0.6365,
+  "partial_only_p0.65": 0.635,
+  "partial_plus_full10pct": 0.6406
+ },
+ "finding": "A 10% contribution from the full-correlation blocks on top of the partial-only ensemble reaches 0.6406 (10 seeds), the best number measured so far, +0.0136 over the published 0.627.",
+ "todo": "25-seed confirmation of the 10% mix, and a paired test against the F-BERT recipe."
+}

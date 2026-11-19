@@ -1,0 +1,14 @@
+{
+ "date": "2026-11-15",
+ "experiment": "mechanism across targets",
+ "n": 974,
+ "seeds": 5,
+ "results": {
+  "varimax_cog": 0.6458,
+  "varimax_er": 0.2361,
+  "varimax_satisf": 0.1791,
+  "hcp_composites": "NaN due to a subject-order bug when masking missing values"
+ },
+ "finding": "The partial+15%full ensemble reaches 0.6458 on cognition, 0.236 on emotion regulation and 0.179 on life satisfaction. The ranking across targets is what one expects from target reliability, and cognition is the strongest.",
+ "bug": "The HCP composite arms returned NaN because the kernel matrix was not subset to the rows with finite values; fix by building per-target kernel subsets."
+}

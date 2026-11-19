@@ -1,0 +1,12 @@
+{
+ "date": "2026-11-15",
+ "n": 974,
+ "decomposition": {
+  "FC_to_cognition": 0.6153,
+  "FC_to_age": 0.585,
+  "FC_to_cog_after_age_sex": "0.6108",
+  "corr_age_cog": -0.0422
+ },
+ "correction": "An earlier run reported 0.1415 for FC->cognition after partialling age+sex. That was a bug in the residualisation (it dropped the intercept term inconsistently). Re-run correctly: FC predicts age strongly (0.585) but age and cognition are nearly uncorrelated in HCP-YA (r=-0.042, N=974, ages 23.5-36), so removing age costs almost nothing: 0.6153 -> 0.6108.",
+ "conclusion": "The connectome's cognitive signal is NOT an age proxy in this cohort. ~0.61 of the correlation survives controlling for age and sex."
+}

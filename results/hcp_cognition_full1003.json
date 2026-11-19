@@ -1,0 +1,47 @@
+{
+ "n_joined": 1003,
+ "n_features": 45000,
+ "atlas": "HCP-MMP 300-node ICA (ICAd300 ts2)",
+ "targets": {
+  "CogFluidComp_AgeAdj": {
+   "n": 992,
+   "within_r": 0.275,
+   "within_sd": 0.0121,
+   "permuted_r": NaN,
+   "permuted_sd": NaN,
+   "perm_z": NaN
+  },
+  "PMAT24_A_CR": {
+   "n": 999,
+   "within_r": 0.3548,
+   "within_sd": 0.0042,
+   "permuted_r": NaN,
+   "permuted_sd": NaN,
+   "perm_z": NaN
+  },
+  "CogTotalComp_AgeAdj": {
+   "n": 991,
+   "within_r": 0.4535,
+   "within_sd": 0.0074,
+   "permuted_r": NaN,
+   "permuted_sd": NaN,
+   "perm_z": NaN
+  },
+  "age": {
+   "n": 1003,
+   "within_r": 0.5273,
+   "within_sd": 0.0055,
+   "permuted_r": NaN,
+   "permuted_sd": NaN,
+   "perm_z": NaN
+  },
+  "gender": {
+   "n": 1003,
+   "within_r": 0.8656,
+   "within_sd": 0.0022,
+   "permuted_r": NaN,
+   "permuted_sd": NaN,
+   "perm_z": NaN
+  }
+ }
+}

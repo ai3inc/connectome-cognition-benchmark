@@ -1,0 +1,13 @@
+{
+ "date": "2026-11-15",
+ "experiment": "does kernel count matter?",
+ "n": 974,
+ "seeds": 10,
+ "results": {
+  "12_kernels": 0.6409,
+  "8_kernels": 0.6367,
+  "4_kernels": 0.6269
+ },
+ "finding": "More kernels is monotonically better: dropping to the 4 strongest costs 0.014. So the ensemble is adding information, not diluting it \u2014 the sqrt weighting keeps the weaker kernels from hurting.",
+ "combined_with": "at 15% full-mix, 12 kernels give 0.6409 sd 0.0081, consistent with the earlier frac sweep peak"
+}

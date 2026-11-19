@@ -1,0 +1,25 @@
+{
+ "date": "2026-11-15",
+ "experiment": "cross-target validation of sqrt(edge) weighting",
+ "n": 974,
+ "seeds": 3,
+ "results": {
+  "varimax_cog": {
+   "sqrt": 0.6407,
+   "uniform": 0.6161,
+   "delta": 0.0246
+  },
+  "varimax_er": {
+   "sqrt": 0.25,
+   "uniform": 0.2378,
+   "delta": 0.0122
+  },
+  "varimax_satisf": {
+   "sqrt": 0.1479,
+   "uniform": 0.1496,
+   "delta": -0.0017
+  }
+ },
+ "finding": "The sqrt(edge) gain is not specific to cognition: it helps the emotion-regulation component too (+0.012). On satisfaction, where the connectome barely predicts anything (0.15), the two are indistinguishable. The pattern is 'the stronger the target signal, the more the resolution weighting helps' \u2014 consistent with uniform averaging diluting high-resolution information.",
+ "implication": "This makes the method a general recipe rather than a cognition-specific trick, which is a stronger claim for a paper."
+}

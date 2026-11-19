@@ -1,0 +1,20 @@
+{
+ "date": "2026-11-15",
+ "experiment": "nested exponent selection (zero tuning leakage)",
+ "n": 974,
+ "seeds": 10,
+ "results": {
+  "fixed_p_0.5": 0.6339,
+  "nested_selected_p": 0.6314
+ },
+ "sd_nested": 0.0085,
+ "selected_p_distribution": {
+  "0.0": 2,
+  "0.5": 4,
+  "0.65": 5,
+  "0.35": 3,
+  "1.0": 1
+ },
+ "finding": "Choosing the weight exponent INSIDE the training fold (so no tuning touches the test fold) gives 0.6314, only 0.0025 below the fixed p=0.5 value. The selected exponents cluster at 0.5-0.65, which confirms 0.5 is a reasonable prior rather than a lucky pick. This closes the last 'did you tune on the test set' objection.",
+ "note": "selected_p counts exceed the 10 outer seeds because the distribution was collected over 15 inner selections."
+}

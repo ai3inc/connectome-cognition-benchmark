@@ -1,0 +1,22 @@
+{
+ "CogFluidComp_AgeAdj": {
+  "n": 992,
+  "fc_full": 0.2797,
+  "fc_full_plus_vol_morph": 0.2805
+ },
+ "CogCrystalComp_AgeAdj": {
+  "n": 998,
+  "fc_full": 0.5286,
+  "fc_full_plus_vol_morph": 0.5406
+ },
+ "CogTotalComp_AgeAdj": {
+  "n": 991,
+  "fc_full": 0.4569,
+  "fc_full_plus_vol_morph": 0.4584
+ },
+ "PMAT24_A_CR": {
+  "n": 999,
+  "fc_full": 0.3535,
+  "fc_full_plus_vol_morph": 0.3614
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "date": "2026-11-17",
+ "question": "does the FC-similarity kin control actually detect relatives?",
+ "why": "our n=961 result was defended by a 'twin-leak control' that kept only extras whose max similarity to the 753 fell below the within-753 90th percentile (0.745). The parallel F-BERT session showed on their 450-parcel features that this detector catches almost no relatives (4 of 503 family pairs, 0.8%). Replicated here on our own 400-parcel features.",
+ "how": "the benchmark's 60x10 folds are family-aware, so a pair that lands in the SAME fold in all 60 seeds is a family pair. Derived those pairs from splits.mat directly, then compared their FC similarity (shared edge profile removed, then cosine) against stranger pairs.",
+ "n_subjects": 753,
+ "n_in_feature_pool": 728,
+ "family_pairs": 465,
+ "stranger_pairs": 264163,
+ "stranger": {
+  "median": -0.0022,
+  "p99": 0.6527,
+  "p99_9": 0.7742
+ },
+ "family": {
+  "median": 0.0001,
+  "p90": 0.3841,
+  "p99": 0.6107
+ },
+ "detector_sensitivity": {
+  "above_stranger_p99_9": 0.0022,
+  "above_stranger_p99": 0.0065,
+  "above_within753_p90_the_control": 0.0839
+ },
+ "verdict": "THE DETECTOR DOES NOT WORK. Only 8.4% of actual family pairs exceed the within-753 90th percentile, and only 0.22% exceed the stranger 99.9th percentile. A control built on this threshold removes roughly one relative in twelve.",
+ "replication": "same conclusion as the parallel session, from a different atlas and a different feature set, and stronger here (their 0.8% above stranger p99.9; ours 0.22%). Family and stranger similarity distributions almost coincide in our features (median 0.0001 vs -0.0022).",
+ "consequence_for_our_claim": "the SIX961_LEAK_CONTROL result (0.7333 leak-controlled vs 0.7335 all, diff -0.0001) can no longer be read as 'no contamination'. It is a run that removed ~8% of relatives, so it bounds the leak effect only weakly. The honest statement is: the 0.0002 difference is consistent with the leak being small, but the control did not establish that, because it barely filtered anyone.",
+ "what_would_settle_it": "an actual family-ID join (HCP restricted file) or the benchmark's own subject list. Neither is available to us here, which is why the parallel session's 753-outside holdout (where co-twins are structurally absent from training by construction of the split) is the better evidence.",
+ "source": "/workspace/famchk.py + FAMCHK.json on <pod>; supplements results/SIX961_LEAK_CONTROL_1117.json"
+}

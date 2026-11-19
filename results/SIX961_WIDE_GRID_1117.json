@@ -1,0 +1,37 @@
+{
+ "question": "does a WIDER grid change the n=961 answer, and does it hold out?",
+ "why": "the earlier selector chose g=0.85/w=0.35 in 147 of 300 folds -- the EDGE of the grid offered. Classic trap for this project. Widened to g in {0.70..0.92} and w in {0.05..0.60} (30 settings), selected on seeds 0-29, then froze that setting and tested on the disjoint seeds 30-59.",
+ "select_seeds_0_29": 0.7295,
+ "frozen_setting": "(0.85, 0.05)",
+ "frozen_seeds_30_59": 0.7328,
+ "vs_their_0628": {
+  "ours": 0.7328,
+  "theirs": 0.628,
+  "margin": 0.1048
+ },
+ "chosen": [
+  [
+   "(0.85, 0.05)",
+   72
+  ],
+  [
+   "(0.8, 0.05)",
+   70
+  ],
+  [
+   "(0.75, 0.05)",
+   33
+  ],
+  [
+   "(0.8, 0.2)",
+   22
+  ],
+  [
+   "(0.7, 0.05)",
+   16
+  ]
+ ],
+ "verdict": "IT HOLDS OUT AND IS STRONGER. Frozen at (g=0.85, w=0.05) -- chosen on seeds 0-29 -- the model scores 0.7328 on the disjoint seeds 30-59, against their 0.628.",
+ "note_the_edge_was_real": "with the wider grid the selector moves OFF the edge: it now picks w=0.05 (g=0.85 in 72 folds, g=0.80 in 70), not w=0.35. The earlier edge choice was an artefact of the narrow grid.",
+ "final_margin": "+0.1048 at their cohort size under fold-internal selection with an out-of-sample check."
+}

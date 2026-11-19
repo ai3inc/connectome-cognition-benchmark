@@ -1,0 +1,30 @@
+{
+ "n": 1003,
+ "n_features_each": 45000,
+ "subjects": {
+  "removed": "subject-level",
+  "n": 5
+ },
+ "total_cols": 90000,
+ "structure": {
+  "netmat1": {
+   "mean": 0.29921,
+   "sd": 8.80585,
+   "frac_negative": 0.5082,
+   "frac_abs_gt_0.5": 0.9114,
+   "rank_90pct_var": 482,
+   "rank_99pct_var": 909,
+   "top10_var_share": 0.3107
+  },
+  "netmat2": {
+   "mean": 0.11719,
+   "sd": 3.80145,
+   "frac_negative": 0.4881,
+   "frac_abs_gt_0.5": 0.84778,
+   "rank_90pct_var": 616,
+   "rank_99pct_var": 947,
+   "top10_var_share": 0.2583
+  }
+ },
+ "subject_identity": "<removed: subject-level>"
+}

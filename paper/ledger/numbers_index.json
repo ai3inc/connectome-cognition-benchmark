@@ -1,0 +1,5094 @@
+{
+ "note": "built by build_numbers.py from ../results; do not edit by hand",
+ "rows": [
+  {
+   "key": "ratio_test_train",
+   "value": 0.1111,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.test_train_ratio"
+  },
+  {
+   "key": "n_bench",
+   "value": 753,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.n"
+  },
+  {
+   "key": "n_cov",
+   "value": 753,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.n_subset"
+  },
+  {
+   "key": "n_seeds",
+   "value": 60,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.per_fold_r['B_sub|resid|CANON_lang2'] rows"
+  },
+  {
+   "key": "n_folds",
+   "value": 10,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.per_fold_r['B_sub|resid|CANON_lang2'] columns"
+  },
+  {
+   "key": "n_fold_scores",
+   "value": 600,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "rows x columns"
+  },
+  {
+   "key": "nb_factor",
+   "value": 8.23,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "sqrt(1 + folds x ratio)"
+  },
+  {
+   "key": "canon_r",
+   "value": 0.7215,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|CANON_lang2.mean_perfold_r"
+  },
+  {
+   "key": "canon_sd",
+   "value": 0.009,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|CANON_lang2.perfold_seed_sd"
+  },
+  {
+   "key": "nofilt_r",
+   "value": 0.6948,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|NOFILT_lang2.mean_perfold_r"
+  },
+  {
+   "key": "nofilt_sd",
+   "value": 0.008,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|NOFILT_lang2.perfold_seed_sd"
+  },
+  {
+   "key": "tauonly_r",
+   "value": 0.7074,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|TAUONLY_lang2.mean_perfold_r"
+  },
+  {
+   "key": "tauonly_sd",
+   "value": 0.0081,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|TAUONLY_lang2.perfold_seed_sd"
+  },
+  {
+   "key": "noalpha_r",
+   "value": 0.7002,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|NOALPHA_NOFILT_lang2.mean_perfold_r"
+  },
+  {
+   "key": "noalpha_sd",
+   "value": 0.0079,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|NOALPHA_NOFILT_lang2.perfold_seed_sd"
+  },
+  {
+   "key": "cbigpart_r",
+   "value": 0.6954,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|CBIGPART_lang2.mean_perfold_r"
+  },
+  {
+   "key": "cbigpart_sd",
+   "value": 0.0081,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|CBIGPART_lang2.perfold_seed_sd"
+  },
+  {
+   "key": "cbigpart_noalpha_r",
+   "value": 0.7009,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|CBIGPART_NOALPHA_lang2.mean_perfold_r"
+  },
+  {
+   "key": "cbigpart_noalpha_sd",
+   "value": 0.008,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|CBIGPART_NOALPHA_lang2.perfold_seed_sd"
+  },
+  {
+   "key": "cbig6_r",
+   "value": 0.6798,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|CBIG6_eq.mean_perfold_r"
+  },
+  {
+   "key": "cbig6_sd",
+   "value": 0.0083,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|CBIG6_eq.perfold_seed_sd"
+  },
+  {
+   "key": "canon_pooled_resid",
+   "value": 0.7267,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|CANON_lang2.pooled_r"
+  },
+  {
+   "key": "cbig6_pooled_resid",
+   "value": 0.6858,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|CBIG6_eq.pooled_r"
+  },
+  {
+   "key": "canon_raw_r",
+   "value": 0.7326,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.A753|raw|CANON_lang2.mean_perfold_r"
+  },
+  {
+   "key": "canon_raw_pooled",
+   "value": 0.7357,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.A753|raw|CANON_lang2.pooled_r"
+  },
+  {
+   "key": "cbig6_raw_r",
+   "value": 0.6902,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.A753|raw|CBIG6_eq.mean_perfold_r"
+  },
+  {
+   "key": "cbig6_raw_pooled",
+   "value": 0.6936,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.A753|raw|CBIG6_eq.pooled_r"
+  },
+  {
+   "key": "nofilt_raw_r",
+   "value": 0.7055,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.A753|raw|NOFILT_lang2.mean_perfold_r"
+  },
+  {
+   "key": "canon_fold_sd",
+   "value": 0.0624,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.summary.B_sub|resid|CANON_lang2.perfold_fold_sd"
+  },
+  {
+   "key": "canon_vs_cbig6_diff",
+   "value": 0.0417,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "per_fold_r resid CANON_lang2 - CBIG6_eq"
+  },
+  {
+   "key": "canon_vs_cbig6_t",
+   "value": 3.23,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "NB t, per_fold_r resid CANON_lang2 vs CBIG6_eq"
+  },
+  {
+   "key": "canon_vs_cbig6_p",
+   "value": 0.00131,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "NB p, per_fold_r resid CANON_lang2 vs CBIG6_eq"
+  },
+  {
+   "key": "nofilt_vs_cbig6_diff",
+   "value": 0.015,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "per_fold_r resid NOFILT_lang2 - CBIG6_eq"
+  },
+  {
+   "key": "nofilt_vs_cbig6_t",
+   "value": 1.33,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "NB t, per_fold_r resid NOFILT_lang2 vs CBIG6_eq"
+  },
+  {
+   "key": "nofilt_vs_cbig6_p",
+   "value": 0.184,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "NB p, per_fold_r resid NOFILT_lang2 vs CBIG6_eq"
+  },
+  {
+   "key": "filter_diff",
+   "value": 0.0267,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "per_fold_r resid CANON_lang2 - NOFILT_lang2"
+  },
+  {
+   "key": "filter_t",
+   "value": 2.55,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "NB t, per_fold_r resid CANON_lang2 vs NOFILT_lang2"
+  },
+  {
+   "key": "filter_p",
+   "value": 0.011,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "NB p, per_fold_r resid CANON_lang2 vs NOFILT_lang2"
+  },
+  {
+   "key": "tauonly_vs_cbig6_diff",
+   "value": 0.0276,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "per_fold_r resid TAUONLY_lang2 - CBIG6_eq"
+  },
+  {
+   "key": "tauonly_vs_cbig6_t",
+   "value": 2.49,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "NB t, per_fold_r resid TAUONLY_lang2 vs CBIG6_eq"
+  },
+  {
+   "key": "tauonly_vs_cbig6_p",
+   "value": 0.013,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "NB p, per_fold_r resid TAUONLY_lang2 vs CBIG6_eq"
+  },
+  {
+   "key": "keep_trunc_diff",
+   "value": 0.0141,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "per_fold_r resid CANON_lang2 - TAUONLY_lang2"
+  },
+  {
+   "key": "keep_trunc_t",
+   "value": 1.66,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "NB t, per_fold_r resid CANON_lang2 vs TAUONLY_lang2"
+  },
+  {
+   "key": "keep_trunc_p",
+   "value": 0.098,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "NB p, per_fold_r resid CANON_lang2 vs TAUONLY_lang2"
+  },
+  {
+   "key": "alpha_nofilt_diff",
+   "value": -0.0053,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "per_fold_r resid NOFILT_lang2 - NOALPHA_NOFILT_lang2"
+  },
+  {
+   "key": "alpha_nofilt_t",
+   "value": -3.4,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "NB t, per_fold_r resid NOFILT_lang2 vs NOALPHA_NOFILT_lang2"
+  },
+  {
+   "key": "alpha_nofilt_p",
+   "value": 0.000727,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "NB p, per_fold_r resid NOFILT_lang2 vs NOALPHA_NOFILT_lang2"
+  },
+  {
+   "key": "kernelform_diff",
+   "value": -0.0005,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "per_fold_r resid NOFILT_lang2 - CBIGPART_lang2"
+  },
+  {
+   "key": "kernelform_t",
+   "value": -0.18,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "NB t, per_fold_r resid NOFILT_lang2 vs CBIGPART_lang2"
+  },
+  {
+   "key": "kernelform_p",
+   "value": 0.861,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "NB p, per_fold_r resid NOFILT_lang2 vs CBIGPART_lang2"
+  },
+  {
+   "key": "canon_vs_cbig6_fold_wins",
+   "value": 524,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "folds with canon > cbig6"
+  },
+  {
+   "key": "canon_vs_cbig6_seed_wins",
+   "value": 60,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "seeds with canon > cbig6"
+  },
+  {
+   "key": "canon_vs_cbig6_seed_naive_t",
+   "value": 52.5,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "naive t over seed means"
+  },
+  {
+   "key": "pub_rs",
+   "value": 0.5276,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.ooi_own_results.KRR_single:results.fmri.rs.mean"
+  },
+  {
+   "key": "pub_lang",
+   "value": 0.599,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.ooi_own_results.KRR_single:results.fmri.lang.mean"
+  },
+  {
+   "key": "pub_social",
+   "value": 0.5177,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.ooi_own_results.KRR_single:results.fmri.social.mean"
+  },
+  {
+   "key": "pub_gamb",
+   "value": 0.5002,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.ooi_own_results.KRR_single:results.fmri.gamb.mean"
+  },
+  {
+   "key": "pub_wm",
+   "value": 0.557,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.ooi_own_results.KRR_single:results.fmri.wm.mean"
+  },
+  {
+   "key": "pub_motor",
+   "value": 0.4444,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.ooi_own_results.KRR_single:results.fmri.motor.mean"
+  },
+  {
+   "key": "pub_best",
+   "value": 0.599,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.ooi_own_results.combined:results.combined.best.mean"
+  },
+  {
+   "key": "pub_multikrr",
+   "value": 0.6665,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.ooi_own_results.combined:results.combined.multiKRR_six.mean"
+  },
+  {
+   "key": "pub_stack6",
+   "value": 0.6779,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.ooi_own_results.combined:results.combined.stacking_LRR_six.mean"
+  },
+  {
+   "key": "pub_stack6_sd",
+   "value": 0.0089,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.ooi_own_results.combined:results.combined.stacking_LRR_six.sd"
+  },
+  {
+   "key": "pub_stackall",
+   "value": 0.6711,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.ooi_own_results.combined:results.combined.stacking_LRR_all.mean"
+  },
+  {
+   "key": "canon_vs_pub",
+   "value": 0.0436,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "canon_r - pub_stack6"
+  },
+  {
+   "key": "nofilt_vs_pub",
+   "value": 0.0169,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "nofilt_r - pub_stack6"
+  },
+  {
+   "key": "cbig6_vs_pub",
+   "value": 0.0019,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "cbig6_r - pub_stack6"
+  },
+  {
+   "key": "canon_vs_pub_multikrr",
+   "value": 0.055,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "canon_r - pub_multikrr"
+  },
+  {
+   "key": "cov_cost_canon",
+   "value": 0.0111,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "raw - resid, canon"
+  },
+  {
+   "key": "pooled_minus_perfold_canon_raw",
+   "value": 0.0031,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "pooled - per-fold, raw"
+  },
+  {
+   "key": "rerun_rs",
+   "value": 0.5271,
+   "source_file": "results/METRIC_CHECK_1118.json",
+   "sha16": "421be5cf474c047c",
+   "locator": "$.summary.A753|raw|CBIG_rs.mean_perfold_r"
+  },
+  {
+   "key": "rerun_lang",
+   "value": 0.6076,
+   "source_file": "results/METRIC_CHECK_1118.json",
+   "sha16": "421be5cf474c047c",
+   "locator": "$.summary.A753|raw|CBIG_lang.mean_perfold_r"
+  },
+  {
+   "key": "rerun_social",
+   "value": 0.5234,
+   "source_file": "results/METRIC_CHECK_1118.json",
+   "sha16": "421be5cf474c047c",
+   "locator": "$.summary.A753|raw|CBIG_social.mean_perfold_r"
+  },
+  {
+   "key": "rerun_gamb",
+   "value": 0.5001,
+   "source_file": "results/METRIC_CHECK_1118.json",
+   "sha16": "421be5cf474c047c",
+   "locator": "$.summary.A753|raw|CBIG_gamb.mean_perfold_r"
+  },
+  {
+   "key": "rerun_motor",
+   "value": 0.4382,
+   "source_file": "results/METRIC_CHECK_1118.json",
+   "sha16": "421be5cf474c047c",
+   "locator": "$.summary.A753|raw|CBIG_motor.mean_perfold_r"
+  },
+  {
+   "key": "rerun_wm",
+   "value": 0.5641,
+   "source_file": "results/METRIC_CHECK_1118.json",
+   "sha16": "421be5cf474c047c",
+   "locator": "$.summary.A753|raw|CBIG_wm.mean_perfold_r"
+  },
+  {
+   "key": "rerun_single_maxdiff",
+   "value": 0.0086,
+   "source_file": "results/METRIC_CHECK_1118.json",
+   "sha16": "421be5cf474c047c",
+   "locator": "max |rerun_m - pub_m| over six fMRI modalities"
+  },
+  {
+   "key": "nofilt_raw_oldgrid",
+   "value": 0.6789,
+   "source_file": "results/METRIC_CHECK_1118.json",
+   "sha16": "421be5cf474c047c",
+   "locator": "$.summary.A753|raw|NOFILT_lang2.mean_perfold_r"
+  },
+  {
+   "key": "canon_raw_oldgrid",
+   "value": 0.7326,
+   "source_file": "results/METRIC_CHECK_1118.json",
+   "sha16": "421be5cf474c047c",
+   "locator": "$.summary.A753|raw|CANON_lang2.mean_perfold_r"
+  },
+  {
+   "key": "lam_floor_old",
+   "value": 0.001,
+   "source_file": "code/canonical.py",
+   "sha16": "34791855b1fd0852",
+   "locator": "LAMBDAS min"
+  },
+  {
+   "key": "lam_floor_new",
+   "value": 1e-12,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.lambda_grid min"
+  },
+  {
+   "key": "lam_floor_understatement",
+   "value": 0.0266,
+   "source_file": "results/METRIC_CHECK_1118.json",
+   "sha16": "421be5cf474c047c",
+   "locator": "nofilt raw new grid - old grid"
+  },
+  {
+   "key": "nofilt_raw_floor6",
+   "value": 0.7054,
+   "source_file": "results/METRIC_CHECK_LAMGRID_1118.json",
+   "sha16": "8f8d16660dd34d55",
+   "locator": "$.summary.A753|raw|NOFILT_lang2.mean_perfold_r"
+  },
+  {
+   "key": "lam_floor6",
+   "value": 1e-06,
+   "source_file": "results/METRIC_CHECK_LAMGRID_1118.json",
+   "sha16": "8f8d16660dd34d55",
+   "locator": "$.lambda_grid.0"
+  },
+  {
+   "key": "n_result_files",
+   "value": 540,
+   "source_file": "results/",
+   "sha16": "-",
+   "locator": "count of results/*.json in the private repository"
+  },
+  {
+   "key": "canon_lam_interior_folds",
+   "value": 600,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.lambda_chosen resid CANON at 1e-3"
+  },
+  {
+   "key": "nofilt_lam_floor_folds",
+   "value": 600,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.lambda_chosen resid NOFILT at floor"
+  },
+  {
+   "key": "cbig6_lam_floor_folds",
+   "value": 517,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.lambda_chosen resid CBIG6 at floor"
+  },
+  {
+   "key": "cbig6_raw_oldgrid",
+   "value": 0.6902,
+   "source_file": "results/METRIC_CHECK_1118.json",
+   "sha16": "421be5cf474c047c",
+   "locator": "$.summary.A753|raw|CBIG6_eq.mean_perfold_r"
+  },
+  {
+   "key": "cbig6_raw_floor6",
+   "value": 0.6902,
+   "source_file": "results/METRIC_CHECK_LAMGRID_1118.json",
+   "sha16": "8f8d16660dd34d55",
+   "locator": "$.summary.A753|raw|CBIG6_eq.mean_perfold_r"
+  },
+  {
+   "key": "c_g",
+   "value": 0.92,
+   "source_file": "code/canonical.py",
+   "sha16": "34791855b1fd0852",
+   "locator": "G_SHRINK"
+  },
+  {
+   "key": "c_wfull",
+   "value": 0.05,
+   "source_file": "code/canonical.py",
+   "sha16": "34791855b1fd0852",
+   "locator": "W_FULL"
+  },
+  {
+   "key": "c_tau",
+   "value": 0.5,
+   "source_file": "code/canonical.py",
+   "sha16": "34791855b1fd0852",
+   "locator": "TAU"
+  },
+  {
+   "key": "c_keep",
+   "value": 150,
+   "source_file": "code/canonical.py",
+   "sha16": "34791855b1fd0852",
+   "locator": "KEEP"
+  },
+  {
+   "key": "c_alpha",
+   "value": 0.1,
+   "source_file": "code/canonical.py",
+   "sha16": "34791855b1fd0852",
+   "locator": "ALPHA"
+  },
+  {
+   "key": "c_wfull_pct",
+   "value": 5,
+   "source_file": "code/canonical.py",
+   "sha16": "34791855b1fd0852",
+   "locator": "100 x W_FULL"
+  },
+  {
+   "key": "c_lang_w",
+   "value": 2,
+   "source_file": "code/canonical.py",
+   "sha16": "34791855b1fd0852",
+   "locator": "MOD_WEIGHTS language"
+  },
+  {
+   "key": "c_inner",
+   "value": 4,
+   "source_file": "code/canonical.py",
+   "sha16": "34791855b1fd0852",
+   "locator": "_inner_splits"
+  },
+  {
+   "key": "c_holdout_inner",
+   "value": 10,
+   "source_file": "code/fbert/eval_holdout.py",
+   "sha16": "9e87767341b8e6f9",
+   "locator": "INNER_K"
+  },
+  {
+   "key": "c_leak_pct",
+   "value": 90,
+   "source_file": "code/fbert/eval_holdout_chain.py",
+   "sha16": "23b7f0a1d80b3df6",
+   "locator": "leak-control percentile"
+  },
+  {
+   "key": "c_boot",
+   "value": 10000,
+   "source_file": "code/fbert/eval_holdout.py",
+   "sha16": "9e87767341b8e6f9",
+   "locator": "boot_diff n"
+  },
+  {
+   "key": "c_nreg_ours",
+   "value": 450,
+   "source_file": "code/fbert/eval_samefolds.py",
+   "sha16": "9829c7b3ec02e83f",
+   "locator": "N_REG"
+  },
+  {
+   "key": "c_fbert_pow",
+   "value": 0.35,
+   "source_file": "code/fbert/eval_samefolds.py",
+   "sha16": "9829c7b3ec02e83f",
+   "locator": "p035 eigenvalue power (F-BERT's target)"
+  },
+  {
+   "key": "c_short_tp",
+   "value": 200,
+   "source_file": "code/fbert/hcp_prep.py",
+   "sha16": "c6bd29de02b7faee",
+   "locator": "SHORT_T"
+  },
+  {
+   "key": "c_nreg",
+   "value": 400,
+   "source_file": "code/canonical.py",
+   "sha16": "34791855b1fd0852",
+   "locator": "IU regions"
+  },
+  {
+   "key": "nested_r",
+   "value": 0.7225,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "$.mean_perfold_r.NESTED"
+  },
+  {
+   "key": "nested_sd",
+   "value": 0.0087,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "$.seed_sd.NESTED"
+  },
+  {
+   "key": "nested_minus_fixed",
+   "value": 0.0009,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "$.NB.NESTED_vs_fixed_g0.92_k150.diff_mean_perfold_r"
+  },
+  {
+   "key": "nested_minus_fixed_t",
+   "value": 0.29,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "$.NB.NESTED_vs_fixed_g0.92_k150.corrected_t"
+  },
+  {
+   "key": "nested_minus_fixed_p",
+   "value": 0.769,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "$.NB.NESTED_vs_fixed_g0.92_k150.p_two_sided"
+  },
+  {
+   "key": "nested_vs_cbig6",
+   "value": 0.0426,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "$.NB.NESTED_vs_CBIG6.diff_mean_perfold_r"
+  },
+  {
+   "key": "nested_vs_cbig6_t",
+   "value": 3.14,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "$.NB.NESTED_vs_CBIG6.corrected_t"
+  },
+  {
+   "key": "nested_vs_cbig6_p",
+   "value": 0.00175,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "$.NB.NESTED_vs_CBIG6.p_two_sided"
+  },
+  {
+   "key": "nested_pick_top",
+   "value": 511,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "$.picks.CANON_g0.9_k150"
+  },
+  {
+   "key": "posthoc_cell_r",
+   "value": 0.7252,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "$.mean_perfold_r.CANON_g0.9_k150"
+  },
+  {
+   "key": "nested_grid_cells",
+   "value": 4,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "|g| x |keep|"
+  },
+  {
+   "key": "nested_grid_lams",
+   "value": 8,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "|lambda|"
+  },
+  {
+   "key": "nested_g_lo",
+   "value": 0.9,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "$.grid.g min"
+  },
+  {
+   "key": "nested_g_hi",
+   "value": 0.92,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "$.grid.g max"
+  },
+  {
+   "key": "nested_k_lo",
+   "value": 150,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "$.grid.keep min"
+  },
+  {
+   "key": "nested_k_hi",
+   "value": 200,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "$.grid.keep max"
+  },
+  {
+   "key": "lam_grid_max",
+   "value": 10.0,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "$.lambda_grid max"
+  },
+  {
+   "key": "lam_grid_n",
+   "value": 13,
+   "source_file": "results/METRIC_CHECK_COV753_1118.json",
+   "sha16": "bc42a1e9e567c17a",
+   "locator": "len($.lambda_grid)"
+  },
+  {
+   "key": "nested_vs_pub",
+   "value": 0.0446,
+   "source_file": "results/NESTED_MATCHED_1118.json",
+   "sha16": "02315af3ec7f7096",
+   "locator": "nested - pub_stack6"
+  },
+  {
+   "key": "rest_canon_r",
+   "value": 0.5799,
+   "source_file": "results/METRIC_CHECK_COV753_REST_1118.json",
+   "sha16": "76e63a8323c1fb31",
+   "locator": "$.summary.B_sub|resid|CANON_rs.mean_perfold_r"
+  },
+  {
+   "key": "rest_nofilt_r",
+   "value": 0.5695,
+   "source_file": "results/METRIC_CHECK_COV753_REST_1118.json",
+   "sha16": "76e63a8323c1fb31",
+   "locator": "$.summary.B_sub|resid|NOFILT_rs.mean_perfold_r"
+  },
+  {
+   "key": "rest_cbig_r",
+   "value": 0.517,
+   "source_file": "results/METRIC_CHECK_COV753_REST_1118.json",
+   "sha16": "76e63a8323c1fb31",
+   "locator": "$.summary.B_sub|resid|CBIG_rs.mean_perfold_r"
+  },
+  {
+   "key": "rest_cbig_raw_r",
+   "value": 0.5271,
+   "source_file": "results/METRIC_CHECK_COV753_REST_1118.json",
+   "sha16": "76e63a8323c1fb31",
+   "locator": "$.summary.A753|raw|CBIG_rs.mean_perfold_r"
+  },
+  {
+   "key": "rest_canon_vs_cbig_diff",
+   "value": 0.0629,
+   "source_file": "results/METRIC_CHECK_COV753_REST_1118.json",
+   "sha16": "76e63a8323c1fb31",
+   "locator": "per_fold_r resid CANON_rs - CBIG_rs"
+  },
+  {
+   "key": "rest_canon_vs_cbig_t",
+   "value": 4.17,
+   "source_file": "results/METRIC_CHECK_COV753_REST_1118.json",
+   "sha16": "76e63a8323c1fb31",
+   "locator": "NB t CANON_rs vs CBIG_rs"
+  },
+  {
+   "key": "rest_canon_vs_cbig_p",
+   "value": 3.5e-05,
+   "source_file": "results/METRIC_CHECK_COV753_REST_1118.json",
+   "sha16": "76e63a8323c1fb31",
+   "locator": "NB p CANON_rs vs CBIG_rs"
+  },
+  {
+   "key": "rest_nofilt_vs_cbig_diff",
+   "value": 0.0525,
+   "source_file": "results/METRIC_CHECK_COV753_REST_1118.json",
+   "sha16": "76e63a8323c1fb31",
+   "locator": "per_fold_r resid NOFILT_rs - CBIG_rs"
+  },
+  {
+   "key": "rest_nofilt_vs_cbig_t",
+   "value": 4.15,
+   "source_file": "results/METRIC_CHECK_COV753_REST_1118.json",
+   "sha16": "76e63a8323c1fb31",
+   "locator": "NB t NOFILT_rs vs CBIG_rs"
+  },
+  {
+   "key": "rest_nofilt_vs_cbig_p",
+   "value": 3.9e-05,
+   "source_file": "results/METRIC_CHECK_COV753_REST_1118.json",
+   "sha16": "76e63a8323c1fb31",
+   "locator": "NB p NOFILT_rs vs CBIG_rs"
+  },
+  {
+   "key": "rest_nofilt_vs_pub",
+   "value": 0.0419,
+   "source_file": "results/METRIC_CHECK_COV753_REST_1118.json",
+   "sha16": "76e63a8323c1fb31",
+   "locator": "rest_nofilt_r - pub_rs"
+  },
+  {
+   "key": "rest_canon_vs_pub",
+   "value": 0.0523,
+   "source_file": "results/METRIC_CHECK_COV753_REST_1118.json",
+   "sha16": "76e63a8323c1fb31",
+   "locator": "rest_canon_r - pub_rs"
+  },
+  {
+   "key": "ns_train",
+   "value": 753,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.n_train"
+  },
+  {
+   "key": "ns_hold",
+   "value": 263,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.n_holdout"
+  },
+  {
+   "key": "ns_hold_clean",
+   "value": 244,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.n_holdout_leak_controlled"
+  },
+  {
+   "key": "ns_gate",
+   "value": true,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.gate_passed"
+  },
+  {
+   "key": "ns_confirmed",
+   "value": true,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.verdict"
+  },
+  {
+   "key": "ns_d1_r",
+   "value": 0.7863,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.holdout_r.D1"
+  },
+  {
+   "key": "ns_d0_r",
+   "value": 0.7696,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.holdout_r.D0"
+  },
+  {
+   "key": "ns_cbig6_r",
+   "value": 0.7222,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.holdout_r.CBIG6"
+  },
+  {
+   "key": "ns_plain_t_r",
+   "value": 0.7077,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.holdout_r.PLAIN_T"
+  },
+  {
+   "key": "ns_plain_i_r",
+   "value": 0.7101,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.holdout_r.PLAIN_I"
+  },
+  {
+   "key": "ns_prim_d",
+   "value": 0.064,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.primary_D1_vs_CBIG6.diff"
+  },
+  {
+   "key": "ns_prim_lo",
+   "value": 0.03,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.primary_D1_vs_CBIG6.ci95.0"
+  },
+  {
+   "key": "ns_prim_hi",
+   "value": 0.099,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.primary_D1_vs_CBIG6.ci95.1"
+  },
+  {
+   "key": "ns_d0_vs_cbig6_d",
+   "value": 0.047,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.secondary.D0_vs_CBIG6.diff"
+  },
+  {
+   "key": "ns_d0_vs_cbig6_lo",
+   "value": 0.021,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.secondary.D0_vs_CBIG6.ci95.0"
+  },
+  {
+   "key": "ns_d0_vs_cbig6_hi",
+   "value": 0.076,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.secondary.D0_vs_CBIG6.ci95.1"
+  },
+  {
+   "key": "ns_d1_vs_plain_t_d",
+   "value": 0.079,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.secondary.D1_vs_PLAIN_T.diff"
+  },
+  {
+   "key": "ns_d1_vs_plain_t_lo",
+   "value": 0.043,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.secondary.D1_vs_PLAIN_T.ci95.0"
+  },
+  {
+   "key": "ns_d1_vs_plain_t_hi",
+   "value": 0.116,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.secondary.D1_vs_PLAIN_T.ci95.1"
+  },
+  {
+   "key": "ns_d0_vs_plain_i_d",
+   "value": 0.06,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.secondary.D0_vs_PLAIN_I.diff"
+  },
+  {
+   "key": "ns_d0_vs_plain_i_lo",
+   "value": 0.036,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.secondary.D0_vs_PLAIN_I.ci95.0"
+  },
+  {
+   "key": "ns_d0_vs_plain_i_hi",
+   "value": 0.085,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.secondary.D0_vs_PLAIN_I.ci95.1"
+  },
+  {
+   "key": "ns_d1_vs_d0_d",
+   "value": 0.017,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.secondary.D1_vs_D0.diff"
+  },
+  {
+   "key": "ns_d1_vs_d0_lo",
+   "value": -0.008,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.secondary.D1_vs_D0.ci95.0"
+  },
+  {
+   "key": "ns_d1_vs_d0_hi",
+   "value": 0.041,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.secondary.D1_vs_D0.ci95.1"
+  },
+  {
+   "key": "ns_clean_prim_d",
+   "value": 0.062,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.secondary_leak_controlled.D1_vs_CBIG6.diff"
+  },
+  {
+   "key": "ns_clean_prim_lo",
+   "value": 0.027,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.secondary_leak_controlled.D1_vs_CBIG6.ci95.0"
+  },
+  {
+   "key": "ns_clean_prim_hi",
+   "value": 0.102,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.secondary_leak_controlled.D1_vs_CBIG6.ci95.1"
+  },
+  {
+   "key": "ns_fbert_r",
+   "value": 0.7243,
+   "source_file": "results/FBERT_HOLDOUT_1117.json",
+   "sha16": "b0831b710fac7da2",
+   "locator": "$.holdout_r.FBERT_best"
+  },
+  {
+   "key": "ns_d1_vs_fbert_d",
+   "value": 0.062,
+   "source_file": "results/FBERT_HOLDOUT_1117.json",
+   "sha16": "b0831b710fac7da2",
+   "locator": "$.paired_vs_FBERT_best.D1.diff"
+  },
+  {
+   "key": "ns_d1_vs_fbert_lo",
+   "value": 0.033,
+   "source_file": "results/FBERT_HOLDOUT_1117.json",
+   "sha16": "b0831b710fac7da2",
+   "locator": "$.paired_vs_FBERT_best.D1.ci95.0"
+  },
+  {
+   "key": "ns_d1_vs_fbert_hi",
+   "value": 0.095,
+   "source_file": "results/FBERT_HOLDOUT_1117.json",
+   "sha16": "b0831b710fac7da2",
+   "locator": "$.paired_vs_FBERT_best.D1.ci95.1"
+  },
+  {
+   "key": "ns_d0_vs_fbert_d",
+   "value": 0.045,
+   "source_file": "results/FBERT_HOLDOUT_1117.json",
+   "sha16": "b0831b710fac7da2",
+   "locator": "$.paired_vs_FBERT_best.D0.diff"
+  },
+  {
+   "key": "ns_d0_vs_fbert_lo",
+   "value": 0.019,
+   "source_file": "results/FBERT_HOLDOUT_1117.json",
+   "sha16": "b0831b710fac7da2",
+   "locator": "$.paired_vs_FBERT_best.D0.ci95.0"
+  },
+  {
+   "key": "ns_d0_vs_fbert_hi",
+   "value": 0.075,
+   "source_file": "results/FBERT_HOLDOUT_1117.json",
+   "sha16": "b0831b710fac7da2",
+   "locator": "$.paired_vs_FBERT_best.D0.ci95.1"
+  },
+  {
+   "key": "fs_plain",
+   "value": 0.4839,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.arms.B_full.mean"
+  },
+  {
+   "key": "fs_fbert8",
+   "value": 0.5247,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.arms.A8P1_full.mean"
+  },
+  {
+   "key": "fs_fbert1",
+   "value": 0.4924,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.arms.A1P1_full.mean"
+  },
+  {
+   "key": "fs_teacher",
+   "value": 0.5842,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.arms.C_full.mean"
+  },
+  {
+   "key": "fs_d0",
+   "value": 0.5842,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.arms.D0_full.mean"
+  },
+  {
+   "key": "fs_d1",
+   "value": 0.5854,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.arms.D1_full.mean"
+  },
+  {
+   "key": "fs_seeds",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.n_seeds"
+  },
+  {
+   "key": "rest_d0_fbert_d",
+   "value": 0.0595,
+   "source_file": "results/REVIEW_CORRECTED_T_1118.json",
+   "sha16": "6cb91ec28e0242a7",
+   "locator": "$.from_per_seed.rest_D0_vs_FBERT8M.diff"
+  },
+  {
+   "key": "rest_d0_fbert_t",
+   "value": 4.65,
+   "source_file": "results/REVIEW_CORRECTED_T_1118.json",
+   "sha16": "6cb91ec28e0242a7",
+   "locator": "$.from_per_seed.rest_D0_vs_FBERT8M.corrected_t"
+  },
+  {
+   "key": "rest_d0_fbert_p",
+   "value": 1.94e-05,
+   "source_file": "results/REVIEW_CORRECTED_T_1118.json",
+   "sha16": "6cb91ec28e0242a7",
+   "locator": "$.from_per_seed.rest_D0_vs_FBERT8M.p_two_sided"
+  },
+  {
+   "key": "rest_d0_teacher_d",
+   "value": 0.0001,
+   "source_file": "results/REVIEW_CORRECTED_T_1118.json",
+   "sha16": "6cb91ec28e0242a7",
+   "locator": "$.from_per_seed.rest_D0_vs_FC035_teacher.diff"
+  },
+  {
+   "key": "rest_d0_teacher_t",
+   "value": 0.03,
+   "source_file": "results/REVIEW_CORRECTED_T_1118.json",
+   "sha16": "6cb91ec28e0242a7",
+   "locator": "$.from_per_seed.rest_D0_vs_FC035_teacher.corrected_t"
+  },
+  {
+   "key": "fx_plain",
+   "value": 0.6481,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "$.arms.B6_eq.mean"
+  },
+  {
+   "key": "fx_teacher",
+   "value": 0.6762,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "$.arms.C6_eq.mean"
+  },
+  {
+   "key": "fx_fbert_cat",
+   "value": 0.7068,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "$.arms.A8cat.mean"
+  },
+  {
+   "key": "fx_d0",
+   "value": 0.6993,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "$.arms.D06_eq.mean"
+  },
+  {
+   "key": "fx_d1",
+   "value": 0.7238,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "$.arms.D16_eq.mean"
+  },
+  {
+   "key": "six_d1_fbert_d",
+   "value": 0.017,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "per_seed D16_eq - A8cat"
+  },
+  {
+   "key": "six_d1_fbert_wins",
+   "value": 60,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "seeds D16_eq > A8cat"
+  },
+  {
+   "key": "six_d1_fbert_t",
+   "value": 2.68,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "approximate NB t from per-seed scores (factor 8.23)"
+  },
+  {
+   "key": "six_d1_fbert_p",
+   "value": 0.0096,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "two-sided p"
+  },
+  {
+   "key": "six_d0_fbert_d",
+   "value": -0.0074,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "per_seed D06_eq - A8cat"
+  },
+  {
+   "key": "six_d0_fbert_wins",
+   "value": 9,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "seeds D06_eq > A8cat"
+  },
+  {
+   "key": "six_d0_fbert_t",
+   "value": -0.84,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "approximate NB t from per-seed scores (factor 8.23)"
+  },
+  {
+   "key": "six_d0_fbert_p",
+   "value": 0.41,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "two-sided p"
+  },
+  {
+   "key": "seed_factor_60",
+   "value": 8.23,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "sqrt((1/(kJ)+1/(k-1)) kJ), k=10, J=60"
+  },
+  {
+   "key": "seed_factor_20",
+   "value": 4.82,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "sqrt((1/(kJ)+1/(k-1)) kJ), k=10, J=20"
+  },
+  {
+   "key": "aomic_n",
+   "value": 879,
+   "source_file": "results/FBERT_AOMIC_1117.json",
+   "sha16": "1c73a60ef7dc8152",
+   "locator": "$.n"
+  },
+  {
+   "key": "aomic_d0",
+   "value": 0.4119,
+   "source_file": "results/FBERT_AOMIC_1117.json",
+   "sha16": "1c73a60ef7dc8152",
+   "locator": "$.arms.D0.mean"
+  },
+  {
+   "key": "aomic_fbert",
+   "value": 0.3675,
+   "source_file": "results/FBERT_AOMIC_1117.json",
+   "sha16": "1c73a60ef7dc8152",
+   "locator": "$.arms.A8.mean"
+  },
+  {
+   "key": "aomic_teacher",
+   "value": 0.4166,
+   "source_file": "results/FBERT_AOMIC_1117.json",
+   "sha16": "1c73a60ef7dc8152",
+   "locator": "$.arms.C.mean"
+  },
+  {
+   "key": "aomic_d",
+   "value": 0.044,
+   "source_file": "results/FBERT_AOMIC_1117.json",
+   "sha16": "1c73a60ef7dc8152",
+   "locator": "$.PRIMARY_D0_vs_A8.mean_diff"
+  },
+  {
+   "key": "aomic_wins",
+   "value": 20,
+   "source_file": "results/FBERT_AOMIC_1117.json",
+   "sha16": "1c73a60ef7dc8152",
+   "locator": "$.PRIMARY_D0_vs_A8.positive"
+  },
+  {
+   "key": "aomic_of",
+   "value": 20,
+   "source_file": "results/FBERT_AOMIC_1117.json",
+   "sha16": "1c73a60ef7dc8152",
+   "locator": "$.PRIMARY_D0_vs_A8.of"
+  },
+  {
+   "key": "aomic_t",
+   "value": 2.74,
+   "source_file": "results/FBERT_AOMIC_1117.json",
+   "sha16": "1c73a60ef7dc8152",
+   "locator": "seed t / seed_factor(20)"
+  },
+  {
+   "key": "abide_n",
+   "value": 1035,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.n_dx"
+  },
+  {
+   "key": "abide_nfiq",
+   "value": 966,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.n_fiq"
+  },
+  {
+   "key": "abide_sites",
+   "value": 20,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.n_sites"
+  },
+  {
+   "key": "abide_d0",
+   "value": 0.78,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.tasks.dx.arms.D0.mean"
+  },
+  {
+   "key": "abide_fbert",
+   "value": 0.731,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.tasks.dx.arms.A8.mean"
+  },
+  {
+   "key": "abide_d",
+   "value": 0.05,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.tasks.dx.D0_vs_A8.mean_diff"
+  },
+  {
+   "key": "abide_wins",
+   "value": 20,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.tasks.dx.D0_vs_A8.positive"
+  },
+  {
+   "key": "abide_t",
+   "value": 8.37,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "seed t / seed_factor(20)"
+  },
+  {
+   "key": "abide_fiq_d0",
+   "value": 0.255,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.tasks.fiq.arms.D0.mean"
+  },
+  {
+   "key": "abide_fiq_fbert",
+   "value": 0.201,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.tasks.fiq.arms.A8.mean"
+  },
+  {
+   "key": "abide_fiq_d",
+   "value": 0.054,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.tasks.fiq.D0_vs_A8.mean_diff"
+  },
+  {
+   "key": "abide_fiq_wins",
+   "value": 20,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.tasks.fiq.D0_vs_A8.positive"
+  },
+  {
+   "key": "abide_fiq_t",
+   "value": 3.45,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "seed t / seed_factor(20)"
+  },
+  {
+   "key": "adhd_n",
+   "value": 435,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.n_dx"
+  },
+  {
+   "key": "adhd_niq",
+   "value": 369,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.n_iq"
+  },
+  {
+   "key": "adhd_sites",
+   "value": 6,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "len($.sites)"
+  },
+  {
+   "key": "adhd_d0",
+   "value": 0.57,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.dx.arms.D0"
+  },
+  {
+   "key": "adhd_fbert",
+   "value": 0.548,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.dx.arms.A8"
+  },
+  {
+   "key": "adhd_d",
+   "value": 0.022,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.dx.D0_vs_A8.diff"
+  },
+  {
+   "key": "adhd_lo",
+   "value": -0.023,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.dx.D0_vs_A8.ci95.0"
+  },
+  {
+   "key": "adhd_hi",
+   "value": 0.068,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.dx.D0_vs_A8.ci95.1"
+  },
+  {
+   "key": "adhd_p",
+   "value": 0.83,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.dx.D0_vs_A8.p_gt_0"
+  },
+  {
+   "key": "adhd_iq_d0",
+   "value": 0.105,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.iq.arms.D0"
+  },
+  {
+   "key": "adhd_iq_fbert",
+   "value": 0.139,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.iq.arms.A8"
+  },
+  {
+   "key": "adhd_iq_d",
+   "value": -0.035,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "D0 - A8 IQ r"
+  },
+  {
+   "key": "adhd_iq_fbert1",
+   "value": 0.195,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.iq.arms.A1"
+  },
+  {
+   "key": "nyu_n",
+   "value": 256,
+   "source_file": "results/FBERT_ADHD_NYU_WITHIN_1117.json",
+   "sha16": "9dfd51b875e4aff0",
+   "locator": "$.n"
+  },
+  {
+   "key": "nyu_dx_fbert",
+   "value": 0.622,
+   "source_file": "results/FBERT_ADHD_NYU_WITHIN_1117.json",
+   "sha16": "9dfd51b875e4aff0",
+   "locator": "$.dx.A8"
+  },
+  {
+   "key": "nyu_dx_d0",
+   "value": 0.55,
+   "source_file": "results/FBERT_ADHD_NYU_WITHIN_1117.json",
+   "sha16": "9dfd51b875e4aff0",
+   "locator": "$.dx.D0"
+  },
+  {
+   "key": "nyu_dx_d0_ahead",
+   "value": 1,
+   "source_file": "results/FBERT_ADHD_NYU_WITHIN_1117.json",
+   "sha16": "9dfd51b875e4aff0",
+   "locator": "$.dx.D0_ahead_repeats"
+  },
+  {
+   "key": "bjepa_r",
+   "value": 0.067,
+   "source_file": "results/FBERT_BJEPA_1117.json",
+   "sha16": "47806912279a71a6",
+   "locator": "$.BrainJEPA"
+  },
+  {
+   "key": "ra_raw_conditioning_without_filter_d",
+   "value": 0.0175,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.raw.NB.conditioning_without_filter.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_raw_conditioning_without_filter_t",
+   "value": 1.54,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.raw.NB.conditioning_without_filter.corrected_t"
+  },
+  {
+   "key": "six_d0_g_top_folds",
+   "value": 577,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "$.g_selected_counts.D06_eq.0.98"
+  },
+  {
+   "key": "six_d0_g_folds",
+   "value": 600,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "sum of $.g_selected_counts.D06_eq"
+  },
+  {
+   "key": "six_d0_plain_pooled_d",
+   "value": 0.0512,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "pooled per split: D06_eq - B6_eq"
+  },
+  {
+   "key": "fe_rest_m_d0",
+   "value": 0.5913,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "mean of $.per_fold.D0_full"
+  },
+  {
+   "key": "fe_rest_m_d1",
+   "value": 0.5829,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "mean of $.per_fold.D1_full"
+  },
+  {
+   "key": "fe_rest_m_teacher",
+   "value": 0.5911,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "mean of $.per_fold.C_full"
+  },
+  {
+   "key": "fe_rest_m_fbert8",
+   "value": 0.5235,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "mean of $.per_fold.A8P1_full"
+  },
+  {
+   "key": "fe_rest_m_fbert1",
+   "value": 0.4935,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "mean of $.per_fold.A1P1_full"
+  },
+  {
+   "key": "fe_rest_m_plain",
+   "value": 0.4853,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "mean of $.per_fold.B_full"
+  },
+  {
+   "key": "fe_rest_ratio",
+   "value": 0.1111,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.test_train_ratio (--ratio)"
+  },
+  {
+   "key": "fe_rest_splits",
+   "value": 60,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.splits"
+  },
+  {
+   "key": "fe_rest_d0_fbert_d",
+   "value": 0.0677,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.per_fold D0_full - A8P1_full, mean over 600 folds"
+  },
+  {
+   "key": "fe_rest_d0_fbert_t",
+   "value": 3.88,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_rest_d0_fbert_p",
+   "value": 0.00012,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_rest_d0_fbert_pos",
+   "value": 60,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.NB.D0_full_vs_A8P1_full.splits_positive"
+  },
+  {
+   "key": "fe_rest_d0_fbert_folds",
+   "value": 600,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "finite paired folds D0_full, A8P1_full"
+  },
+  {
+   "key": "fe_rest_d0_teacher_d",
+   "value": 0.0001,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.per_fold D0_full - C_full, mean over 600 folds"
+  },
+  {
+   "key": "fe_rest_d0_teacher_t",
+   "value": 0.03,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_rest_d0_teacher_p",
+   "value": 0.98,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_rest_d0_teacher_pos",
+   "value": 34,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.NB.D0_full_vs_C_full.splits_positive"
+  },
+  {
+   "key": "fe_rest_d0_teacher_folds",
+   "value": 600,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "finite paired folds D0_full, C_full"
+  },
+  {
+   "key": "fe_rest_teacher_fbert_d",
+   "value": 0.0676,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.per_fold C_full - A8P1_full, mean over 600 folds"
+  },
+  {
+   "key": "fe_rest_teacher_fbert_t",
+   "value": 4.14,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_rest_teacher_fbert_p",
+   "value": 4.1e-05,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_rest_teacher_fbert_pos",
+   "value": 60,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.NB.C_full_vs_A8P1_full.splits_positive"
+  },
+  {
+   "key": "fe_rest_teacher_fbert_folds",
+   "value": 600,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "finite paired folds C_full, A8P1_full"
+  },
+  {
+   "key": "fe_rest_d1_fbert_d",
+   "value": 0.0594,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.per_fold D1_full - A8P1_full, mean over 600 folds"
+  },
+  {
+   "key": "fe_rest_d1_fbert_t",
+   "value": 3.13,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_rest_d1_fbert_p",
+   "value": 0.0019,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_rest_d1_fbert_pos",
+   "value": 60,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.NB.D1_full_vs_A8P1_full.splits_positive"
+  },
+  {
+   "key": "fe_rest_d1_fbert_folds",
+   "value": 600,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "finite paired folds D1_full, A8P1_full"
+  },
+  {
+   "key": "fe_rest_d1_d0_d",
+   "value": -0.0084,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.per_fold D1_full - D0_full, mean over 600 folds"
+  },
+  {
+   "key": "fe_rest_d1_d0_t",
+   "value": -0.87,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_rest_d1_d0_p",
+   "value": 0.39,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_rest_d1_d0_pos",
+   "value": 4,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.NB.D1_full_vs_D0_full.splits_positive"
+  },
+  {
+   "key": "fe_rest_d1_d0_folds",
+   "value": 600,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "finite paired folds D1_full, D0_full"
+  },
+  {
+   "key": "fe_rest_plain_fbert_d",
+   "value": -0.0382,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.per_fold B_full - A8P1_full, mean over 600 folds"
+  },
+  {
+   "key": "fe_rest_plain_fbert_t",
+   "value": -2.0,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_rest_plain_fbert_p",
+   "value": 0.046,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_rest_plain_fbert_pos",
+   "value": 0,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.NB.B_full_vs_A8P1_full.splits_positive"
+  },
+  {
+   "key": "fe_rest_plain_fbert_folds",
+   "value": 600,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "finite paired folds B_full, A8P1_full"
+  },
+  {
+   "key": "fe_rest_d0_plain_d",
+   "value": 0.106,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.per_fold D0_full - B_full, mean over 600 folds"
+  },
+  {
+   "key": "fe_rest_d0_plain_t",
+   "value": 6.28,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_rest_d0_plain_p",
+   "value": 6.6e-10,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_rest_d0_plain_pos",
+   "value": 60,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.NB.D0_full_vs_B_full.splits_positive"
+  },
+  {
+   "key": "fe_rest_d0_plain_folds",
+   "value": 600,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "finite paired folds D0_full, B_full"
+  },
+  {
+   "key": "fe_rest_d0_fbert1_d",
+   "value": 0.0978,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.per_fold D0_full - A1P1_full, mean over 600 folds"
+  },
+  {
+   "key": "fe_rest_d0_fbert1_t",
+   "value": 4.55,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_rest_d0_fbert1_p",
+   "value": 6.4e-06,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_rest_d0_fbert1_pos",
+   "value": 60,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.NB.D0_full_vs_A1P1_full.splits_positive"
+  },
+  {
+   "key": "fe_rest_d0_fbert1_folds",
+   "value": 600,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "finite paired folds D0_full, A1P1_full"
+  },
+  {
+   "key": "fe_six_m_d0",
+   "value": 0.7075,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "mean of $.per_fold.D06_eq"
+  },
+  {
+   "key": "fe_six_m_d1",
+   "value": 0.7193,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "mean of $.per_fold.D16_eq"
+  },
+  {
+   "key": "fe_six_m_teacher",
+   "value": 0.6849,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "mean of $.per_fold.C6_eq"
+  },
+  {
+   "key": "fe_six_m_fbert_cat",
+   "value": 0.7026,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "mean of $.per_fold.A8cat"
+  },
+  {
+   "key": "fe_six_m_plain",
+   "value": 0.6507,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "mean of $.per_fold.B6_eq"
+  },
+  {
+   "key": "fe_six_ratio",
+   "value": 0.1111,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "$.test_train_ratio (--ratio)"
+  },
+  {
+   "key": "fe_six_splits",
+   "value": 60,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "$.splits"
+  },
+  {
+   "key": "fe_six_d0_fbert_d",
+   "value": 0.0049,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "$.per_fold D06_eq - A8cat, mean over 600 folds"
+  },
+  {
+   "key": "fe_six_d0_fbert_t",
+   "value": 0.52,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_six_d0_fbert_p",
+   "value": 0.6,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_six_d0_fbert_pos",
+   "value": 51,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "$.NB.D06_eq_vs_A8cat.splits_positive"
+  },
+  {
+   "key": "fe_six_d0_fbert_folds",
+   "value": 600,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "finite paired folds D06_eq, A8cat"
+  },
+  {
+   "key": "fe_six_d1_fbert_d",
+   "value": 0.0166,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "$.per_fold D16_eq - A8cat, mean over 600 folds"
+  },
+  {
+   "key": "fe_six_d1_fbert_t",
+   "value": 1.4,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_six_d1_fbert_p",
+   "value": 0.16,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_six_d1_fbert_pos",
+   "value": 60,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "$.NB.D16_eq_vs_A8cat.splits_positive"
+  },
+  {
+   "key": "fe_six_d1_fbert_folds",
+   "value": 600,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "finite paired folds D16_eq, A8cat"
+  },
+  {
+   "key": "fe_six_teacher_fbert_d",
+   "value": -0.0178,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "$.per_fold C6_eq - A8cat, mean over 600 folds"
+  },
+  {
+   "key": "fe_six_teacher_fbert_t",
+   "value": -1.45,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_six_teacher_fbert_p",
+   "value": 0.15,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_six_teacher_fbert_pos",
+   "value": 0,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "$.NB.C6_eq_vs_A8cat.splits_positive"
+  },
+  {
+   "key": "fe_six_teacher_fbert_folds",
+   "value": 600,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "finite paired folds C6_eq, A8cat"
+  },
+  {
+   "key": "fe_six_d1_d0_d",
+   "value": 0.0117,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "$.per_fold D16_eq - D06_eq, mean over 600 folds"
+  },
+  {
+   "key": "fe_six_d1_d0_t",
+   "value": 1.16,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_six_d1_d0_p",
+   "value": 0.25,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_six_d1_d0_pos",
+   "value": 60,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "$.NB.D16_eq_vs_D06_eq.splits_positive"
+  },
+  {
+   "key": "fe_six_d1_d0_folds",
+   "value": 600,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "finite paired folds D16_eq, D06_eq"
+  },
+  {
+   "key": "fe_six_d0_teacher_d",
+   "value": 0.0227,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "$.per_fold D06_eq - C6_eq, mean over 600 folds"
+  },
+  {
+   "key": "fe_six_d0_teacher_t",
+   "value": 3.19,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_six_d0_teacher_p",
+   "value": 0.0015,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_six_d0_teacher_pos",
+   "value": 60,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "$.NB.D06_eq_vs_C6_eq.splits_positive"
+  },
+  {
+   "key": "fe_six_d0_teacher_folds",
+   "value": 600,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "finite paired folds D06_eq, C6_eq"
+  },
+  {
+   "key": "fe_six_d0_plain_d",
+   "value": 0.0568,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "$.per_fold D06_eq - B6_eq, mean over 600 folds"
+  },
+  {
+   "key": "fe_six_d0_plain_t",
+   "value": 5.65,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_six_d0_plain_p",
+   "value": 2.4e-08,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_six_d0_plain_pos",
+   "value": 60,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "$.NB.D06_eq_vs_B6_eq.splits_positive"
+  },
+  {
+   "key": "fe_six_d0_plain_folds",
+   "value": 600,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "finite paired folds D06_eq, B6_eq"
+  },
+  {
+   "key": "fe_six_d1_plain_d",
+   "value": 0.0686,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "$.per_fold D16_eq - B6_eq, mean over 600 folds"
+  },
+  {
+   "key": "fe_six_d1_plain_t",
+   "value": 4.44,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_six_d1_plain_p",
+   "value": 1.1e-05,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_six_d1_plain_pos",
+   "value": 60,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "$.NB.D16_eq_vs_B6_eq.splits_positive"
+  },
+  {
+   "key": "fe_six_d1_plain_folds",
+   "value": 600,
+   "source_file": "results/FOLDNB_SIXMOD_1119.json",
+   "sha16": "b49719856ce32502",
+   "locator": "finite paired folds D16_eq, B6_eq"
+  },
+  {
+   "key": "fe_aomic_m_d0",
+   "value": 0.4176,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "mean of $.per_fold.D0"
+  },
+  {
+   "key": "fe_aomic_m_d1",
+   "value": 0.3788,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "mean of $.per_fold.D1"
+  },
+  {
+   "key": "fe_aomic_m_teacher",
+   "value": 0.4225,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "mean of $.per_fold.C"
+  },
+  {
+   "key": "fe_aomic_m_fbert",
+   "value": 0.3752,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "mean of $.per_fold.A8"
+  },
+  {
+   "key": "fe_aomic_ratio",
+   "value": 0.1111,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "$.test_train_ratio (recorded fold sizes)"
+  },
+  {
+   "key": "fe_aomic_splits",
+   "value": 20,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "$.splits"
+  },
+  {
+   "key": "fe_aomic_d0_fbert_d",
+   "value": 0.0425,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "$.per_fold D0 - A8, mean over 200 folds"
+  },
+  {
+   "key": "fe_aomic_d0_fbert_t",
+   "value": 2.04,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_aomic_d0_fbert_p",
+   "value": 0.042,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_aomic_d0_fbert_pos",
+   "value": 20,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "$.NB.D0_vs_A8.splits_positive"
+  },
+  {
+   "key": "fe_aomic_d0_fbert_folds",
+   "value": 200,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "finite paired folds D0, A8"
+  },
+  {
+   "key": "fe_aomic_d1_fbert_d",
+   "value": 0.0036,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "$.per_fold D1 - A8, mean over 200 folds"
+  },
+  {
+   "key": "fe_aomic_d1_fbert_t",
+   "value": 0.16,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_aomic_d1_fbert_p",
+   "value": 0.87,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_aomic_d1_fbert_pos",
+   "value": 10,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "$.NB.D1_vs_A8.splits_positive"
+  },
+  {
+   "key": "fe_aomic_d1_fbert_folds",
+   "value": 200,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "finite paired folds D1, A8"
+  },
+  {
+   "key": "fe_aomic_teacher_fbert_d",
+   "value": 0.0473,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "$.per_fold C - A8, mean over 200 folds"
+  },
+  {
+   "key": "fe_aomic_teacher_fbert_t",
+   "value": 2.32,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_aomic_teacher_fbert_p",
+   "value": 0.021,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_aomic_teacher_fbert_pos",
+   "value": 20,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "$.NB.C_vs_A8.splits_positive"
+  },
+  {
+   "key": "fe_aomic_teacher_fbert_folds",
+   "value": 200,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "finite paired folds C, A8"
+  },
+  {
+   "key": "fe_aomic_d0_teacher_d",
+   "value": -0.0048,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "$.per_fold D0 - C, mean over 200 folds"
+  },
+  {
+   "key": "fe_aomic_d0_teacher_t",
+   "value": -0.62,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_aomic_d0_teacher_p",
+   "value": 0.54,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_aomic_d0_teacher_pos",
+   "value": 3,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "$.NB.D0_vs_C.splits_positive"
+  },
+  {
+   "key": "fe_aomic_d0_teacher_folds",
+   "value": 200,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "finite paired folds D0, C"
+  },
+  {
+   "key": "fe_aomic_d1_d0_d",
+   "value": -0.0389,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "$.per_fold D1 - D0, mean over 200 folds"
+  },
+  {
+   "key": "fe_aomic_d1_d0_t",
+   "value": -2.44,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1111)"
+  },
+  {
+   "key": "fe_aomic_d1_d0_p",
+   "value": 0.016,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_aomic_d1_d0_pos",
+   "value": 0,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "$.NB.D1_vs_D0.splits_positive"
+  },
+  {
+   "key": "fe_aomic_d1_d0_folds",
+   "value": 200,
+   "source_file": "results/FOLDNB_AOMIC_1119.json",
+   "sha16": "aada6679dd03907d",
+   "locator": "finite paired folds D1, D0"
+  },
+  {
+   "key": "fe_abide_m_d0",
+   "value": 0.773,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "mean of $.per_fold.D0"
+  },
+  {
+   "key": "fe_abide_m_d1",
+   "value": 0.7714,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "mean of $.per_fold.D1"
+  },
+  {
+   "key": "fe_abide_m_teacher",
+   "value": 0.7807,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "mean of $.per_fold.C"
+  },
+  {
+   "key": "fe_abide_m_fbert",
+   "value": 0.7336,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "mean of $.per_fold.A8"
+  },
+  {
+   "key": "fe_abide_ratio",
+   "value": 0.1141,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "$.test_train_ratio (recorded fold sizes)"
+  },
+  {
+   "key": "fe_abide_splits",
+   "value": 20,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "$.splits"
+  },
+  {
+   "key": "fe_abide_d0_fbert_d",
+   "value": 0.0394,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "$.per_fold D0 - A8, mean over 200 folds"
+  },
+  {
+   "key": "fe_abide_d0_fbert_t",
+   "value": 3.2,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1141)"
+  },
+  {
+   "key": "fe_abide_d0_fbert_p",
+   "value": 0.0016,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_abide_d0_fbert_pos",
+   "value": 20,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "$.NB.D0_vs_A8.splits_positive"
+  },
+  {
+   "key": "fe_abide_d0_fbert_folds",
+   "value": 200,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "finite paired folds D0, A8"
+  },
+  {
+   "key": "fe_abide_d1_fbert_d",
+   "value": 0.0378,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "$.per_fold D1 - A8, mean over 200 folds"
+  },
+  {
+   "key": "fe_abide_d1_fbert_t",
+   "value": 3.38,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1141)"
+  },
+  {
+   "key": "fe_abide_d1_fbert_p",
+   "value": 0.00086,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_abide_d1_fbert_pos",
+   "value": 20,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "$.NB.D1_vs_A8.splits_positive"
+  },
+  {
+   "key": "fe_abide_d1_fbert_folds",
+   "value": 200,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "finite paired folds D1, A8"
+  },
+  {
+   "key": "fe_abide_teacher_fbert_d",
+   "value": 0.0471,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "$.per_fold C - A8, mean over 200 folds"
+  },
+  {
+   "key": "fe_abide_teacher_fbert_t",
+   "value": 4.48,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1141)"
+  },
+  {
+   "key": "fe_abide_teacher_fbert_p",
+   "value": 1.2e-05,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_abide_teacher_fbert_pos",
+   "value": 20,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "$.NB.C_vs_A8.splits_positive"
+  },
+  {
+   "key": "fe_abide_teacher_fbert_folds",
+   "value": 200,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "finite paired folds C, A8"
+  },
+  {
+   "key": "fe_abide_d0_teacher_d",
+   "value": -0.0077,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "$.per_fold D0 - C, mean over 200 folds"
+  },
+  {
+   "key": "fe_abide_d0_teacher_t",
+   "value": -1.49,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1141)"
+  },
+  {
+   "key": "fe_abide_d0_teacher_p",
+   "value": 0.14,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_abide_d0_teacher_pos",
+   "value": 0,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "$.NB.D0_vs_C.splits_positive"
+  },
+  {
+   "key": "fe_abide_d0_teacher_folds",
+   "value": 200,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "finite paired folds D0, C"
+  },
+  {
+   "key": "fe_abide_d1_d0_d",
+   "value": -0.0016,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "$.per_fold D1 - D0, mean over 200 folds"
+  },
+  {
+   "key": "fe_abide_d1_d0_t",
+   "value": -0.15,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1141)"
+  },
+  {
+   "key": "fe_abide_d1_d0_p",
+   "value": 0.88,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_abide_d1_d0_pos",
+   "value": 7,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "$.NB.D1_vs_D0.splits_positive"
+  },
+  {
+   "key": "fe_abide_d1_d0_folds",
+   "value": 200,
+   "source_file": "results/FOLDNB_ABIDE_DX_1119.json",
+   "sha16": "1443b30fced24221",
+   "locator": "finite paired folds D1, D0"
+  },
+  {
+   "key": "fe_abide_fiq_m_d0",
+   "value": 0.2572,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "mean of $.per_fold.D0"
+  },
+  {
+   "key": "fe_abide_fiq_m_d1",
+   "value": 0.2496,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "mean of $.per_fold.D1"
+  },
+  {
+   "key": "fe_abide_fiq_m_teacher",
+   "value": 0.2614,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "mean of $.per_fold.C"
+  },
+  {
+   "key": "fe_abide_fiq_m_fbert",
+   "value": 0.2064,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "mean of $.per_fold.A8"
+  },
+  {
+   "key": "fe_abide_fiq_ratio",
+   "value": 0.1155,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "$.test_train_ratio (recorded fold sizes)"
+  },
+  {
+   "key": "fe_abide_fiq_splits",
+   "value": 20,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "$.splits"
+  },
+  {
+   "key": "fe_abide_fiq_d0_fbert_d",
+   "value": 0.0508,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "$.per_fold D0 - A8, mean over 200 folds"
+  },
+  {
+   "key": "fe_abide_fiq_d0_fbert_t",
+   "value": 1.89,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1155)"
+  },
+  {
+   "key": "fe_abide_fiq_d0_fbert_p",
+   "value": 0.061,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_abide_fiq_d0_fbert_pos",
+   "value": 20,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "$.NB.D0_vs_A8.splits_positive"
+  },
+  {
+   "key": "fe_abide_fiq_d0_fbert_folds",
+   "value": 200,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "finite paired folds D0, A8"
+  },
+  {
+   "key": "fe_abide_fiq_d1_fbert_d",
+   "value": 0.0431,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "$.per_fold D1 - A8, mean over 200 folds"
+  },
+  {
+   "key": "fe_abide_fiq_d1_fbert_t",
+   "value": 1.79,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1155)"
+  },
+  {
+   "key": "fe_abide_fiq_d1_fbert_p",
+   "value": 0.075,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_abide_fiq_d1_fbert_pos",
+   "value": 20,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "$.NB.D1_vs_A8.splits_positive"
+  },
+  {
+   "key": "fe_abide_fiq_d1_fbert_folds",
+   "value": 200,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "finite paired folds D1, A8"
+  },
+  {
+   "key": "fe_abide_fiq_teacher_fbert_d",
+   "value": 0.055,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "$.per_fold C - A8, mean over 200 folds"
+  },
+  {
+   "key": "fe_abide_fiq_teacher_fbert_t",
+   "value": 1.7,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1155)"
+  },
+  {
+   "key": "fe_abide_fiq_teacher_fbert_p",
+   "value": 0.091,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_abide_fiq_teacher_fbert_pos",
+   "value": 20,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "$.NB.C_vs_A8.splits_positive"
+  },
+  {
+   "key": "fe_abide_fiq_teacher_fbert_folds",
+   "value": 200,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "finite paired folds C, A8"
+  },
+  {
+   "key": "fe_abide_fiq_d0_teacher_d",
+   "value": -0.0042,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "$.per_fold D0 - C, mean over 200 folds"
+  },
+  {
+   "key": "fe_abide_fiq_d0_teacher_t",
+   "value": -0.48,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1155)"
+  },
+  {
+   "key": "fe_abide_fiq_d0_teacher_p",
+   "value": 0.63,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_abide_fiq_d0_teacher_pos",
+   "value": 5,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "$.NB.D0_vs_C.splits_positive"
+  },
+  {
+   "key": "fe_abide_fiq_d0_teacher_folds",
+   "value": 200,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "finite paired folds D0, C"
+  },
+  {
+   "key": "fe_abide_fiq_d1_d0_d",
+   "value": -0.0077,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "$.per_fold D1 - D0, mean over 200 folds"
+  },
+  {
+   "key": "fe_abide_fiq_d1_d0_t",
+   "value": -0.34,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "corrected t recomputed from $.per_fold (ratio 0.1155)"
+  },
+  {
+   "key": "fe_abide_fiq_d1_d0_p",
+   "value": 0.74,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "two-sided p, df = folds - 1"
+  },
+  {
+   "key": "fe_abide_fiq_d1_d0_pos",
+   "value": 4,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "$.NB.D1_vs_D0.splits_positive"
+  },
+  {
+   "key": "fe_abide_fiq_d1_d0_folds",
+   "value": 200,
+   "source_file": "results/FOLDNB_ABIDE_FIQ_1119.json",
+   "sha16": "bfc52a3e8621f21f",
+   "locator": "finite paired folds D1, D0"
+  },
+  {
+   "key": "fe_short_d0_fbert_d",
+   "value": 0.0307,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.per_fold D0_short - A8P1_short"
+  },
+  {
+   "key": "fe_short_d0_fbert_t",
+   "value": 1.24,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "corrected t from $.per_fold D0_short, A8P1_short"
+  },
+  {
+   "key": "fe_short_d0_fbert1_d",
+   "value": 0.0025,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.per_fold D0_short - A1P2_short"
+  },
+  {
+   "key": "fe_short_d0_fbert1_t",
+   "value": 0.08,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "corrected t from $.per_fold D0_short, A1P2_short"
+  },
+  {
+   "key": "fe_short_plain_fbert_d",
+   "value": -0.0682,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.per_fold B_short - A8P1_short"
+  },
+  {
+   "key": "fe_short_plain_fbert_t",
+   "value": -2.31,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "corrected t from $.per_fold B_short, A8P1_short"
+  },
+  {
+   "key": "fe_short_d0_plain_d",
+   "value": 0.0989,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.per_fold D0_short - B_short"
+  },
+  {
+   "key": "fe_short_d0_plain_t",
+   "value": 3.58,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "corrected t from $.per_fold D0_short, B_short"
+  },
+  {
+   "key": "fe_short_m_d0",
+   "value": 0.3788,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.mean_perfold.D0_short"
+  },
+  {
+   "key": "fe_short_m_fbert8",
+   "value": 0.3482,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.mean_perfold.A8P1_short"
+  },
+  {
+   "key": "fe_short_m_fbert1",
+   "value": 0.3764,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.mean_perfold.A1P2_short"
+  },
+  {
+   "key": "fe_short_m_plain",
+   "value": 0.2799,
+   "source_file": "results/FOLDNB_SAMEFOLDS_1119.json",
+   "sha16": "f4de2226510f5e9d",
+   "locator": "$.mean_perfold.B_short"
+  },
+  {
+   "key": "ra_canon_r",
+   "value": 0.7215,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.mean_perfold_r.CANON"
+  },
+  {
+   "key": "ra_nofilt_r",
+   "value": 0.6948,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.mean_perfold_r.NOFILT"
+  },
+  {
+   "key": "ra_fullw1_r",
+   "value": 0.6788,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.mean_perfold_r.FULLW1"
+  },
+  {
+   "key": "ra_partw0_r",
+   "value": 0.6906,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.mean_perfold_r.PARTW0"
+  },
+  {
+   "key": "ra_partna_w0_r",
+   "value": 0.6982,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.mean_perfold_r.PARTNA_W0"
+  },
+  {
+   "key": "ra_full_filt_r",
+   "value": 0.6683,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.mean_perfold_r.FULL_FILT"
+  },
+  {
+   "key": "ra_cbig6_r",
+   "value": 0.6798,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.mean_perfold_r.CBIG6"
+  },
+  {
+   "key": "ra_cbig6_hkh_r",
+   "value": 0.6822,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.mean_perfold_r.CBIG6_HKH"
+  },
+  {
+   "key": "ra_cbig6_filt_r",
+   "value": 0.6722,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.mean_perfold_r.CBIG6_FILT"
+  },
+  {
+   "key": "ra_canon_eq_r",
+   "value": 0.7199,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.mean_perfold_r.CANON_EQ"
+  },
+  {
+   "key": "ra_canon_ind_r",
+   "value": 0.6886,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.mean_perfold_r.CANON_IND"
+  },
+  {
+   "key": "ra_canon_vs_cbig6_d",
+   "value": 0.0417,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.CANON_vs_CBIG6.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_canon_vs_cbig6_t",
+   "value": 3.23,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.CANON_vs_CBIG6.corrected_t"
+  },
+  {
+   "key": "ra_canon_vs_cbig6_p",
+   "value": 0.00131,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.CANON_vs_CBIG6.p_two_sided"
+  },
+  {
+   "key": "ra_nofilt_vs_cbig6_d",
+   "value": 0.015,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.NOFILT_vs_CBIG6.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_nofilt_vs_cbig6_t",
+   "value": 1.33,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.NOFILT_vs_CBIG6.corrected_t"
+  },
+  {
+   "key": "ra_nofilt_vs_cbig6_p",
+   "value": 0.184,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.NOFILT_vs_CBIG6.p_two_sided"
+  },
+  {
+   "key": "ra_filter_on_conditioned_d",
+   "value": 0.0267,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.filter_on_conditioned.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_filter_on_conditioned_t",
+   "value": 2.55,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.filter_on_conditioned.corrected_t"
+  },
+  {
+   "key": "ra_filter_on_conditioned_p",
+   "value": 0.011,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.filter_on_conditioned.p_two_sided"
+  },
+  {
+   "key": "ra_filter_on_full_d",
+   "value": -0.0105,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.filter_on_full.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_filter_on_full_t",
+   "value": -2.15,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.filter_on_full.corrected_t"
+  },
+  {
+   "key": "ra_filter_on_full_p",
+   "value": 0.032,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.filter_on_full.p_two_sided"
+  },
+  {
+   "key": "ra_conditioning_without_filter_d",
+   "value": 0.016,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.conditioning_without_filter.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_conditioning_without_filter_t",
+   "value": 1.42,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.conditioning_without_filter.corrected_t"
+  },
+  {
+   "key": "ra_conditioning_without_filter_p",
+   "value": 0.157,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.conditioning_without_filter.p_two_sided"
+  },
+  {
+   "key": "ra_conditioning_with_filter_d",
+   "value": 0.0532,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.conditioning_with_filter.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_conditioning_with_filter_t",
+   "value": 3.89,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.conditioning_with_filter.corrected_t"
+  },
+  {
+   "key": "ra_conditioning_with_filter_p",
+   "value": 0.000113,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.conditioning_with_filter.p_two_sided"
+  },
+  {
+   "key": "ra_filter_on_benchmark_kernel_d",
+   "value": -0.0101,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.filter_on_benchmark_kernel.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_filter_on_benchmark_kernel_t",
+   "value": -1.85,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.filter_on_benchmark_kernel.corrected_t"
+  },
+  {
+   "key": "ra_filter_on_benchmark_kernel_p",
+   "value": 0.0644,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.filter_on_benchmark_kernel.p_two_sided"
+  },
+  {
+   "key": "ra_benchmark_kernel_normalisation_d",
+   "value": 0.0024,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.benchmark_kernel_normalisation.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_benchmark_kernel_normalisation_t",
+   "value": 0.77,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.benchmark_kernel_normalisation.corrected_t"
+  },
+  {
+   "key": "ra_benchmark_kernel_normalisation_p",
+   "value": 0.443,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.benchmark_kernel_normalisation.p_two_sided"
+  },
+  {
+   "key": "ra_fullw1_vs_cbig6_d",
+   "value": -0.001,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.FULLW1_vs_CBIG6.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_fullw1_vs_cbig6_t",
+   "value": -0.2,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.FULLW1_vs_CBIG6.corrected_t"
+  },
+  {
+   "key": "ra_fullw1_vs_cbig6_p",
+   "value": 0.841,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.FULLW1_vs_CBIG6.p_two_sided"
+  },
+  {
+   "key": "ra_partial_step_d",
+   "value": 0.0118,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.partial_step.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_partial_step_t",
+   "value": 0.91,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.partial_step.corrected_t"
+  },
+  {
+   "key": "ra_partial_step_p",
+   "value": 0.364,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.partial_step.p_two_sided"
+  },
+  {
+   "key": "ra_partial_without_power_d",
+   "value": 0.0194,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.partial_without_power.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_partial_without_power_t",
+   "value": 1.69,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.partial_without_power.corrected_t"
+  },
+  {
+   "key": "ra_partial_without_power_p",
+   "value": 0.0915,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.partial_without_power.p_two_sided"
+  },
+  {
+   "key": "ra_power_step_d",
+   "value": -0.0076,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.power_step.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_power_step_t",
+   "value": -3.84,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.power_step.corrected_t"
+  },
+  {
+   "key": "ra_power_step_p",
+   "value": 0.000137,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.power_step.p_two_sided"
+  },
+  {
+   "key": "ra_mix_step_d",
+   "value": 0.0042,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.mix_step.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_mix_step_t",
+   "value": 2.1,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.mix_step.corrected_t"
+  },
+  {
+   "key": "ra_mix_step_p",
+   "value": 0.0365,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.mix_step.p_two_sided"
+  },
+  {
+   "key": "ra_language_weight_d",
+   "value": 0.0016,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.language_weight.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_language_weight_t",
+   "value": 0.56,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.language_weight.corrected_t"
+  },
+  {
+   "key": "ra_language_weight_p",
+   "value": 0.575,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.language_weight.p_two_sided"
+  },
+  {
+   "key": "ra_inductive_filter_vs_none_d",
+   "value": -0.0063,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.inductive_filter_vs_none.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_inductive_filter_vs_none_t",
+   "value": -1.7,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.inductive_filter_vs_none.corrected_t"
+  },
+  {
+   "key": "ra_inductive_filter_vs_none_p",
+   "value": 0.0898,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.inductive_filter_vs_none.p_two_sided"
+  },
+  {
+   "key": "ra_transductive_vs_inductive_filter_d",
+   "value": 0.033,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.transductive_vs_inductive_filter.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_transductive_vs_inductive_filter_t",
+   "value": 2.97,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.transductive_vs_inductive_filter.corrected_t"
+  },
+  {
+   "key": "ra_transductive_vs_inductive_filter_p",
+   "value": 0.00314,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.transductive_vs_inductive_filter.p_two_sided"
+  },
+  {
+   "key": "ra_canon_ind_vs_cbig6_d",
+   "value": 0.0087,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.CANON_IND_vs_CBIG6.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_canon_ind_vs_cbig6_t",
+   "value": 0.72,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.CANON_IND_vs_CBIG6.corrected_t"
+  },
+  {
+   "key": "ra_canon_ind_vs_cbig6_p",
+   "value": 0.472,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.CANON_IND_vs_CBIG6.p_two_sided"
+  },
+  {
+   "key": "ra_canon_eq_vs_cbig6_d",
+   "value": 0.0401,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.CANON_EQ_vs_CBIG6.diff_mean_perfold_r"
+  },
+  {
+   "key": "ra_canon_eq_vs_cbig6_t",
+   "value": 3.04,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.CANON_EQ_vs_CBIG6.corrected_t"
+  },
+  {
+   "key": "ra_canon_eq_vs_cbig6_p",
+   "value": 0.00249,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.NB.CANON_EQ_vs_CBIG6.p_two_sided"
+  },
+  {
+   "key": "ra_interaction_d",
+   "value": 0.0372,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "(CANON-NOFILT)-(FULL_FILT-FULLW1) per fold"
+  },
+  {
+   "key": "ra_interaction_t",
+   "value": 3.47,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "NB t of the interaction"
+  },
+  {
+   "key": "ra_interaction_p",
+   "value": 0.00056,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "NB p of the interaction"
+  },
+  {
+   "key": "ra_ind_lam_interior",
+   "value": 600,
+   "source_file": "results/REVIEW_ARMS_1119.json",
+   "sha16": "185be36b0f89fd15",
+   "locator": "$.resid.lambda_chosen.CANON_IND['0.001']"
+  },
+  {
+   "key": "c233_d1",
+   "value": 0.7721,
+   "source_file": "results/CANON_HOLDOUT_233_1117.json",
+   "sha16": "7a82be9853ba718e",
+   "locator": "$.arms.D1_benchmark_protocol.r"
+  },
+  {
+   "key": "c233_d0",
+   "value": 0.7298,
+   "source_file": "results/CANON_HOLDOUT_233_1117.json",
+   "sha16": "7a82be9853ba718e",
+   "locator": "$.arms.D0_strict_inductive.r"
+  },
+  {
+   "key": "c233_before_grid_fix",
+   "value": 0.6741,
+   "source_file": "results/CANON_HOLDOUT_233_1117.json",
+   "sha16": "7a82be9853ba718e",
+   "locator": "$.correction (value before the ridge grid was widened)"
+  },
+  {
+   "key": "c233_n",
+   "value": 233,
+   "source_file": "results/CANON_HOLDOUT_233_1117.json",
+   "sha16": "7a82be9853ba718e",
+   "locator": "len($.holdout_ids)"
+  },
+  {
+   "key": "n_prior_cv",
+   "value": 43,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "early cross-validated development cohorts larger than the 753: AGE_DECOMPOSITION_1115.json, ALPHA_SWEEP_FINAL_1115.json, CANONICAL.json, CKA_SHRINKAGE_1115.json, CPM_BASELINE_1115.json, CPM_WITH_ALPHA_1115.json, CROSSTARGET_WEIGHTING_1115.json, DIMENSION_WEIGHTED_ENSEMBLE_1115.json, FINAL_METHOD_1115.json, KERNEL_COUNT_1115.json, KERNEL_TRANSFORMS_1115.json, LITERATURE_PARCELLATION_VALIDATION_1115.json, LOSO_AGE_ROBUSTNESS_1115.json, MIXED_PARTIAL_BEST_1115.json, MKL_ENSEMBLE_1115.json, MULTITARGET_1115.json, MULTITARGET_FIXED_1115.json, MULTITASK_REJECTED_1115.json, NESTED_EXPONENT_1115.json, PAIRED_TEST_1115.json, PARTIAL_ONLY_DISCOVERY_1115.json, ROBUSTNESS_1115.json, ROBUSTNESS_BATTERY_1115.json, SOTA_TARGET_CORRECTED_1115.json, SURFACE_PARCEL_TRANSFER_1115.json, SURFACE_TRANSFER_DECISIVE_1115.json, TARGET_TRANSFORMS_1115.json, TOPK_VS_WEIGHTING_1115.json, TWENTYFIVE_SEED_VERDICT_1115.json, final_200.json, full_feat.json, fusion_hcp.json, hcp_cognition_full1003.json, hcp_netmats_report.json, hcp_perm_1003.json, int_full.json, intervals_hcp.json, loso_hcp.json, nonlinear_hcp.json, residual_hcp.json, sota_crossed.json, struct_from_fc.json, sweep_hcp.json"
+  },
+  {
+   "key": "n_prior_heldout",
+   "value": 27,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "earlier result files using subjects outside the 753 as held-out test subjects: FBERT_HOLDOUT_1117.json, FBERT_HOLDOUT_HYB_1117.json, FBERT_JOINT_HOLDOUT_F_1117.json, FBERT_MULTIATLAS_1117.json, FBERT_S_MOTOR_HOLDOUT_1117.json, FBERT_T_HOLDOUT_1117.json, CANON_HOLDOUT_233_1117.json, HO263.json, HO263B.json, LAMRULE.json, MOTORHO.json, RELHO.json, RELHO2.json, THREEHO.json, CLIP_HOLDOUT_VALID_1119.json, RANK_HOLDOUT_1118B.json, FBERT_HOLDOUT_FAMILY_1117.json, EXTRACTION_PAIR_FOLD_INTERNAL_HOLDOUT_1117.json, MOTOR_DROP_HOLDOUT_233_1117.json, THREE_EXTRACTION_HOLDOUT_233_1117.json, RELATIONAL_REPEATED_HOLDOUT_1117.json, RELATIONAL_BAGGED_SUBJECT_BOOTSTRAP_1117.json, RELREP.json, MOTORREP.json, BCHO.json, SEVENTH_TASK_RELATIONAL_1117.json, RELATIONAL_BEST_SUBSET_1117.json"
+  },
+  {
+   "key": "n_prior_train",
+   "value": 10,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "earlier result files adding their target values to training (incl. the intercept prior): SIX961_NESTED_1117.json, SIX961_WIDE_GRID_1117.json, SIX_MODALITY_961_1117.json, SIX974_a.json, POPULATION_SCALING_1117.json, POP_LEAKCONTROL_a.json, POPULATION_LEAK_CONTROL_1117.json, SIX961_LEAK_CONTROL_1117.json, RS_AT_THEIR_COHORT_SIZE_1117.json, EXTRA_SUBJECTS_1118B.json"
+  },
+  {
+   "key": "n_prior_feat",
+   "value": 5,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "earlier result files using their unlabelled features only: CKA961_b.json, CKA_SIX_KERNELS_961_1117.json, CKA_2X2_FILTER_G_1117.json, CKA_SWEEP_G.json, CKA_2x2.json"
+  },
+  {
+   "key": "n_prior_looks",
+   "value": 85,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "all of the above, identical copies counted once"
+  },
+  {
+   "key": "pool_n",
+   "value": 974,
+   "source_file": "results/POOL_OVERLAP_1119.json",
+   "sha16": "20ddde88a0ca85ad",
+   "locator": "$.pool_n"
+  },
+  {
+   "key": "pool_outside",
+   "value": 246,
+   "source_file": "results/POOL_OVERLAP_1119.json",
+   "sha16": "20ddde88a0ca85ad",
+   "locator": "$.pool_outside_753"
+  },
+  {
+   "key": "pool_new_in_pool",
+   "value": 242,
+   "source_file": "results/POOL_OVERLAP_1119.json",
+   "sha16": "20ddde88a0ca85ad",
+   "locator": "$.new_subjects_in_pool"
+  },
+  {
+   "key": "kin_detect_pct",
+   "value": 8.4,
+   "source_file": "results/FAMILY_DETECTOR_SENSITIVITY_1117.json",
+   "sha16": "ad719d1335468f0c",
+   "locator": "100 x $.detector_sensitivity.above_within753_p90_the_control"
+  },
+  {
+   "key": "ns_d1_g",
+   "value": 0.9,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "GS[chosen.D1.kernel] (GS from eval_holdout.py)"
+  },
+  {
+   "key": "ns_d0_g",
+   "value": 0.98,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "GS[chosen.D0.kernel]"
+  },
+  {
+   "key": "ns_g_max",
+   "value": 0.98,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "max GS"
+  },
+  {
+   "key": "ns_g_min",
+   "value": 0.9,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "min GS"
+  },
+  {
+   "key": "ns_d1_lam",
+   "value": 0.001,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.chosen.D1.lambda"
+  },
+  {
+   "key": "ns_d0_lam",
+   "value": 1e-06,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.chosen.D0.lambda"
+  },
+  {
+   "key": "ns_cbig_lam",
+   "value": 1e-06,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.chosen.CBIG6.lambda"
+  },
+  {
+   "key": "ns_lam_floor",
+   "value": 1e-06,
+   "source_file": "code/fbert/eval_samefolds.py",
+   "sha16": "9829c7b3ec02e83f",
+   "locator": "LAMBDAS min"
+  },
+  {
+   "key": "ns_lam_top",
+   "value": 100.0,
+   "source_file": "code/fbert/eval_samefolds.py",
+   "sha16": "9829c7b3ec02e83f",
+   "locator": "LAMBDAS max"
+  },
+  {
+   "key": "adhd_iq_lo",
+   "value": -0.124,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.iq.D0_vs_A8.ci95.0"
+  },
+  {
+   "key": "adhd_iq_hi",
+   "value": 0.05,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.iq.D0_vs_A8.ci95.1"
+  },
+  {
+   "key": "aomic_d1",
+   "value": 0.3593,
+   "source_file": "results/FBERT_AOMIC_1117.json",
+   "sha16": "1c73a60ef7dc8152",
+   "locator": "$.arms.D1.mean"
+  },
+  {
+   "key": "abide_d1",
+   "value": 0.777,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.tasks.dx.arms.D1.mean"
+  },
+  {
+   "key": "abide_teacher",
+   "value": 0.787,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.tasks.dx.arms.C.mean"
+  },
+  {
+   "key": "abide_fiq_d1",
+   "value": 0.234,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.tasks.fiq.arms.D1.mean"
+  },
+  {
+   "key": "abide_fiq_teacher",
+   "value": 0.257,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.tasks.fiq.arms.C.mean"
+  },
+  {
+   "key": "adhd_d1",
+   "value": 0.536,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.dx.arms.D1"
+  },
+  {
+   "key": "adhd_teacher",
+   "value": 0.566,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.dx.arms.C"
+  },
+  {
+   "key": "adhd_iq_d1",
+   "value": 0.064,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.iq.arms.D1"
+  },
+  {
+   "key": "adhd_iq_teacher",
+   "value": 0.13,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.iq.arms.C"
+  },
+  {
+   "key": "other_er_chain",
+   "value": 0.2821,
+   "source_file": "results/THREE_TARGETS_1116.json",
+   "sha16": "87dec61b6fa7f1e7",
+   "locator": "mean($.varimax_er.v4)"
+  },
+  {
+   "key": "other_er_plain",
+   "value": 0.3157,
+   "source_file": "results/THREE_TARGETS_1116.json",
+   "sha16": "87dec61b6fa7f1e7",
+   "locator": "mean($.varimax_er.baseline_full_FC)"
+  },
+  {
+   "key": "other_er_t",
+   "value": -1.1,
+   "source_file": "results/THREE_TARGETS_1116.json",
+   "sha16": "87dec61b6fa7f1e7",
+   "locator": "approximate corrected t from per-split means (naive t / seed_factor)"
+  },
+  {
+   "key": "other_sat_chain",
+   "value": 0.0743,
+   "source_file": "results/THREE_TARGETS_1116.json",
+   "sha16": "87dec61b6fa7f1e7",
+   "locator": "mean($.varimax_satisf.v4)"
+  },
+  {
+   "key": "other_sat_plain",
+   "value": 0.0845,
+   "source_file": "results/THREE_TARGETS_1116.json",
+   "sha16": "87dec61b6fa7f1e7",
+   "locator": "mean($.varimax_satisf.baseline_full_FC)"
+  },
+  {
+   "key": "other_sat_t",
+   "value": -0.32,
+   "source_file": "results/THREE_TARGETS_1116.json",
+   "sha16": "87dec61b6fa7f1e7",
+   "locator": "approximate corrected t from per-split means (naive t / seed_factor)"
+  },
+  {
+   "key": "adhd_d1_fbert_lo",
+   "value": -0.057,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.dx.D1_vs_A8.ci95.0"
+  },
+  {
+   "key": "adhd_d1_fbert_hi",
+   "value": 0.032,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.dx.D1_vs_A8.ci95.1"
+  },
+  {
+   "key": "adhd_iq_d1_fbert_lo",
+   "value": -0.182,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.iq.D1_vs_A8.ci95.0"
+  },
+  {
+   "key": "adhd_iq_d1_fbert_hi",
+   "value": 0.034,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.iq.D1_vs_A8.ci95.1"
+  },
+  {
+   "key": "fbert_loss_recorded",
+   "value": 0.2115,
+   "source_file": "results/FBERT_VARIANTS_1117.json",
+   "sha16": "99cb808417dca587",
+   "locator": "$.recorded_loss.8m (the checkpoint's recorded training loss)"
+  },
+  {
+   "key": "fbert_loss_rebuilt",
+   "value": 0.229,
+   "source_file": "results/FBERT_VARIANTS_1117.json",
+   "sha16": "99cb808417dca587",
+   "locator": "min loss over the rebuilt forward-pass variants, 8M (the variant used)"
+  },
+  {
+   "key": "fbert_paper_hcp",
+   "value": 0.502,
+   "source_file": "CANON_NUMBERS.json",
+   "sha16": "abf6a0c0ac2cecdd",
+   "locator": "the F-BERT preprint's table, F-BERT-8M on HCP"
+  },
+  {
+   "key": "lev_rel_d",
+   "value": 0.0026,
+   "source_file": "results/REVIEW_CORRECTED_T_1118.json",
+   "sha16": "6cb91ec28e0242a7",
+   "locator": "$.from_recorded_t.REL_1of9_0.7382_vs_0.7357.diff"
+  },
+  {
+   "key": "lev_rel_t",
+   "value": 1.47,
+   "source_file": "results/REVIEW_CORRECTED_T_1118.json",
+   "sha16": "6cb91ec28e0242a7",
+   "locator": "$.from_recorded_t.REL_1of9_0.7382_vs_0.7357.corrected_t (sign of the difference)"
+  },
+  {
+   "key": "clip_cert_r",
+   "value": 0.7215,
+   "source_file": "results/CLIP_COV_GATE_1118B.json",
+   "sha16": "5c23a030212379fd",
+   "locator": "$.cert_raw_value_kernel"
+  },
+  {
+   "key": "lev_clip_d",
+   "value": 0.0081,
+   "source_file": "results/CLIP_COV_GATE_1118B.json",
+   "sha16": "5c23a030212379fd",
+   "locator": "$.clip_fixed.diff"
+  },
+  {
+   "key": "lev_clip_t",
+   "value": 1.57,
+   "source_file": "results/CLIP_COV_GATE_1118B.json",
+   "sha16": "5c23a030212379fd",
+   "locator": "$._NB_T_CORRECTION_1119.corrected.clip_fixed.NB_t (sign of the difference)"
+  },
+  {
+   "key": "lev_rank_d",
+   "value": 0.0054,
+   "source_file": "results/RANKLAM_1118B.json",
+   "sha16": "dcdfd2707501884a",
+   "locator": "$.rank_kernel.diff"
+  },
+  {
+   "key": "lev_rank_t",
+   "value": 1.06,
+   "source_file": "results/RANKLAM_1118B.json",
+   "sha16": "dcdfd2707501884a",
+   "locator": "$._NB_T_CORRECTION_1119.corrected.rank_kernel.NB_t (sign of the difference)"
+  },
+  {
+   "key": "lev_winsor_d",
+   "value": 0.001,
+   "source_file": "results/TARGET_TRANSFORM_1118B.json",
+   "sha16": "ab43e334a86c360d",
+   "locator": "$.winsor_2.5.diff"
+  },
+  {
+   "key": "lev_winsor_t",
+   "value": 0.6,
+   "source_file": "results/TARGET_TRANSFORM_1118B.json",
+   "sha16": "ab43e334a86c360d",
+   "locator": "$._NB_T_CORRECTION_1119.corrected.winsor_2.5.NB_t (sign of the difference)"
+  },
+  {
+   "key": "lev_kta_d",
+   "value": -0.001,
+   "source_file": "results/KTA_STRUCT_PRIOR_1118B.json",
+   "sha16": "64c894944dccb03b",
+   "locator": "$.kta_power_1.0.diff"
+  },
+  {
+   "key": "lev_labelgram_d",
+   "value": -0.0025,
+   "source_file": "results/AUX_TARGET_1118B.json",
+   "sha16": "db8bae3b14d559aa",
+   "locator": "$.arms_60seeds.label_gram_b0.10.diff"
+  },
+  {
+   "key": "lev_labelgram_t",
+   "value": -0.82,
+   "source_file": "results/AUX_TARGET_1118B.json",
+   "sha16": "db8bae3b14d559aa",
+   "locator": "$._NB_T_CORRECTION_1119.corrected.label_gram_b0.10.NB_t (sign of the difference)"
+  },
+  {
+   "key": "lev_extra_d",
+   "value": -0.0026,
+   "source_file": "results/EXTRA_SUBJECTS_1118B.json",
+   "sha16": "f244b8039a7af518",
+   "locator": "$.extra_label_mean_intercept.diff"
+  },
+  {
+   "key": "lev_extra_t",
+   "value": -1.04,
+   "source_file": "results/EXTRA_SUBJECTS_1118B.json",
+   "sha16": "f244b8039a7af518",
+   "locator": "$._NB_T_CORRECTION_1119.corrected.extra_label_mean_intercept.NB_t (sign of the difference)"
+  },
+  {
+   "key": "lev_aux_d",
+   "value": -0.004,
+   "source_file": "results/AUX_TARGET_1118B.json",
+   "sha16": "db8bae3b14d559aa",
+   "locator": "$.arms_60seeds.multi_task_composite.diff"
+  },
+  {
+   "key": "lev_aux_t",
+   "value": -0.79,
+   "source_file": "results/AUX_TARGET_1118B.json",
+   "sha16": "db8bae3b14d559aa",
+   "locator": "$._NB_T_CORRECTION_1119.corrected.multi_task_composite.NB_t (sign of the difference)"
+  },
+  {
+   "key": "lev_ranktarget_d",
+   "value": -0.0056,
+   "source_file": "results/TARGET_TRANSFORM_1118B.json",
+   "sha16": "ab43e334a86c360d",
+   "locator": "$.rank_normal_target.diff"
+  },
+  {
+   "key": "lev_ranktarget_t",
+   "value": -1.51,
+   "source_file": "results/TARGET_TRANSFORM_1118B.json",
+   "sha16": "ab43e334a86c360d",
+   "locator": "$._NB_T_CORRECTION_1119.corrected.rank_normal_target.NB_t (sign of the difference)"
+  },
+  {
+   "key": "lev_alpha_d",
+   "value": -0.0079,
+   "source_file": "results/ALPHA_ON_TOP_1119.json",
+   "sha16": "38da6a4167aa338d",
+   "locator": "$.alpha_only.diff"
+  },
+  {
+   "key": "lev_alpha_t",
+   "value": -1.99,
+   "source_file": "results/ALPHA_ON_TOP_1119.json",
+   "sha16": "38da6a4167aa338d",
+   "locator": "$.alpha_only.NB_t (sign of the difference)"
+  },
+  {
+   "key": "lev_alphamix_d",
+   "value": -0.0003,
+   "source_file": "results/ALPHA_ON_TOP_1119.json",
+   "sha16": "38da6a4167aa338d",
+   "locator": "$.mix_0.10.diff"
+  },
+  {
+   "key": "lev_alphamix_t",
+   "value": -0.73,
+   "source_file": "results/ALPHA_ON_TOP_1119.json",
+   "sha16": "38da6a4167aa338d",
+   "locator": "$.mix_0.10.NB_t (sign of the difference)"
+  },
+  {
+   "key": "lev_rankmix_d",
+   "value": 0.0057,
+   "source_file": "results/RANKLAM_1118B.json",
+   "sha16": "dcdfd2707501884a",
+   "locator": "$.certified_plus_rank_mix.diff"
+  },
+  {
+   "key": "lev_rankmix_t",
+   "value": 2.17,
+   "source_file": "results/RANKLAM_1118B.json",
+   "sha16": "dcdfd2707501884a",
+   "locator": "$._NB_T_CORRECTION_1119.corrected.certified_plus_rank_mix.NB_t (sign of the difference)"
+  },
+  {
+   "key": "lev_clipmix_d",
+   "value": 0.006,
+   "source_file": "results/CLIP_GATE_1118B.json",
+   "sha16": "a2807bc4fda85987",
+   "locator": "$.fixed_equal_mix.diff"
+  },
+  {
+   "key": "lev_clipmix_t",
+   "value": 2.33,
+   "source_file": "results/CLIP_GATE_1118B.json",
+   "sha16": "a2807bc4fda85987",
+   "locator": "$._NB_T_CORRECTION_1119.corrected.fixed_equal_mix.NB_t (sign of the difference)"
+  },
+  {
+   "key": "lev_lambag_d",
+   "value": -0.0511,
+   "source_file": "results/RANKLAM_1118B.json",
+   "sha16": "dcdfd2707501884a",
+   "locator": "$.lambda_bag.diff"
+  },
+  {
+   "key": "lev_lambag_t",
+   "value": -4.22,
+   "source_file": "results/RANKLAM_1118B.json",
+   "sha16": "dcdfd2707501884a",
+   "locator": "$._NB_T_CORRECTION_1119.corrected.lambda_bag.NB_t (sign of the difference)"
+  },
+  {
+   "key": "nb_bug_factor",
+   "value": 17.9,
+   "source_file": "results/CLIP_COV_GATE_1118B.json",
+   "sha16": "5c23a030212379fd",
+   "locator": "reported_t / NB_t, clip_fixed"
+  },
+  {
+   "key": "lev_n",
+   "value": 14,
+   "source_file": "results/RANKLAM_1118B.json",
+   "sha16": "dcdfd2707501884a",
+   "locator": "count of rows in Table S1"
+  },
+  {
+   "key": "lev_pos_sig",
+   "value": 2,
+   "source_file": "results/RANKLAM_1118B.json",
+   "sha16": "dcdfd2707501884a",
+   "locator": "rows with corrected t > 1.96"
+  },
+  {
+   "key": "lev_neg_sig",
+   "value": 2,
+   "source_file": "results/RANKLAM_1118B.json",
+   "sha16": "dcdfd2707501884a",
+   "locator": "rows with corrected t < -1.96"
+  },
+  {
+   "key": "pr_rest_wins",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.full.D0-A8.positive"
+  },
+  {
+   "key": "pr_rest_of",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.full.D0-A8.of"
+  },
+  {
+   "key": "pr_rest_need",
+   "value": 57,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_rest_met",
+   "value": true,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_a_wins",
+   "value": 9,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "$.contrasts.eq.D0-A8.positive"
+  },
+  {
+   "key": "pr_a_of",
+   "value": 60,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "$.contrasts.eq.D0-A8.of"
+  },
+  {
+   "key": "pr_a_need",
+   "value": 57,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_a_met",
+   "value": false,
+   "source_file": "results/FBERT_SIXMOD_1117.json",
+   "sha16": "e2477290be4de65c",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_b_wins",
+   "value": 10,
+   "source_file": "results/FBERT_SIXMOD_PLUS_1117.json",
+   "sha16": "562410166cfe8474",
+   "locator": "$.contrasts.PLUS-A8cat.positive"
+  },
+  {
+   "key": "pr_b_of",
+   "value": 60,
+   "source_file": "results/FBERT_SIXMOD_PLUS_1117.json",
+   "sha16": "562410166cfe8474",
+   "locator": "$.contrasts.PLUS-A8cat.of"
+  },
+  {
+   "key": "pr_b_need",
+   "value": 57,
+   "source_file": "results/FBERT_SIXMOD_PLUS_1117.json",
+   "sha16": "562410166cfe8474",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_b_met",
+   "value": false,
+   "source_file": "results/FBERT_SIXMOD_PLUS_1117.json",
+   "sha16": "562410166cfe8474",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_c_wins",
+   "value": 7,
+   "source_file": "results/FBERT_SIXMOD_DECOR_1117.json",
+   "sha16": "56eca90df1e6dbf1",
+   "locator": "$.contrasts.DECOR-A8DECOR.positive"
+  },
+  {
+   "key": "pr_c_of",
+   "value": 60,
+   "source_file": "results/FBERT_SIXMOD_DECOR_1117.json",
+   "sha16": "56eca90df1e6dbf1",
+   "locator": "$.contrasts.DECOR-A8DECOR.of"
+  },
+  {
+   "key": "pr_c_need",
+   "value": 57,
+   "source_file": "results/FBERT_SIXMOD_DECOR_1117.json",
+   "sha16": "56eca90df1e6dbf1",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_c_met",
+   "value": false,
+   "source_file": "results/FBERT_SIXMOD_DECOR_1117.json",
+   "sha16": "56eca90df1e6dbf1",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_d_p",
+   "value": 1.0,
+   "source_file": "results/FBERT_HOLDOUT_1117.json",
+   "sha16": "b0831b710fac7da2",
+   "locator": "$.primary_D1_vs_FBERT_best.p_gt_0"
+  },
+  {
+   "key": "pr_d_lo",
+   "value": 0.033,
+   "source_file": "results/FBERT_HOLDOUT_1117.json",
+   "sha16": "b0831b710fac7da2",
+   "locator": "$.primary_D1_vs_FBERT_best.ci95.0"
+  },
+  {
+   "key": "pr_d_hi",
+   "value": 0.095,
+   "source_file": "results/FBERT_HOLDOUT_1117.json",
+   "sha16": "b0831b710fac7da2",
+   "locator": "$.primary_D1_vs_FBERT_best.ci95.1"
+  },
+  {
+   "key": "pr_d_met",
+   "value": true,
+   "source_file": "results/FBERT_HOLDOUT_1117.json",
+   "sha16": "b0831b710fac7da2",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_e_p",
+   "value": 1.0,
+   "source_file": "results/FBERT_HOLDOUT_HYB_1117.json",
+   "sha16": "9416ed4fe3aa6221",
+   "locator": "$.primary_HYB_vs_FBERT_best.p_gt_0"
+  },
+  {
+   "key": "pr_e_lo",
+   "value": 0.036,
+   "source_file": "results/FBERT_HOLDOUT_HYB_1117.json",
+   "sha16": "9416ed4fe3aa6221",
+   "locator": "$.primary_HYB_vs_FBERT_best.ci95.0"
+  },
+  {
+   "key": "pr_e_hi",
+   "value": 0.092,
+   "source_file": "results/FBERT_HOLDOUT_HYB_1117.json",
+   "sha16": "9416ed4fe3aa6221",
+   "locator": "$.primary_HYB_vs_FBERT_best.ci95.1"
+  },
+  {
+   "key": "pr_e_met",
+   "value": true,
+   "source_file": "results/FBERT_HOLDOUT_HYB_1117.json",
+   "sha16": "9416ed4fe3aa6221",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_f_p",
+   "value": 0.853,
+   "source_file": "results/FBERT_JOINT_HOLDOUT_F_1117.json",
+   "sha16": "45a53ee3682b7826",
+   "locator": "$.PRIMARY_PRED50_vs_ours_D1.p_gt_0"
+  },
+  {
+   "key": "pr_f_lo",
+   "value": -0.007,
+   "source_file": "results/FBERT_JOINT_HOLDOUT_F_1117.json",
+   "sha16": "45a53ee3682b7826",
+   "locator": "$.PRIMARY_PRED50_vs_ours_D1.ci95.0"
+  },
+  {
+   "key": "pr_f_hi",
+   "value": 0.028,
+   "source_file": "results/FBERT_JOINT_HOLDOUT_F_1117.json",
+   "sha16": "45a53ee3682b7826",
+   "locator": "$.PRIMARY_PRED50_vs_ours_D1.ci95.1"
+  },
+  {
+   "key": "pr_f_met",
+   "value": false,
+   "source_file": "results/FBERT_JOINT_HOLDOUT_F_1117.json",
+   "sha16": "45a53ee3682b7826",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_g_p",
+   "value": 0.304,
+   "source_file": "results/FBERT_MULTIATLAS_1117.json",
+   "sha16": "f7da9a92ca1a2a0e",
+   "locator": "$.part2_holdout.PRIMARY_MA_vs_D1_450.p_gt_0"
+  },
+  {
+   "key": "pr_g_lo",
+   "value": -0.014,
+   "source_file": "results/FBERT_MULTIATLAS_1117.json",
+   "sha16": "f7da9a92ca1a2a0e",
+   "locator": "$.part2_holdout.PRIMARY_MA_vs_D1_450.ci95.0"
+  },
+  {
+   "key": "pr_g_hi",
+   "value": 0.009,
+   "source_file": "results/FBERT_MULTIATLAS_1117.json",
+   "sha16": "f7da9a92ca1a2a0e",
+   "locator": "$.part2_holdout.PRIMARY_MA_vs_D1_450.ci95.1"
+  },
+  {
+   "key": "pr_g_met",
+   "value": false,
+   "source_file": "results/FBERT_MULTIATLAS_1117.json",
+   "sha16": "f7da9a92ca1a2a0e",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_h_wins",
+   "value": 20,
+   "source_file": "results/FBERT_AOMIC_1117.json",
+   "sha16": "1c73a60ef7dc8152",
+   "locator": "$.PRIMARY_D0_vs_A8.positive"
+  },
+  {
+   "key": "pr_h_of",
+   "value": 20,
+   "source_file": "results/FBERT_AOMIC_1117.json",
+   "sha16": "1c73a60ef7dc8152",
+   "locator": "$.PRIMARY_D0_vs_A8.of"
+  },
+  {
+   "key": "pr_h_need",
+   "value": 19,
+   "source_file": "results/FBERT_AOMIC_1117.json",
+   "sha16": "1c73a60ef7dc8152",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_h_met",
+   "value": true,
+   "source_file": "results/FBERT_AOMIC_1117.json",
+   "sha16": "1c73a60ef7dc8152",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_i_wins",
+   "value": 60,
+   "source_file": "results/FBERT_BJEPA_1117.json",
+   "sha16": "47806912279a71a6",
+   "locator": "$.PRIMARY_D0_vs_BrainJEPA.positive"
+  },
+  {
+   "key": "pr_i_of",
+   "value": 60,
+   "source_file": "results/FBERT_BJEPA_1117.json",
+   "sha16": "47806912279a71a6",
+   "locator": "$.PRIMARY_D0_vs_BrainJEPA.of"
+  },
+  {
+   "key": "pr_i_need",
+   "value": 57,
+   "source_file": "results/FBERT_BJEPA_1117.json",
+   "sha16": "47806912279a71a6",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_i_met",
+   "value": true,
+   "source_file": "results/FBERT_BJEPA_1117.json",
+   "sha16": "47806912279a71a6",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_j_wins",
+   "value": 20,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.tasks.dx.D0_vs_A8.positive"
+  },
+  {
+   "key": "pr_j_of",
+   "value": 20,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "$.tasks.dx.D0_vs_A8.of"
+  },
+  {
+   "key": "pr_j_need",
+   "value": 19,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_j_met",
+   "value": true,
+   "source_file": "results/FBERT_ABIDE_1117.json",
+   "sha16": "76bea37c12650896",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_l_p",
+   "value": 0.834,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.dx.D0_vs_A8.p_gt_0"
+  },
+  {
+   "key": "pr_l_lo",
+   "value": -0.023,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.dx.D0_vs_A8.ci95.0"
+  },
+  {
+   "key": "pr_l_hi",
+   "value": 0.068,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "$.tasks.dx.D0_vs_A8.ci95.1"
+  },
+  {
+   "key": "pr_l_met",
+   "value": false,
+   "source_file": "results/FBERT_ADHD_1117.json",
+   "sha16": "44c5e5e8239b9d8b",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_r_wins",
+   "value": 26,
+   "source_file": "results/FBERT_R_MOTOR_1117.json",
+   "sha16": "539877148f429ebd",
+   "locator": "$.PRIMARY_D1_nomotor_vs_six.positive"
+  },
+  {
+   "key": "pr_r_of",
+   "value": 60,
+   "source_file": "results/FBERT_R_MOTOR_1117.json",
+   "sha16": "539877148f429ebd",
+   "locator": "$.PRIMARY_D1_nomotor_vs_six.of"
+  },
+  {
+   "key": "pr_r_need",
+   "value": 57,
+   "source_file": "results/FBERT_R_MOTOR_1117.json",
+   "sha16": "539877148f429ebd",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_r_met",
+   "value": false,
+   "source_file": "results/FBERT_R_MOTOR_1117.json",
+   "sha16": "539877148f429ebd",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_s_p",
+   "value": 0.519,
+   "source_file": "results/FBERT_S_MOTOR_HOLDOUT_1117.json",
+   "sha16": "9b2e71ad60f463cd",
+   "locator": "$.PRIMARY_D0_nomotor_vs_six.p_gt_0"
+  },
+  {
+   "key": "pr_s_lo",
+   "value": -0.01,
+   "source_file": "results/FBERT_S_MOTOR_HOLDOUT_1117.json",
+   "sha16": "9b2e71ad60f463cd",
+   "locator": "$.PRIMARY_D0_nomotor_vs_six.ci95.0"
+  },
+  {
+   "key": "pr_s_hi",
+   "value": 0.011,
+   "source_file": "results/FBERT_S_MOTOR_HOLDOUT_1117.json",
+   "sha16": "9b2e71ad60f463cd",
+   "locator": "$.PRIMARY_D0_nomotor_vs_six.ci95.1"
+  },
+  {
+   "key": "pr_s_met",
+   "value": false,
+   "source_file": "results/FBERT_S_MOTOR_HOLDOUT_1117.json",
+   "sha16": "9b2e71ad60f463cd",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_t_wins",
+   "value": 57,
+   "source_file": "results/FBERT_T_INFOLD_1117.json",
+   "sha16": "b0018a2eaa048cd2",
+   "locator": "$.PRIMARY_D1_rel_vs_six.positive"
+  },
+  {
+   "key": "pr_t_of",
+   "value": 60,
+   "source_file": "results/FBERT_T_INFOLD_1117.json",
+   "sha16": "b0018a2eaa048cd2",
+   "locator": "$.PRIMARY_D1_rel_vs_six.of"
+  },
+  {
+   "key": "pr_t_need",
+   "value": 57,
+   "source_file": "results/FBERT_T_INFOLD_1117.json",
+   "sha16": "b0018a2eaa048cd2",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_t_met",
+   "value": true,
+   "source_file": "results/FBERT_T_INFOLD_1117.json",
+   "sha16": "b0018a2eaa048cd2",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_t2_p",
+   "value": 0.716,
+   "source_file": "results/FBERT_T_HOLDOUT_1117.json",
+   "sha16": "6e93a2eaa963310c",
+   "locator": "$.COPRIMARY_D1_rel_vs_six.p_gt_0"
+  },
+  {
+   "key": "pr_t2_lo",
+   "value": -0.008,
+   "source_file": "results/FBERT_T_HOLDOUT_1117.json",
+   "sha16": "6e93a2eaa963310c",
+   "locator": "$.COPRIMARY_D1_rel_vs_six.ci95.0"
+  },
+  {
+   "key": "pr_t2_hi",
+   "value": 0.015,
+   "source_file": "results/FBERT_T_HOLDOUT_1117.json",
+   "sha16": "6e93a2eaa963310c",
+   "locator": "$.COPRIMARY_D1_rel_vs_six.ci95.1"
+  },
+  {
+   "key": "pr_t2_met",
+   "value": false,
+   "source_file": "results/FBERT_T_HOLDOUT_1117.json",
+   "sha16": "6e93a2eaa963310c",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_ns_lo",
+   "value": 0.03,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.primary_D1_vs_CBIG6.ci95.0"
+  },
+  {
+   "key": "pr_ns_hi",
+   "value": 0.099,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "$.primary_D1_vs_CBIG6.ci95.1"
+  },
+  {
+   "key": "pr_ns_met",
+   "value": true,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_k_cells",
+   "value": 4,
+   "source_file": "results/FBERT_UNION_SUMMARY_1117.json",
+   "sha16": "21d278bd565d3ee4",
+   "locator": "cohorts"
+  },
+  {
+   "key": "pr_k_cells_met",
+   "value": 4,
+   "source_file": "results/FBERT_UNION_SUMMARY_1117.json",
+   "sha16": "21d278bd565d3ee4",
+   "locator": "cohorts with U - A8 positive in the threshold number of repeats"
+  },
+  {
+   "key": "pr_k_met",
+   "value": true,
+   "source_file": "results/FBERT_UNION_SUMMARY_1117.json",
+   "sha16": "21d278bd565d3ee4",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_n_cells",
+   "value": 9,
+   "source_file": "results/FBERT_SOTA_HCP_six_1117.json",
+   "sha16": "2c607041af10e745",
+   "locator": "cells of Addendum N (ADHD-200 within NYU counted as two cells, diagnosis and IQ)"
+  },
+  {
+   "key": "pr_n_cells_met",
+   "value": 2,
+   "source_file": "results/FBERT_SOTA_HCP_six_1117.json",
+   "sha16": "2c607041af10e745",
+   "locator": "cells where the combined system beat both comparators"
+  },
+  {
+   "key": "pr_n_met",
+   "value": false,
+   "source_file": "results/FBERT_SOTA_HCP_six_1117.json",
+   "sha16": "2c607041af10e745",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_o_cells",
+   "value": 2,
+   "source_file": "results/FBERT_SOTA_O_adhd_1117.json",
+   "sha16": "9d400976aae5ec3e",
+   "locator": "cells of Addendum O"
+  },
+  {
+   "key": "pr_o_cells_met",
+   "value": 0,
+   "source_file": "results/FBERT_SOTA_O_adhd_1117.json",
+   "sha16": "9d400976aae5ec3e",
+   "locator": "cells won"
+  },
+  {
+   "key": "pr_o_met",
+   "value": false,
+   "source_file": "results/FBERT_SOTA_O_adhd_1117.json",
+   "sha16": "9d400976aae5ec3e",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_p_cells",
+   "value": 9,
+   "source_file": "results/FBERT_P_HCP_rest_k0.json",
+   "sha16": "b3665632445bd6ba",
+   "locator": "cells of the addendum"
+  },
+  {
+   "key": "pr_p_cells_met",
+   "value": 0,
+   "source_file": "results/FBERT_P_HCP_rest_k0.json",
+   "sha16": "b3665632445bd6ba",
+   "locator": "cells won (see the rule above)"
+  },
+  {
+   "key": "pr_p_met",
+   "value": false,
+   "source_file": "results/FBERT_P_HCP_rest_k0.json",
+   "sha16": "b3665632445bd6ba",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_q1_cells",
+   "value": 7,
+   "source_file": "results/FBERT_Q1_aomic.json",
+   "sha16": "384e1d37ef6c62d7",
+   "locator": "cells of the addendum"
+  },
+  {
+   "key": "pr_q1_cells_met",
+   "value": 0,
+   "source_file": "results/FBERT_Q1_aomic.json",
+   "sha16": "384e1d37ef6c62d7",
+   "locator": "cells won (see the rule above)"
+  },
+  {
+   "key": "pr_q1_met",
+   "value": false,
+   "source_file": "results/FBERT_Q1_aomic.json",
+   "sha16": "384e1d37ef6c62d7",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_q2_cells",
+   "value": 9,
+   "source_file": "results/FBERT_Q2_HCP_rest_k0.json",
+   "sha16": "24975cbca2b9ac53",
+   "locator": "cells of the addendum"
+  },
+  {
+   "key": "pr_q2_cells_met",
+   "value": 0,
+   "source_file": "results/FBERT_Q2_HCP_rest_k0.json",
+   "sha16": "24975cbca2b9ac53",
+   "locator": "cells won (see the rule above)"
+  },
+  {
+   "key": "pr_q2_met",
+   "value": false,
+   "source_file": "results/FBERT_Q2_HCP_rest_k0.json",
+   "sha16": "24975cbca2b9ac53",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_q3_cells",
+   "value": 9,
+   "source_file": "results/FBERT_Q3_HCP_rest_k0.json",
+   "sha16": "7d8321ec1bfd88ce",
+   "locator": "cells of the addendum"
+  },
+  {
+   "key": "pr_q3_cells_met",
+   "value": 0,
+   "source_file": "results/FBERT_Q3_HCP_rest_k0.json",
+   "sha16": "7d8321ec1bfd88ce",
+   "locator": "cells won (see the rule above)"
+  },
+  {
+   "key": "pr_q3_met",
+   "value": false,
+   "source_file": "results/FBERT_Q3_HCP_rest_k0.json",
+   "sha16": "7d8321ec1bfd88ce",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_cbert_cells",
+   "value": 9,
+   "source_file": "results/FBERT_P_HCP_rest_k0.json",
+   "sha16": "b3665632445bd6ba",
+   "locator": "cells of Addendum P"
+  },
+  {
+   "key": "pr_cbert_ahead",
+   "value": 4,
+   "source_file": "results/FBERT_P_HCP_rest_k0.json",
+   "sha16": "b3665632445bd6ba",
+   "locator": "cells where C-BERT's mean exceeds F-BERT-8M's"
+  },
+  {
+   "key": "pr_cbert_behind",
+   "value": 5,
+   "source_file": "results/FBERT_P_HCP_rest_k0.json",
+   "sha16": "b3665632445bd6ba",
+   "locator": "cells where C-BERT's mean is below F-BERT-8M's (the every-cell rule fails)"
+  },
+  {
+   "key": "pr_cbert_met",
+   "value": false,
+   "source_file": "results/FBERT_P_HCP_rest_k0.json",
+   "sha16": "b3665632445bd6ba",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_sec0_wins",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.full.D0-A1.positive"
+  },
+  {
+   "key": "pr_sec0_of",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.full.D0-A1.of"
+  },
+  {
+   "key": "pr_sec0_need",
+   "value": 57,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_sec0_met",
+   "value": true,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_sec1_wins",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.full.D1-A8.positive"
+  },
+  {
+   "key": "pr_sec1_of",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.full.D1-A8.of"
+  },
+  {
+   "key": "pr_sec1_need",
+   "value": 57,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_sec1_met",
+   "value": true,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_sec2_wins",
+   "value": 0,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.full.B-A8.positive"
+  },
+  {
+   "key": "pr_sec2_of",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.full.B-A8.of"
+  },
+  {
+   "key": "pr_sec2_need",
+   "value": 57,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_sec2_met",
+   "value": false,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_sec3_wins",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.full.C-A8.positive"
+  },
+  {
+   "key": "pr_sec3_of",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.full.C-A8.of"
+  },
+  {
+   "key": "pr_sec3_need",
+   "value": 57,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_sec3_met",
+   "value": true,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_sec4_wins",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.short.D0-A8.positive"
+  },
+  {
+   "key": "pr_sec4_of",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.short.D0-A8.of"
+  },
+  {
+   "key": "pr_sec4_need",
+   "value": 57,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_sec4_met",
+   "value": true,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_sec5_wins",
+   "value": 31,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.short.D0-A1.positive"
+  },
+  {
+   "key": "pr_sec5_of",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.short.D0-A1.of"
+  },
+  {
+   "key": "pr_sec5_need",
+   "value": 57,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_sec5_met",
+   "value": false,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_sec6_wins",
+   "value": 0,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.short.B-A8.positive"
+  },
+  {
+   "key": "pr_sec6_of",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.short.B-A8.of"
+  },
+  {
+   "key": "pr_sec6_need",
+   "value": 57,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_sec6_met",
+   "value": false,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_sec7_wins",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.short.C-A8.positive"
+  },
+  {
+   "key": "pr_sec7_of",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.short.C-A8.of"
+  },
+  {
+   "key": "pr_sec7_need",
+   "value": 57,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_sec7_met",
+   "value": true,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_sec8_wins",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.short.D0-B.positive"
+  },
+  {
+   "key": "pr_sec8_of",
+   "value": 60,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "$.contrasts.short.D0-B.of"
+  },
+  {
+   "key": "pr_sec8_need",
+   "value": 57,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "pre-registered threshold"
+  },
+  {
+   "key": "pr_sec8_met",
+   "value": true,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "decision rule applied to stored values"
+  },
+  {
+   "key": "pr_m_dvars_alone_ok",
+   "value": false,
+   "source_file": "results/FBERT_ADHD_MOTION_1117.json",
+   "sha16": "f731066d429fa043",
+   "locator": "$.reading.dvars_alone_ge_0.60"
+  },
+  {
+   "key": "pr_m_half_removed",
+   "value": false,
+   "source_file": "results/FBERT_ADHD_MOTION_1117.json",
+   "sha16": "f731066d429fa043",
+   "locator": "$.reading.half_of_margin_removed"
+  },
+  {
+   "key": "pr_m_dvars_auc",
+   "value": 0.417,
+   "source_file": "results/FBERT_ADHD_MOTION_1117.json",
+   "sha16": "f731066d429fa043",
+   "locator": "$.mean.DV"
+  },
+  {
+   "key": "pr_m_best_temporal",
+   "value": 0.562,
+   "source_file": "results/FBERT_ADHD_MOTION_1117.json",
+   "sha16": "f731066d429fa043",
+   "locator": "max of the closed-form temporal arms"
+  },
+  {
+   "key": "pr_m_fbert_auc",
+   "value": 0.622,
+   "source_file": "results/FBERT_ADHD_MOTION_1117.json",
+   "sha16": "f731066d429fa043",
+   "locator": "$.mean.A8"
+  },
+  {
+   "key": "pr_m_margin",
+   "value": 0.072,
+   "source_file": "results/FBERT_ADHD_MOTION_1117.json",
+   "sha16": "f731066d429fa043",
+   "locator": "$.reading.fbert_margin_raw"
+  },
+  {
+   "key": "pr_m_margin_after",
+   "value": 0.06,
+   "source_file": "results/FBERT_ADHD_MOTION_1117.json",
+   "sha16": "f731066d429fa043",
+   "locator": "$.reading.fbert_margin_after_dvars"
+  },
+  {
+   "key": "pr_m_temporal_reaches",
+   "value": false,
+   "source_file": "results/FBERT_ADHD_MOTION_1117.json",
+   "sha16": "f731066d429fa043",
+   "locator": "best closed-form temporal arm >= F-BERT"
+  },
+  {
+   "key": "pr_n",
+   "value": 17,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "single-decision rows of Table S2"
+  },
+  {
+   "key": "pr_met",
+   "value": 8,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "single-decision rows met"
+  },
+  {
+   "key": "pr_notmet",
+   "value": 9,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "single-decision rows not met"
+  },
+  {
+   "key": "pr_met_by_repeats",
+   "value": 5,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "met rows decided by counting repeats"
+  },
+  {
+   "key": "pr_sec_n",
+   "value": 9,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "secondary rows"
+  },
+  {
+   "key": "pr_sec_met",
+   "value": 6,
+   "source_file": "results/FBERT_SAMEFOLDS_1117.json",
+   "sha16": "7ad51b53d0721cd6",
+   "locator": "secondary rows met"
+  },
+  {
+   "key": "pr_multi_n",
+   "value": 8,
+   "source_file": "results/CHAIN_VS_OOI_KERNEL_263_1119.json",
+   "sha16": "8bdfb003dca47fe4",
+   "locator": "multi-cell rows"
+  }
+ ]
+}

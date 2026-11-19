@@ -1,0 +1,42 @@
+{
+ "date": "2026-11-15",
+ "experiment": "FINAL method confirmation and paired test",
+ "n": 974,
+ "target": "Ooi varimax_cog",
+ "method": "6 partial-correlation ICA blocks (d15..d300) weighted by sqrt(edges) + 10% weight on the 6 full-correlation blocks, alpha=0.35 recalibration, correlation-kernel KRR with nested lambda",
+ "confirmed_25seed": {
+  "r": 0.6383,
+  "sd": 0.008,
+  "min": 0.622,
+  "max": 0.653
+ },
+ "frac_curve": {
+  "0.00": 0.6386,
+  "0.05": 0.6399,
+  "0.10": 0.6406,
+  "0.15": 0.6409,
+  "0.20": 0.6409,
+  "0.30": 0.6401
+ },
+ "decomposition": {
+  "single_d300_full": 0.6061,
+  "six_full_resolution": 0.6091,
+  "six_partial": 0.6386,
+  "partial_plus_full_mix": 0.6409,
+  "all_twelve_uniformweight": 0.6349
+ },
+ "paired_test_vs_fbert_recipe": {
+  "fbert": 0.6048,
+  "ours": 0.6386,
+  "diff": 0.0337,
+  "wins": "20/20",
+  "t_nadeau_bengio": 10.94,
+  "p": "<0.00001"
+ },
+ "key_scientific_finding": "Partial correlation, not resolution diversity, carries the signal. Six full-correlation ICA blocks at six resolutions add only +0.003 over the best single block; the partial-correlation blocks add +0.033. Mixing 10-20% of the full blocks on top of the partial ensemble gives a further +0.002.",
+ "honest_limits": [
+  "comparison baseline is a faithful reimplementation of the F-BERT recipe, not their official code",
+  "their published 0.627 uses Schaefer-400, ours uses ICA",
+  "task-vs-rest on identical Schaefer-400 was NOT significant (p=0.52 at n=93)"
+ ]
+}

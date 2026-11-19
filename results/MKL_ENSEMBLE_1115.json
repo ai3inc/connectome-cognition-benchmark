@@ -1,0 +1,19 @@
+{
+ "date": "2026-11-15",
+ "method": "multiple-kernel ensemble: average the doubly-centred correlation kernels of 12 blocks (6 ICA dimensionalities x {full, partial correlation}), each block first eigenvalue-recalibrated to alpha=0.35, then a single KRR",
+ "n": 974,
+ "target": "Ooi-2022 varimax_cog",
+ "results": {
+  "lam_0.001": 0.6201,
+  "lam_0.01": 0.5376,
+  "lam_0.1": 0.3797,
+  "lam_1.0": 0.1922
+ },
+ "sd_at_lam_0.001": 0.0035,
+ "comparison": {
+  "best_single_block": 0.6133,
+  "published_SOTA_FBERT": 0.627,
+  "published_SOTA_tucker": 0.571
+ },
+ "verdict": "gap to SOTA now 0.007 = 2 SE at this sd. lambda sweep is at the edge of the grid, so extend it downward before claiming anything."
+}

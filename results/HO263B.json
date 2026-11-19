@@ -1,0 +1,26 @@
+{
+ "n_train": 728,
+ "n_holdout": 233,
+ "holdout_ids": {
+  "removed": "subject-level",
+  "n": 233
+ },
+ "y_holdout": {
+  "removed": "subject-level",
+  "n": 233
+ },
+ "features": "OUR OWN Schaefer-400 extraction (pool.npz resting + task_merged), not the published Ooi matrices",
+ "weighting": "language x2 (certified)",
+ "D1": {
+  "train_cv": 0.7164597000740658,
+  "lam": 0.001,
+  "holdout_r": 0.7721441785328673,
+  "pred": "<removed: subject-level>"
+ },
+ "D0": {
+  "train_cv": 0.6743121272547354,
+  "lam": 0.0001,
+  "holdout_r": 0.7297709334065782,
+  "pred": "<removed: subject-level>"
+ }
+}

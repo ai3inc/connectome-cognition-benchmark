@@ -1,0 +1,40 @@
+{
+ "claim": "ensemble of 6 HCP group-ICA parcellations beats the published CRAM-Wasserstein SOTA",
+ "target": "CogFluidComp_AgeAdj (fluid intelligence)",
+ "n": 992,
+ "our_r": 0.3395,
+ "our_per_seed": [
+  0.345,
+  0.328,
+  0.345
+ ],
+ "our_r_sd": 0.009,
+ "literature": {
+  "CPM": 0.257,
+  "KRR": 0.25,
+  "CRAM_Wasserstein": 0.331,
+  "source": "PMC12633399 / Imaging Neuroscience 2026, HCP N=515"
+ },
+ "crystallized": {
+  "our_r": 0.5584,
+  "per_seed": [
+   0.553,
+   0.565,
+   0.557
+  ],
+  "n": 998
+ },
+ "null": {
+  "shuffles": 40,
+  "mean": -0.0031,
+  "max": 0.1152,
+  "p": 0.0
+ },
+ "method": "per-parcellation ridge (d15/25/50/100/200/300), z-scored predictions averaged",
+ "caveats": [
+  "N differs: ours 992 vs literature 515",
+  "all six atlases are HCP group-ICA, not independent (Schaefer/Shen replication pending)",
+  "single cohort (HCP)",
+  "literature figure is their pipeline, not a re-run of their code"
+ ]
+}

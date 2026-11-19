@@ -1,0 +1,30 @@
+{
+ "n_train": 728,
+ "n_holdout": 233,
+ "holdout_ids": {
+  "removed": "subject-level",
+  "n": 233
+ },
+ "y_holdout": {
+  "removed": "subject-level",
+  "n": 233
+ },
+ "max": {
+  "lam": 0.001,
+  "train_cv": 0.7021310503458407,
+  "holdout_r": 0.7721441785328673,
+  "pred": "<removed: subject-level>"
+ },
+ "mean": {
+  "lam": 0.001,
+  "train_cv": 0.7164597000740661,
+  "holdout_r": 0.7721441785328673,
+  "pred": "<removed: subject-level>"
+ },
+ "median": {
+  "lam": 0.001,
+  "train_cv": 0.7076818857196417,
+  "holdout_r": 0.7721441785328673,
+  "pred": "<removed: subject-level>"
+ }
+}

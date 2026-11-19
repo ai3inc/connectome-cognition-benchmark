@@ -1,0 +1,48 @@
+{
+ "n": 753,
+ "seeds": 60,
+ "target": "varimax_cog residualised in-fold on age band(4)+sex",
+ "metric": "mean of per-fold r",
+ "note": "this is the condition 0.7215 is quoted under",
+ "cert_raw_value_kernel": 0.7215,
+ "clip_fixed": {
+  "r": 0.7296,
+  "diff": 0.0081,
+  "wins": "60/60",
+  "NB_t": 28.17,
+  "p": 0.0,
+  "n_fold_scores": 600
+ },
+ "clip_fold_internal_2way": {
+  "r": 0.7287,
+  "diff": 0.0071,
+  "wins": "58/60",
+  "NB_t": 25.53,
+  "p": 0.0,
+  "n_fold_scores": 600,
+  "picks_clip": 576,
+  "picks_raw": 24
+ },
+ "date": "2026-11-18",
+ "purpose": "session's three conditions for quoting clip: (a) choose it inside the fold, (b) exact Nadeau-Bengio t on OUTER fold scores, (c) residualised target so it is comparable to 0.7215",
+ "condition_match_check": "the cert arm reproduces 0.7215 exactly (two earlier independent implementations also give 0.7215), so the clip arm is measured on the same scale",
+ "verdict": "PASSES ALL THREE. clip +0.0081 (60/60, NB t 28.17); chosen in-fold +0.0071 (58/60, NB t 25.53, rule picks clip in 576/600). Residualised target, exact NB on outer folds.",
+ "prediction_from_session": "<removed: subject-level>",
+ "why_the_effect_is_larger_here_than_in_the_non_covariate_run": "the raw-target run gave +0.0062; residualising the target leaves clip at +0.0081. The covariate step removes variance shared with age and sex, and that variance was diluting the edge-scale signal the clip removes.",
+ "_NB_T_CORRECTION_1119": {
+  "note": "session found the NB formula was wrong in this file's helper: it divided the variance by m AND multiplied by (1/k + n_te/n_tr), which under-corrects. Correct: var(d)*(1/m + n_te/n_tr). The t values in this file are inflated by 17.9x; the corrected values are below. Deltas and win counts are unaffected. No re-run needed -- the conversion is exact.",
+  "corrected": {
+   "clip_fixed": {
+    "reported_t": 28.17,
+    "NB_t": 1.57,
+    "p_two_sided": 0.1156
+   },
+   "clip_fold_internal_2way": {
+    "reported_t": 25.53,
+    "NB_t": 1.43,
+    "p_two_sided": 0.1538
+   }
+  },
+  "verdict_change": "clip and rank are NOT significant under the exact NB t. Only the lambda-bag loss and the two hand-set 50/50 mixes survive."
+ }
+}

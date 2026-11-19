@@ -1,0 +1,16 @@
+{
+ "date": "2026-11-15",
+ "experiment": "surface-parcellation transfer with a random control",
+ "n": 949,
+ "parcellation": "Schaefer-200, 19,900 edges, target Ooi varimax_cog",
+ "results": {
+  "flat": 0.3432,
+  "yeo_blocks_p0": 0.3459,
+  "yeo_p0.5": 0.3455,
+  "yeo_p1.0": 0.3485,
+  "random_blocks_same_sizes_p0.5": 0.3461
+ },
+ "finding": "On a single surface parcellation the block-weighting idea barely helps (flat 0.343 -> best 0.349) and the structured Yeo partition is indistinguishable from a RANDOM partition of the same sizes (0.3485 vs 0.3461). So the earlier +0.012 from equal 20-blocks was an averaging effect, not network structure.",
+ "implication": "The large gain in the ICA case (+0.024 from sqrt weighting, +0.033 from partial correlation) comes from mixing genuinely DIFFERENT representations (full vs partial correlation), not from partitioning one representation into blocks.",
+ "honest_caveat": "This is the strongest evidence so far that our method's advantage is representation-specific rather than a general-purpose trick, which weakens any claim that it would beat the literature on their own Schaefer pipeline."
+}

@@ -1,0 +1,81 @@
+{
+ "n_features": {
+  "fc": 300,
+  "vol": 56,
+  "morph": 136,
+  "fc+vol": 356,
+  "fc+morph": 436,
+  "vol+morph": 192,
+  "all3": 492
+ },
+ "targets": {
+  "CogFluidComp_AgeAdj": {
+   "n": 992,
+   "fc": 0.2515,
+   "fc_sd": 0.0245,
+   "vol": 0.1448,
+   "vol_sd": 0.0067,
+   "morph": 0.1833,
+   "morph_sd": 0.0156,
+   "fc+vol": 0.2901,
+   "fc+vol_sd": 0.0203,
+   "fc+morph": 0.288,
+   "fc+morph_sd": 0.0242,
+   "vol+morph": 0.223,
+   "vol+morph_sd": 0.0115,
+   "all3": 0.31,
+   "all3_sd": 0.0213
+  },
+  "CogCrystalComp_AgeAdj": {
+   "n": 998,
+   "fc": 0.4549,
+   "fc_sd": 0.0119,
+   "vol": 0.2914,
+   "vol_sd": 0.0066,
+   "morph": 0.3185,
+   "morph_sd": 0.0092,
+   "fc+vol": 0.4649,
+   "fc+vol_sd": 0.0136,
+   "fc+morph": 0.4666,
+   "fc+morph_sd": 0.0108,
+   "vol+morph": 0.3313,
+   "vol+morph_sd": 0.0075,
+   "all3": 0.4655,
+   "all3_sd": 0.0153
+  },
+  "CogTotalComp_AgeAdj": {
+   "n": 991,
+   "fc": 0.4067,
+   "fc_sd": 0.0205,
+   "vol": 0.2665,
+   "vol_sd": 0.0087,
+   "morph": 0.2903,
+   "morph_sd": 0.0114,
+   "fc+vol": 0.4212,
+   "fc+vol_sd": 0.0075,
+   "fc+morph": 0.4253,
+   "fc+morph_sd": 0.0086,
+   "vol+morph": 0.3123,
+   "vol+morph_sd": 0.0068,
+   "all3": 0.4313,
+   "all3_sd": 0.0067
+  },
+  "PMAT24_A_CR": {
+   "n": 999,
+   "fc": 0.2822,
+   "fc_sd": 0.007,
+   "vol": 0.2867,
+   "vol_sd": 0.004,
+   "morph": 0.3227,
+   "morph_sd": 0.0072,
+   "fc+vol": 0.3529,
+   "fc+vol_sd": 0.0107,
+   "fc+morph": 0.374,
+   "fc+morph_sd": 0.0101,
+   "vol+morph": 0.3293,
+   "vol+morph_sd": 0.0072,
+   "all3": 0.3789,
+   "all3_sd": 0.0114
+  }
+ }
+}

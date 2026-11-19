@@ -1,0 +1,14 @@
+{
+ "date": "2026-11-15",
+ "experiment": "target-side transform ensembling",
+ "seeds": 15,
+ "n": 974,
+ "results": {
+  "raw_only": 0.6339,
+  "raw_plus_rank": 0.6337,
+  "raw_rank_winsor": 0.6333
+ },
+ "sd": "0.0096-0.0098",
+ "finding": "Monotone small decrease as target transforms are added. Target-side noise/skew is NOT the bottleneck; smoothing the target gains nothing. Combined with the feature-side result (sqrt weighting helps a lot), this localises the remaining error to the connectome representation itself, not to target measurement.",
+ "benchmark": "raw_only 0.6339 +/- 0.0096 is the cleanest reproducible number for the final method."
+}

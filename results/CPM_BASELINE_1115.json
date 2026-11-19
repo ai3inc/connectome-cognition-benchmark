@@ -1,0 +1,12 @@
+{
+ "date": "2026-11-15",
+ "experiment": "CPM baseline vs kernel ensemble on the same target and folds",
+ "n": 974,
+ "target": "Ooi-2022 varimax_cog",
+ "results": {
+  "cpm_raw_edges": 0.3258,
+  "our_sqrt_weighted_ensemble": 0.6349
+ },
+ "finding": "Connectome-based predictive modelling \u2014 the method most clinical papers use \u2014 reaches 0.326 on this target, roughly half our kernel ensemble's 0.635. CPM's appeal is interpretability (it names a set of edges), not accuracy.",
+ "caveat": "CPM hyperparameter is the correlation threshold (0.01 used here); a sweep could move its number, so report it as a baseline with the threshold stated."
+}

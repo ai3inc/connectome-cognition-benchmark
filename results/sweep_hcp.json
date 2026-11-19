@@ -1,0 +1,2440 @@
+{
+ "n_subjects": 1003,
+ "n_features": 45000,
+ "pca_dims": 300,
+ "pca_var_captured": 0.8158,
+ "n_columns_scanned": 577,
+ "targets": {
+  "T1_Count": {
+   "n": 1003,
+   "r": 0.0709,
+   "family": "other"
+  },
+  "T2_Count": {
+   "n": 1003,
+   "r": 0.0343,
+   "family": "other"
+  },
+  "3T_tMRI_PctCompl": {
+   "n": 1003,
+   "r": -0.0631,
+   "family": "other"
+  },
+  "fMRI_WM_PctCompl": {
+   "n": 1003,
+   "r": -0.0225,
+   "family": "other"
+  },
+  "fMRI_Gamb_PctCompl": {
+   "n": 1003,
+   "r": -0.0291,
+   "family": "other"
+  },
+  "fMRI_Mot_PctCompl": {
+   "n": 1003,
+   "r": -0.0305,
+   "family": "other"
+  },
+  "fMRI_Lang_PctCompl": {
+   "n": 1003,
+   "r": -0.0704,
+   "family": "other"
+  },
+  "fMRI_Soc_PctCompl": {
+   "n": 1003,
+   "r": -0.0002,
+   "family": "other"
+  },
+  "fMRI_Rel_PctCompl": {
+   "n": 1003,
+   "r": 0.0078,
+   "family": "other"
+  },
+  "fMRI_Emo_PctCompl": {
+   "n": 1003,
+   "r": 0.0226,
+   "family": "other"
+  },
+  "3T_dMRI_PctCompl": {
+   "n": 1003,
+   "r": -0.0011,
+   "family": "other"
+  },
+  "7T_RS-fMRI_Count": {
+   "n": 1003,
+   "r": 0.1719,
+   "family": "other"
+  },
+  "7T_RS-fMRI_PctCompl": {
+   "n": 1003,
+   "r": 0.1719,
+   "family": "other"
+  },
+  "7T_tMRI_PctCompl": {
+   "n": 1003,
+   "r": 0.185,
+   "family": "other"
+  },
+  "fMRI_Movie_PctCompl": {
+   "n": 1003,
+   "r": 0.1725,
+   "family": "other"
+  },
+  "fMRI_Ret_PctCompl": {
+   "n": 1003,
+   "r": 0.1834,
+   "family": "other"
+  },
+  "7T_dMRI_PctCompl": {
+   "n": 1003,
+   "r": 0.1758,
+   "family": "other"
+  },
+  "MMSE_Score": {
+   "n": 1003,
+   "r": 0.1135,
+   "family": "cognition"
+  },
+  "PSQI_Score": {
+   "n": 1003,
+   "r": 0.0808,
+   "family": "sleep"
+  },
+  "PSQI_Comp1": {
+   "n": 1003,
+   "r": -0.0027,
+   "family": "sleep"
+  },
+  "PSQI_Comp2": {
+   "n": 1003,
+   "r": -0.0088,
+   "family": "sleep"
+  },
+  "PSQI_Comp3": {
+   "n": 1003,
+   "r": 0.1057,
+   "family": "sleep"
+  },
+  "PSQI_Comp4": {
+   "n": 1003,
+   "r": 0.1107,
+   "family": "sleep"
+  },
+  "PSQI_Comp5": {
+   "n": 1003,
+   "r": -0.0501,
+   "family": "sleep"
+  },
+  "PSQI_Comp6": {
+   "n": 1003,
+   "r": 0.033,
+   "family": "sleep"
+  },
+  "PSQI_Comp7": {
+   "n": 1003,
+   "r": 0.004,
+   "family": "sleep"
+  },
+  "PSQI_Min2Asleep": {
+   "n": 1003,
+   "r": -0.007,
+   "family": "sleep"
+  },
+  "PSQI_AmtSleep": {
+   "n": 1003,
+   "r": 0.0996,
+   "family": "sleep"
+  },
+  "PSQI_Latency30Min": {
+   "n": 1003,
+   "r": -0.0262,
+   "family": "sleep"
+  },
+  "PSQI_WakeUp": {
+   "n": 1003,
+   "r": 0.0197,
+   "family": "sleep"
+  },
+  "PSQI_Bathroom": {
+   "n": 1003,
+   "r": 0.0329,
+   "family": "sleep"
+  },
+  "PSQI_Breathe": {
+   "n": 1003,
+   "r": 0.1314,
+   "family": "sleep"
+  },
+  "PSQI_Snore": {
+   "n": 1003,
+   "r": 0.0462,
+   "family": "sleep"
+  },
+  "PSQI_TooCold": {
+   "n": 1003,
+   "r": 0.0115,
+   "family": "sleep"
+  },
+  "PSQI_TooHot": {
+   "n": 1003,
+   "r": 0.0339,
+   "family": "sleep"
+  },
+  "PSQI_BadDream": {
+   "n": 1003,
+   "r": 0.033,
+   "family": "sleep"
+  },
+  "PSQI_Pain": {
+   "n": 1003,
+   "r": -0.0204,
+   "family": "sleep"
+  },
+  "PSQI_Other": {
+   "n": 1003,
+   "r": 0.0782,
+   "family": "sleep"
+  },
+  "PSQI_Quality": {
+   "n": 1003,
+   "r": -0.0027,
+   "family": "sleep"
+  },
+  "PSQI_SleepMeds": {
+   "n": 1003,
+   "r": 0.033,
+   "family": "sleep"
+  },
+  "PSQI_DayStayAwake": {
+   "n": 1003,
+   "r": 0.0383,
+   "family": "sleep"
+  },
+  "PSQI_DayEnthusiasm": {
+   "n": 1003,
+   "r": 0.0236,
+   "family": "sleep"
+  },
+  "PSQI_BedPtnrRmate": {
+   "n": 1002,
+   "r": 0.179,
+   "family": "sleep"
+  },
+  "PicSeq_Unadj": {
+   "n": 1003,
+   "r": 0.1582,
+   "family": "cognition"
+  },
+  "PicSeq_AgeAdj": {
+   "n": 1003,
+   "r": 0.1545,
+   "family": "cognition"
+  },
+  "CardSort_Unadj": {
+   "n": 1001,
+   "r": 0.1827,
+   "family": "cognition"
+  },
+  "CardSort_AgeAdj": {
+   "n": 1001,
+   "r": 0.1738,
+   "family": "cognition"
+  },
+  "Flanker_Unadj": {
+   "n": 1003,
+   "r": 0.1332,
+   "family": "cognition"
+  },
+  "Flanker_AgeAdj": {
+   "n": 1003,
+   "r": 0.1258,
+   "family": "cognition"
+  },
+  "PMAT24_A_CR": {
+   "n": 999,
+   "r": 0.2491,
+   "family": "cognition"
+  },
+  "PMAT24_A_SI": {
+   "n": 999,
+   "r": 0.2049,
+   "family": "cognition"
+  },
+  "PMAT24_A_RTCR": {
+   "n": 999,
+   "r": 0.0929,
+   "family": "cognition"
+  },
+  "ReadEng_Unadj": {
+   "n": 1003,
+   "r": 0.3946,
+   "family": "cognition"
+  },
+  "ReadEng_AgeAdj": {
+   "n": 1003,
+   "r": 0.3813,
+   "family": "cognition"
+  },
+  "PicVocab_Unadj": {
+   "n": 1003,
+   "r": 0.3662,
+   "family": "cognition"
+  },
+  "PicVocab_AgeAdj": {
+   "n": 1003,
+   "r": 0.384,
+   "family": "cognition"
+  },
+  "ProcSpeed_Unadj": {
+   "n": 1003,
+   "r": 0.0981,
+   "family": "cognition"
+  },
+  "ProcSpeed_AgeAdj": {
+   "n": 1003,
+   "r": 0.084,
+   "family": "cognition"
+  },
+  "DDisc_SV_1mo_200": {
+   "n": 1000,
+   "r": 0.0907,
+   "family": "cognition"
+  },
+  "DDisc_SV_6mo_200": {
+   "n": 1000,
+   "r": 0.1217,
+   "family": "cognition"
+  },
+  "DDisc_SV_1yr_200": {
+   "n": 1000,
+   "r": 0.148,
+   "family": "cognition"
+  },
+  "DDisc_SV_3yr_200": {
+   "n": 1000,
+   "r": 0.1378,
+   "family": "cognition"
+  },
+  "DDisc_SV_5yr_200": {
+   "n": 1000,
+   "r": 0.1038,
+   "family": "cognition"
+  },
+  "DDisc_SV_10yr_200": {
+   "n": 1000,
+   "r": 0.0475,
+   "family": "cognition"
+  },
+  "DDisc_SV_1mo_40K": {
+   "n": 1000,
+   "r": 0.0745,
+   "family": "cognition"
+  },
+  "DDisc_SV_6mo_40K": {
+   "n": 1000,
+   "r": 0.1116,
+   "family": "cognition"
+  },
+  "DDisc_SV_1yr_40K": {
+   "n": 1000,
+   "r": 0.1818,
+   "family": "cognition"
+  },
+  "DDisc_SV_3yr_40K": {
+   "n": 1000,
+   "r": 0.1058,
+   "family": "cognition"
+  },
+  "DDisc_SV_5yr_40K": {
+   "n": 1000,
+   "r": 0.1108,
+   "family": "cognition"
+  },
+  "DDisc_SV_10yr_40K": {
+   "n": 1000,
+   "r": 0.1139,
+   "family": "cognition"
+  },
+  "DDisc_AUC_200": {
+   "n": 1000,
+   "r": 0.1473,
+   "family": "cognition"
+  },
+  "DDisc_AUC_40K": {
+   "n": 1000,
+   "r": 0.1401,
+   "family": "cognition"
+  },
+  "VSPLOT_TC": {
+   "n": 1000,
+   "r": 0.3222,
+   "family": "cognition"
+  },
+  "VSPLOT_CRTE": {
+   "n": 1000,
+   "r": 0.08,
+   "family": "cognition"
+  },
+  "VSPLOT_OFF": {
+   "n": 1000,
+   "r": 0.3362,
+   "family": "cognition"
+  },
+  "SCPT_TP": {
+   "n": 1000,
+   "r": -0.0508,
+   "family": "cognition"
+  },
+  "SCPT_TN": {
+   "n": 1000,
+   "r": 0.1355,
+   "family": "cognition"
+  },
+  "SCPT_FP": {
+   "n": 1000,
+   "r": 0.1355,
+   "family": "cognition"
+  },
+  "SCPT_FN": {
+   "n": 1000,
+   "r": -0.0508,
+   "family": "cognition"
+  },
+  "SCPT_TPRT": {
+   "n": 996,
+   "r": 0.1404,
+   "family": "cognition"
+  },
+  "SCPT_SEN": {
+   "n": 1000,
+   "r": -0.0508,
+   "family": "cognition"
+  },
+  "SCPT_SPEC": {
+   "n": 1000,
+   "r": 0.1354,
+   "family": "cognition"
+  },
+  "SCPT_LRNR": {
+   "n": 1000,
+   "r": -0.0463,
+   "family": "cognition"
+  },
+  "IWRD_TOT": {
+   "n": 1000,
+   "r": 0.0376,
+   "family": "cognition"
+  },
+  "IWRD_RTC": {
+   "n": 1000,
+   "r": 0.1165,
+   "family": "cognition"
+  },
+  "ListSort_Unadj": {
+   "n": 1003,
+   "r": 0.1686,
+   "family": "cognition"
+  },
+  "ListSort_AgeAdj": {
+   "n": 1003,
+   "r": 0.1631,
+   "family": "cognition"
+  },
+  "CogFluidComp_Unadj": {
+   "n": 992,
+   "r": 0.2207,
+   "family": "cognition"
+  },
+  "CogFluidComp_AgeAdj": {
+   "n": 992,
+   "r": 0.2058,
+   "family": "cognition"
+  },
+  "CogEarlyComp_Unadj": {
+   "n": 995,
+   "r": 0.2708,
+   "family": "cognition"
+  },
+  "CogEarlyComp_AgeAdj": {
+   "n": 995,
+   "r": 0.2708,
+   "family": "cognition"
+  },
+  "CogTotalComp_Unadj": {
+   "n": 991,
+   "r": 0.3786,
+   "family": "cognition"
+  },
+  "CogTotalComp_AgeAdj": {
+   "n": 991,
+   "r": 0.3887,
+   "family": "cognition"
+  },
+  "CogCrystalComp_Unadj": {
+   "n": 998,
+   "r": 0.4035,
+   "family": "cognition"
+  },
+  "CogCrystalComp_AgeAdj": {
+   "n": 998,
+   "r": 0.4075,
+   "family": "cognition"
+  },
+  "ER40_CR": {
+   "n": 1000,
+   "r": 0.0206,
+   "family": "cognition"
+  },
+  "ER40_CRT": {
+   "n": 1000,
+   "r": 0.0391,
+   "family": "cognition"
+  },
+  "ER40ANG": {
+   "n": 1000,
+   "r": 0.0367,
+   "family": "cognition"
+  },
+  "ER40FEAR": {
+   "n": 1000,
+   "r": -0.0525,
+   "family": "cognition"
+  },
+  "ER40HAP": {
+   "n": 1000,
+   "r": 0.0388,
+   "family": "cognition"
+  },
+  "ER40NOE": {
+   "n": 1000,
+   "r": 0.0125,
+   "family": "cognition"
+  },
+  "ER40SAD": {
+   "n": 1000,
+   "r": -0.0351,
+   "family": "cognition"
+  },
+  "AngAffect_Unadj": {
+   "n": 1002,
+   "r": -0.0293,
+   "family": "wellbeing"
+  },
+  "AngHostil_Unadj": {
+   "n": 1002,
+   "r": -0.0233,
+   "family": "wellbeing"
+  },
+  "AngAggr_Unadj": {
+   "n": 1002,
+   "r": 0.1315,
+   "family": "wellbeing"
+  },
+  "FearAffect_Unadj": {
+   "n": 1002,
+   "r": 0.0562,
+   "family": "wellbeing"
+  },
+  "FearSomat_Unadj": {
+   "n": 1002,
+   "r": 0.036,
+   "family": "wellbeing"
+  },
+  "Sadness_Unadj": {
+   "n": 1002,
+   "r": 0.0109,
+   "family": "wellbeing"
+  },
+  "LifeSatisf_Unadj": {
+   "n": 1002,
+   "r": 0.1319,
+   "family": "wellbeing"
+  },
+  "MeanPurp_Unadj": {
+   "n": 1002,
+   "r": 0.1087,
+   "family": "wellbeing"
+  },
+  "PosAffect_Unadj": {
+   "n": 1002,
+   "r": 0.0388,
+   "family": "wellbeing"
+  },
+  "Friendship_Unadj": {
+   "n": 1002,
+   "r": 0.0672,
+   "family": "wellbeing"
+  },
+  "Loneliness_Unadj": {
+   "n": 1002,
+   "r": 0.0193,
+   "family": "wellbeing"
+  },
+  "PercHostil_Unadj": {
+   "n": 1002,
+   "r": -0.0343,
+   "family": "wellbeing"
+  },
+  "PercReject_Unadj": {
+   "n": 1002,
+   "r": -0.0285,
+   "family": "wellbeing"
+  },
+  "EmotSupp_Unadj": {
+   "n": 1002,
+   "r": 0.08,
+   "family": "wellbeing"
+  },
+  "InstruSupp_Unadj": {
+   "n": 1002,
+   "r": 0.0379,
+   "family": "wellbeing"
+  },
+  "PercStress_Unadj": {
+   "n": 1002,
+   "r": 0.0279,
+   "family": "wellbeing"
+  },
+  "SelfEff_Unadj": {
+   "n": 1002,
+   "r": 0.0925,
+   "family": "wellbeing"
+  },
+  "FS_IntraCranial_Vol": {
+   "n": 1003,
+   "r": 0.6732,
+   "family": "brain_volume"
+  },
+  "FS_BrainSeg_Vol": {
+   "n": 1003,
+   "r": 0.7213,
+   "family": "brain_volume"
+  },
+  "FS_BrainSeg_Vol_No_Vent": {
+   "n": 1003,
+   "r": 0.7146,
+   "family": "other"
+  },
+  "FS_BrainSeg_Vol_No_Vent_Surf": {
+   "n": 1003,
+   "r": 0.7148,
+   "family": "other"
+  },
+  "FS_LCort_GM_Vol": {
+   "n": 1003,
+   "r": 0.6776,
+   "family": "brain_volume"
+  },
+  "FS_RCort_GM_Vol": {
+   "n": 1003,
+   "r": 0.7059,
+   "family": "brain_volume"
+  },
+  "FS_TotCort_GM_Vol": {
+   "n": 1003,
+   "r": 0.697,
+   "family": "brain_volume"
+  },
+  "FS_SubCort_GM_Vol": {
+   "n": 1003,
+   "r": 0.5775,
+   "family": "brain_volume"
+  },
+  "FS_Total_GM_Vol": {
+   "n": 1003,
+   "r": 0.7134,
+   "family": "brain_volume"
+  },
+  "FS_SupraTentorial_Vol": {
+   "n": 1003,
+   "r": 0.7124,
+   "family": "brain_volume"
+  },
+  "FS_L_WM_Vol": {
+   "n": 1003,
+   "r": 0.6648,
+   "family": "brain_volume"
+  },
+  "FS_R_WM_Vol": {
+   "n": 1003,
+   "r": 0.6618,
+   "family": "brain_volume"
+  },
+  "FS_Tot_WM_Vol": {
+   "n": 1003,
+   "r": 0.664,
+   "family": "brain_volume"
+  },
+  "FS_Mask_Vol": {
+   "n": 1003,
+   "r": 0.7403,
+   "family": "brain_volume"
+  },
+  "FS_BrainSegVol_eTIV_Ratio": {
+   "n": 1003,
+   "r": 0.1805,
+   "family": "other"
+  },
+  "FS_MaskVol_eTIV_Ratio": {
+   "n": 1003,
+   "r": 0.1382,
+   "family": "other"
+  },
+  "FS_LH_Defect_Holes": {
+   "n": 1003,
+   "r": 0.1453,
+   "family": "other"
+  },
+  "FS_RH_Defect_Holes": {
+   "n": 1003,
+   "r": 0.1885,
+   "family": "other"
+  },
+  "FS_Total_Defect_Holes": {
+   "n": 1003,
+   "r": 0.1986,
+   "family": "other"
+  },
+  "FS_L_LatVent_Vol": {
+   "n": 1003,
+   "r": 0.4093,
+   "family": "brain_volume"
+  },
+  "FS_L_InfLatVent_Vol": {
+   "n": 1003,
+   "r": 0.0956,
+   "family": "brain_volume"
+  },
+  "FS_L_Cerebellum_WM_Vol": {
+   "n": 1003,
+   "r": 0.4268,
+   "family": "brain_volume"
+  },
+  "FS_L_Cerebellum_Cort_Vol": {
+   "n": 1003,
+   "r": 0.6081,
+   "family": "brain_volume"
+  },
+  "FS_L_ThalamusProper_Vol": {
+   "n": 1003,
+   "r": 0.4403,
+   "family": "brain_volume"
+  },
+  "FS_L_Caudate_Vol": {
+   "n": 1003,
+   "r": 0.3814,
+   "family": "brain_volume"
+  },
+  "FS_L_Putamen_Vol": {
+   "n": 1003,
+   "r": 0.3641,
+   "family": "brain_volume"
+  },
+  "FS_L_Pallidum_Vol": {
+   "n": 1003,
+   "r": 0.2702,
+   "family": "brain_volume"
+  },
+  "FS_3rdVent_Vol": {
+   "n": 1003,
+   "r": 0.3659,
+   "family": "brain_volume"
+  },
+  "FS_4thVent_Vol": {
+   "n": 1003,
+   "r": 0.4032,
+   "family": "brain_volume"
+  },
+  "FS_BrainStem_Vol": {
+   "n": 1003,
+   "r": 0.4582,
+   "family": "brain_volume"
+  },
+  "FS_L_Hippo_Vol": {
+   "n": 1003,
+   "r": 0.382,
+   "family": "brain_volume"
+  },
+  "FS_L_Amygdala_Vol": {
+   "n": 1003,
+   "r": 0.4968,
+   "family": "brain_volume"
+  },
+  "FS_CSF_Vol": {
+   "n": 1003,
+   "r": 0.3884,
+   "family": "brain_volume"
+  },
+  "FS_L_AccumbensArea_Vol": {
+   "n": 1003,
+   "r": 0.3574,
+   "family": "brain_volume"
+  },
+  "FS_L_VentDC_Vol": {
+   "n": 1003,
+   "r": 0.4405,
+   "family": "brain_volume"
+  },
+  "FS_L_Vessel_Vol": {
+   "n": 1003,
+   "r": 0.1134,
+   "family": "brain_volume"
+  },
+  "FS_L_ChoroidPlexus_Vol": {
+   "n": 1003,
+   "r": 0.2944,
+   "family": "brain_volume"
+  },
+  "FS_R_LatVent_Vol": {
+   "n": 1003,
+   "r": 0.3997,
+   "family": "brain_volume"
+  },
+  "FS_R_InfLatVent_Vol": {
+   "n": 1003,
+   "r": 0.0622,
+   "family": "brain_volume"
+  },
+  "FS_R_Cerebellum_WM_Vol": {
+   "n": 1003,
+   "r": 0.4764,
+   "family": "brain_volume"
+  },
+  "FS_R_Cerebellum_Cort_Vol": {
+   "n": 1003,
+   "r": 0.5996,
+   "family": "brain_volume"
+  },
+  "FS_R_ThalamusProper_Vol": {
+   "n": 1003,
+   "r": 0.4221,
+   "family": "brain_volume"
+  },
+  "FS_R_Caudate_Vol": {
+   "n": 1003,
+   "r": 0.3784,
+   "family": "brain_volume"
+  },
+  "FS_R_Putamen_Vol": {
+   "n": 1003,
+   "r": 0.4231,
+   "family": "brain_volume"
+  },
+  "FS_R_Pallidum_Vol": {
+   "n": 1003,
+   "r": 0.3768,
+   "family": "brain_volume"
+  },
+  "FS_R_Hippo_Vol": {
+   "n": 1003,
+   "r": 0.4457,
+   "family": "brain_volume"
+  },
+  "FS_R_Amygdala_Vol": {
+   "n": 1003,
+   "r": 0.4583,
+   "family": "brain_volume"
+  },
+  "FS_R_AccumbensArea_Vol": {
+   "n": 1003,
+   "r": 0.3641,
+   "family": "brain_volume"
+  },
+  "FS_R_VentDC_Vol": {
+   "n": 1003,
+   "r": 0.4957,
+   "family": "brain_volume"
+  },
+  "FS_R_Vessel_Vol": {
+   "n": 1003,
+   "r": 0.121,
+   "family": "brain_volume"
+  },
+  "FS_R_ChoroidPlexus_Vol": {
+   "n": 1003,
+   "r": 0.3619,
+   "family": "brain_volume"
+  },
+  "FS_5thVent_Vol": {
+   "n": 1003,
+   "r": 0.0222,
+   "family": "brain_volume"
+  },
+  "FS_WM_Hypointens_Vol": {
+   "n": 1003,
+   "r": 0.1599,
+   "family": "brain_volume"
+  },
+  "FS_OpticChiasm_Vol": {
+   "n": 1003,
+   "r": 0.231,
+   "family": "brain_volume"
+  },
+  "FS_CC_Posterior_Vol": {
+   "n": 1003,
+   "r": 0.2769,
+   "family": "brain_volume"
+  },
+  "FS_CC_MidPosterior_Vol": {
+   "n": 1003,
+   "r": 0.2287,
+   "family": "brain_volume"
+  },
+  "FS_CC_Central_Vol": {
+   "n": 1003,
+   "r": 0.2601,
+   "family": "brain_volume"
+  },
+  "FS_CC_MidAnterior_Vol": {
+   "n": 1003,
+   "r": 0.2276,
+   "family": "brain_volume"
+  },
+  "FS_CC_Anterior_Vol": {
+   "n": 1003,
+   "r": 0.2781,
+   "family": "brain_volume"
+  },
+  "FS_L_Bankssts_Thck": {
+   "n": 1003,
+   "r": 0.1451,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Caudalanteriorcingulate_Thck": {
+   "n": 1003,
+   "r": 0.0697,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Caudalmiddlefrontal_Thck": {
+   "n": 1003,
+   "r": 0.2122,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Cuneus_Thck": {
+   "n": 1003,
+   "r": 0.1587,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Entorhinal_Thck": {
+   "n": 1003,
+   "r": 0.1034,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Fusiform_Thck": {
+   "n": 1003,
+   "r": 0.137,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Inferiorparietal_Thck": {
+   "n": 1003,
+   "r": 0.2544,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Inferiortemporal_Thck": {
+   "n": 1003,
+   "r": 0.179,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Isthmuscingulate_Thck": {
+   "n": 1003,
+   "r": -0.0271,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Lateraloccipital_Thck": {
+   "n": 1003,
+   "r": 0.2392,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Lateralorbitofrontal_Thck": {
+   "n": 1003,
+   "r": 0.171,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Lingual_Thck": {
+   "n": 1003,
+   "r": 0.1649,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Medialorbitofrontal_Thck": {
+   "n": 1003,
+   "r": 0.0543,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Middletemporal_Thck": {
+   "n": 1003,
+   "r": 0.154,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Parahippocampal_Thck": {
+   "n": 1003,
+   "r": 0.167,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Paracentral_Thck": {
+   "n": 1003,
+   "r": 0.1824,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Parsopercularis_Thck": {
+   "n": 1003,
+   "r": 0.1109,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Parsorbitalis_Thck": {
+   "n": 1003,
+   "r": 0.1402,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Parstriangularis_Thck": {
+   "n": 1003,
+   "r": 0.178,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Pericalcarine_Thck": {
+   "n": 1003,
+   "r": 0.1431,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Postcentral_Thck": {
+   "n": 1003,
+   "r": 0.2438,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Posteriorcingulate_Thck": {
+   "n": 1003,
+   "r": 0.0992,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Precentral_Thck": {
+   "n": 1003,
+   "r": 0.1738,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Precuneus_Thck": {
+   "n": 1003,
+   "r": 0.2668,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Rostralanteriorcingulate_Thck": {
+   "n": 1003,
+   "r": 0.0324,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Rostralmiddlefrontal_Thck": {
+   "n": 1003,
+   "r": 0.2292,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Superiorfrontal_Thck": {
+   "n": 1003,
+   "r": 0.2776,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Superiorparietal_Thck": {
+   "n": 1003,
+   "r": 0.3295,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Superiortemporal_Thck": {
+   "n": 1003,
+   "r": 0.1479,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Supramarginal_Thck": {
+   "n": 1003,
+   "r": 0.251,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Frontalpole_Thck": {
+   "n": 1003,
+   "r": 0.1287,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Temporalpole_Thck": {
+   "n": 1003,
+   "r": 0.0851,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Transversetemporal_Thck": {
+   "n": 1003,
+   "r": 0.1371,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Insula_Thck": {
+   "n": 1003,
+   "r": 0.1188,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Bankssts_Thck": {
+   "n": 1003,
+   "r": 0.1965,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Caudalanteriorcingulate_Thck": {
+   "n": 1003,
+   "r": 0.0221,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Caudalmiddlefrontal_Thck": {
+   "n": 1003,
+   "r": 0.1378,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Cuneus_Thck": {
+   "n": 1003,
+   "r": 0.2206,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Entorhinal_Thck": {
+   "n": 1003,
+   "r": 0.1313,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Fusiform_Thck": {
+   "n": 1003,
+   "r": 0.1554,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Inferiorparietal_Thck": {
+   "n": 1003,
+   "r": 0.2677,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Inferiortemporal_Thck": {
+   "n": 1003,
+   "r": 0.143,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Isthmuscingulate_Thck": {
+   "n": 1003,
+   "r": -0.0385,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Lateraloccipital_Thck": {
+   "n": 1003,
+   "r": 0.3134,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Lateralorbitofrontal_Thck": {
+   "n": 1003,
+   "r": 0.1706,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Lingual_Thck": {
+   "n": 1003,
+   "r": 0.2555,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Medialorbitofrontal_Thck": {
+   "n": 1003,
+   "r": 0.0804,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Middletemporal_Thck": {
+   "n": 1003,
+   "r": 0.2568,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Parahippocampal_Thck": {
+   "n": 1003,
+   "r": 0.1666,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Paracentral_Thck": {
+   "n": 1003,
+   "r": 0.1906,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Parsopercularis_Thck": {
+   "n": 1003,
+   "r": 0.1478,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Parsorbitalis_Thck": {
+   "n": 1003,
+   "r": 0.172,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Parstriangularis_Thck": {
+   "n": 1003,
+   "r": 0.1788,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Pericalcarine_Thck": {
+   "n": 1003,
+   "r": 0.1009,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Postcentral_Thck": {
+   "n": 1003,
+   "r": 0.2018,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Posteriorcingulate_Thck": {
+   "n": 1003,
+   "r": 0.0594,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Precentral_Thck": {
+   "n": 1003,
+   "r": 0.2146,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Precuneus_Thck": {
+   "n": 1003,
+   "r": 0.2492,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Rostralanteriorcingulate_Thck": {
+   "n": 1003,
+   "r": 0.051,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Rostralmiddlefrontal_Thck": {
+   "n": 1003,
+   "r": 0.2182,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Superiorfrontal_Thck": {
+   "n": 1003,
+   "r": 0.2808,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Superiorparietal_Thck": {
+   "n": 1003,
+   "r": 0.2947,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Superiortemporal_Thck": {
+   "n": 1003,
+   "r": 0.1958,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Supramarginal_Thck": {
+   "n": 1003,
+   "r": 0.2498,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Frontalpole_Thck": {
+   "n": 1003,
+   "r": 0.1627,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Temporalpole_Thck": {
+   "n": 1003,
+   "r": 0.116,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Transversetemporal_Thck": {
+   "n": 1003,
+   "r": 0.158,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Insula_Thck": {
+   "n": 1003,
+   "r": 0.156,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Bankssts_Area": {
+   "n": 1003,
+   "r": 0.3289,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Caudalanteriorcingulate_Area": {
+   "n": 1003,
+   "r": 0.2869,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Caudalmiddlefrontal_Area": {
+   "n": 1003,
+   "r": 0.4116,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Cuneus_Area": {
+   "n": 1003,
+   "r": 0.3928,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Entorhinal_Area": {
+   "n": 1003,
+   "r": 0.4112,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Fusiform_Area": {
+   "n": 1003,
+   "r": 0.4541,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Inferiorparietal_Area": {
+   "n": 1003,
+   "r": 0.5178,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Inferiortemporal_Area": {
+   "n": 1003,
+   "r": 0.5157,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Isthmuscingulate_Area": {
+   "n": 1003,
+   "r": 0.1103,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Lateraloccipital_Area": {
+   "n": 1003,
+   "r": 0.5239,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Lateralorbitofrontal_Area": {
+   "n": 1003,
+   "r": 0.5659,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Lingual_Area": {
+   "n": 1003,
+   "r": 0.4165,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Medialorbitofrontal_Area": {
+   "n": 1003,
+   "r": 0.3901,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Middletemporal_Area": {
+   "n": 1003,
+   "r": 0.5402,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Parahippocampal_Area": {
+   "n": 1003,
+   "r": 0.3837,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Paracentral_Area": {
+   "n": 1003,
+   "r": 0.3656,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Parsopercularis_Area": {
+   "n": 1003,
+   "r": 0.3427,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Parsorbitalis_Area": {
+   "n": 1003,
+   "r": 0.392,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Parstriangularis_Area": {
+   "n": 1003,
+   "r": 0.3908,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Pericalcarine_Area": {
+   "n": 1003,
+   "r": 0.3963,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Postcentral_Area": {
+   "n": 1003,
+   "r": 0.5198,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Posteriorcingulate_Area": {
+   "n": 1003,
+   "r": 0.3251,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Precentral_Area": {
+   "n": 1003,
+   "r": 0.4618,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Precuneus_Area": {
+   "n": 1003,
+   "r": 0.5796,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Rostralanteriorcingulate_Area": {
+   "n": 1003,
+   "r": 0.438,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Rostralmiddlefrontal_Area": {
+   "n": 1003,
+   "r": 0.534,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Superiorfrontal_Area": {
+   "n": 1003,
+   "r": 0.582,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Superiorparietal_Area": {
+   "n": 1003,
+   "r": 0.4498,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Superiortemporal_Area": {
+   "n": 1003,
+   "r": 0.5538,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Supramarginal_Area": {
+   "n": 1003,
+   "r": 0.5325,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Frontalpole_Area": {
+   "n": 1003,
+   "r": 0.2783,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Temporalpole_Area": {
+   "n": 1003,
+   "r": 0.2704,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Transversetemporal_Area": {
+   "n": 1003,
+   "r": 0.334,
+   "family": "brain_morphometry"
+  },
+  "FS_L_Insula_Area": {
+   "n": 1003,
+   "r": 0.4868,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Bankssts_Area": {
+   "n": 1003,
+   "r": 0.2985,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Caudalanteriorcingulate_Area": {
+   "n": 1003,
+   "r": 0.167,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Caudalmiddlefrontal_Area": {
+   "n": 1003,
+   "r": 0.3721,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Cuneus_Area": {
+   "n": 1003,
+   "r": 0.4002,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Entorhinal_Area": {
+   "n": 1003,
+   "r": 0.3084,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Fusiform_Area": {
+   "n": 1003,
+   "r": 0.5322,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Inferiorparietal_Area": {
+   "n": 1003,
+   "r": 0.5307,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Inferiortemporal_Area": {
+   "n": 1003,
+   "r": 0.5036,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Isthmuscingulate_Area": {
+   "n": 1003,
+   "r": 0.3775,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Lateraloccipital_Area": {
+   "n": 1003,
+   "r": 0.449,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Lateralorbitofrontal_Area": {
+   "n": 1003,
+   "r": 0.4914,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Lingual_Area": {
+   "n": 1003,
+   "r": 0.4535,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Medialorbitofrontal_Area": {
+   "n": 1003,
+   "r": 0.4503,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Middletemporal_Area": {
+   "n": 1003,
+   "r": 0.5764,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Parahippocampal_Area": {
+   "n": 1003,
+   "r": 0.4036,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Paracentral_Area": {
+   "n": 1003,
+   "r": 0.3843,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Parsopercularis_Area": {
+   "n": 1003,
+   "r": 0.3661,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Parsorbitalis_Area": {
+   "n": 1003,
+   "r": 0.4343,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Parstriangularis_Area": {
+   "n": 1003,
+   "r": 0.3634,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Pericalcarine_Area": {
+   "n": 1003,
+   "r": 0.3891,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Postcentral_Area": {
+   "n": 1003,
+   "r": 0.4728,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Posteriorcingulate_Area": {
+   "n": 1003,
+   "r": 0.3566,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Precentral_Area": {
+   "n": 1003,
+   "r": 0.49,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Precuneus_Area": {
+   "n": 1003,
+   "r": 0.5342,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Rostralanteriorcingulate_Area": {
+   "n": 1003,
+   "r": 0.3068,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Rostralmiddlefrontal_Area": {
+   "n": 1003,
+   "r": 0.5712,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Superiorfrontal_Area": {
+   "n": 1003,
+   "r": 0.6074,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Superiorparietal_Area": {
+   "n": 1003,
+   "r": 0.4933,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Superiortemporal_Area": {
+   "n": 1003,
+   "r": 0.5302,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Supramarginal_Area": {
+   "n": 1003,
+   "r": 0.4707,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Frontalpole_Area": {
+   "n": 1003,
+   "r": 0.2029,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Temporalpole_Area": {
+   "n": 1003,
+   "r": 0.142,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Transversetemporal_Area": {
+   "n": 1003,
+   "r": 0.3327,
+   "family": "brain_morphometry"
+  },
+  "FS_R_Insula_Area": {
+   "n": 1003,
+   "r": 0.5423,
+   "family": "brain_morphometry"
+  },
+  "Emotion_Task_Acc": {
+   "n": 995,
+   "r": 0.0156,
+   "family": "task_performance"
+  },
+  "Emotion_Task_Median_RT": {
+   "n": 995,
+   "r": 0.1268,
+   "family": "task_performance"
+  },
+  "Emotion_Task_Face_Acc": {
+   "n": 995,
+   "r": 0.0399,
+   "family": "task_performance"
+  },
+  "Emotion_Task_Face_Median_RT": {
+   "n": 995,
+   "r": 0.0978,
+   "family": "task_performance"
+  },
+  "Emotion_Task_Shape_Acc": {
+   "n": 995,
+   "r": 0.0399,
+   "family": "task_performance"
+  },
+  "Emotion_Task_Shape_Median_RT": {
+   "n": 995,
+   "r": 0.1555,
+   "family": "task_performance"
+  },
+  "Gambling_Task_Perc_Larger": {
+   "n": 1001,
+   "r": 0.0235,
+   "family": "task_performance"
+  },
+  "Gambling_Task_Perc_Smaller": {
+   "n": 1001,
+   "r": 0.0235,
+   "family": "task_performance"
+  },
+  "Gambling_Task_Median_RT_Larger": {
+   "n": 990,
+   "r": 0.0105,
+   "family": "task_performance"
+  },
+  "Gambling_Task_Median_RT_Smaller": {
+   "n": 998,
+   "r": -0.0221,
+   "family": "task_performance"
+  },
+  "Gambling_Task_Reward_Perc_Larger": {
+   "n": 1001,
+   "r": 0.0983,
+   "family": "task_performance"
+  },
+  "Gambling_Task_Reward_Median_RT_Larger": {
+   "n": 980,
+   "r": -0.0261,
+   "family": "task_performance"
+  },
+  "Gambling_Task_Reward_Perc_Smaller": {
+   "n": 1001,
+   "r": 0.0983,
+   "family": "task_performance"
+  },
+  "Gambling_Task_Reward_Median_RT_Smaller": {
+   "n": 993,
+   "r": 0.0093,
+   "family": "task_performance"
+  },
+  "Gambling_Task_Punish_Perc_Larger": {
+   "n": 1001,
+   "r": -0.0804,
+   "family": "task_performance"
+  },
+  "Gambling_Task_Punish_Median_RT_Larger": {
+   "n": 990,
+   "r": 0.0127,
+   "family": "task_performance"
+  },
+  "Gambling_Task_Punish_Perc_Smaller": {
+   "n": 1001,
+   "r": -0.0804,
+   "family": "task_performance"
+  },
+  "Gambling_Task_Punish_Median_RT_Smaller": {
+   "n": 998,
+   "r": -0.0344,
+   "family": "task_performance"
+  },
+  "Language_Task_Acc": {
+   "n": 998,
+   "r": 0.2542,
+   "family": "task_performance"
+  },
+  "Language_Task_Median_RT": {
+   "n": 998,
+   "r": -0.0337,
+   "family": "task_performance"
+  },
+  "Language_Task_Story_Acc": {
+   "n": 998,
+   "r": 0.1283,
+   "family": "task_performance"
+  },
+  "Language_Task_Story_Median_RT": {
+   "n": 998,
+   "r": 0.0158,
+   "family": "task_performance"
+  },
+  "Language_Task_Story_Avg_Difficulty_Level": {
+   "n": 998,
+   "r": 0.2104,
+   "family": "task_performance"
+  },
+  "Language_Task_Math_Acc": {
+   "n": 998,
+   "r": 0.2158,
+   "family": "task_performance"
+  },
+  "Language_Task_Math_Median_RT": {
+   "n": 998,
+   "r": 0.0028,
+   "family": "task_performance"
+  },
+  "Language_Task_Math_Avg_Difficulty_Level": {
+   "n": 998,
+   "r": 0.1432,
+   "family": "task_performance"
+  },
+  "Relational_Task_Acc": {
+   "n": 990,
+   "r": 0.2585,
+   "family": "task_performance"
+  },
+  "Relational_Task_Median_RT": {
+   "n": 990,
+   "r": -0.0117,
+   "family": "task_performance"
+  },
+  "Relational_Task_Match_Acc": {
+   "n": 990,
+   "r": 0.1398,
+   "family": "task_performance"
+  },
+  "Relational_Task_Match_Median_RT": {
+   "n": 990,
+   "r": 0.0295,
+   "family": "task_performance"
+  },
+  "Relational_Task_Rel_Acc": {
+   "n": 990,
+   "r": 0.197,
+   "family": "task_performance"
+  },
+  "Relational_Task_Rel_Median_RT": {
+   "n": 990,
+   "r": -0.0177,
+   "family": "task_performance"
+  },
+  "Social_Task_Perc_Random": {
+   "n": 999,
+   "r": 0.014,
+   "family": "task_performance"
+  },
+  "Social_Task_Perc_TOM": {
+   "n": 999,
+   "r": 0.007,
+   "family": "task_performance"
+  },
+  "Social_Task_Perc_Unsure": {
+   "n": 999,
+   "r": 0.1144,
+   "family": "task_performance"
+  },
+  "Social_Task_Median_RT_Random": {
+   "n": 990,
+   "r": 0.0716,
+   "family": "task_performance"
+  },
+  "Social_Task_Median_RT_TOM": {
+   "n": 995,
+   "r": -0.0082,
+   "family": "task_performance"
+  },
+  "Social_Task_Median_RT_Unsure": {
+   "n": 446,
+   "r": -0.0407,
+   "family": "task_performance"
+  },
+  "Social_Task_Random_Perc_Random": {
+   "n": 999,
+   "r": 0.0374,
+   "family": "task_performance"
+  },
+  "Social_Task_Random_Median_RT_Random": {
+   "n": 991,
+   "r": 0.0766,
+   "family": "task_performance"
+  },
+  "Social_Task_Random_Perc_TOM": {
+   "n": 999,
+   "r": -0.046,
+   "family": "task_performance"
+  },
+  "Social_Task_Random_Perc_Unsure": {
+   "n": 999,
+   "r": 0.0617,
+   "family": "task_performance"
+  },
+  "Social_Task_Random_Median_RT_Unsure": {
+   "n": 368,
+   "r": -0.0516,
+   "family": "task_performance"
+  },
+  "Social_Task_TOM_Perc_Random": {
+   "n": 998,
+   "r": 0.049,
+   "family": "task_performance"
+  },
+  "Social_Task_TOM_Perc_TOM": {
+   "n": 998,
+   "r": 0.1109,
+   "family": "task_performance"
+  },
+  "Social_Task_TOM_Median_RT_TOM": {
+   "n": 997,
+   "r": -0.0014,
+   "family": "task_performance"
+  },
+  "Social_Task_TOM_Perc_Unsure": {
+   "n": 998,
+   "r": 0.0519,
+   "family": "task_performance"
+  },
+  "WM_Task_Acc": {
+   "n": 1003,
+   "r": 0.2601,
+   "family": "task_performance"
+  },
+  "WM_Task_Median_RT": {
+   "n": 990,
+   "r": 0.095,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Acc": {
+   "n": 995,
+   "r": 0.3516,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Median_RT": {
+   "n": 992,
+   "r": 0.052,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Acc": {
+   "n": 1003,
+   "r": 0.1156,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Median_RT": {
+   "n": 992,
+   "r": 0.1182,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Body_Acc": {
+   "n": 1003,
+   "r": 0.0724,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Body_Acc_Target": {
+   "n": 1003,
+   "r": 0.0477,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Body_Acc_Nontarget": {
+   "n": 995,
+   "r": 0.1122,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Face_Acc": {
+   "n": 995,
+   "r": 0.054,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Face_Acc_Target": {
+   "n": 995,
+   "r": 0.0135,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Face_ACC_Nontarget": {
+   "n": 995,
+   "r": 0.0644,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Place_Acc": {
+   "n": 995,
+   "r": 0.0537,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Place_Acc_Target": {
+   "n": 995,
+   "r": -0.0186,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Place_Acc_Nontarget": {
+   "n": 995,
+   "r": 0.0749,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Tool_Acc": {
+   "n": 995,
+   "r": 0.2035,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Tool_Acc_Target": {
+   "n": 995,
+   "r": 0.0722,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Tool_Acc_Nontarget": {
+   "n": 995,
+   "r": 0.1742,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Body_Acc": {
+   "n": 995,
+   "r": 0.1935,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Body_Acc_Target": {
+   "n": 995,
+   "r": 0.2155,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Body_Acc_Nontarget": {
+   "n": 995,
+   "r": 0.1571,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Face_Acc": {
+   "n": 995,
+   "r": 0.2399,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Face_Acc_Target": {
+   "n": 995,
+   "r": 0.1028,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Face_Acc_Nontarget": {
+   "n": 995,
+   "r": 0.1926,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Place_Acc": {
+   "n": 995,
+   "r": 0.1807,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Place_Acc_Target": {
+   "n": 995,
+   "r": 0.0858,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Place_Acc_Nontarget": {
+   "n": 995,
+   "r": 0.1357,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Tool_Acc": {
+   "n": 995,
+   "r": 0.1942,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Tool_Acc_Target": {
+   "n": 995,
+   "r": 0.13,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Tool_Acc_Nontarget": {
+   "n": 995,
+   "r": 0.1791,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Body_Median_RT": {
+   "n": 995,
+   "r": 0.036,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Body_Median_RT_Target": {
+   "n": 959,
+   "r": 0.0155,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Body_Median_RT_Nontarget": {
+   "n": 995,
+   "r": 0.0375,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Face_Median_RT": {
+   "n": 995,
+   "r": 0.0548,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Face_Median_RT_Target": {
+   "n": 981,
+   "r": 0.0601,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Face_Median_RT_Nontarget": {
+   "n": 995,
+   "r": 0.0289,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Place_Median_RT": {
+   "n": 995,
+   "r": 0.0469,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Place_Median_RT_Target": {
+   "n": 975,
+   "r": -0.0062,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Place_Median_RT_Nontarget": {
+   "n": 995,
+   "r": 0.0411,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Tool_Median_RT": {
+   "n": 995,
+   "r": 0.0797,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Tool_Median_RT_Target": {
+   "n": 980,
+   "r": 0.0223,
+   "family": "task_performance"
+  },
+  "WM_Task_0bk_Tool_Median_RT_Nontarget": {
+   "n": 995,
+   "r": 0.0932,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Body_Median_RT": {
+   "n": 995,
+   "r": 0.0248,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Body_Median_RT_Target": {
+   "n": 984,
+   "r": -0.0108,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Body_Median_RT_Nontarget": {
+   "n": 995,
+   "r": -0.0013,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Face_Median_RT": {
+   "n": 995,
+   "r": -0.0136,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Face_Median_RT_Target": {
+   "n": 988,
+   "r": 0.0219,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Face_Median_RT_Nontarget": {
+   "n": 995,
+   "r": 0.0014,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Place_Median_RT": {
+   "n": 995,
+   "r": 0.0217,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Place_Median_RT_Target": {
+   "n": 966,
+   "r": 0.025,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Place_Median_RT_Nontarget": {
+   "n": 995,
+   "r": 0.003,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Tool_Median_RT": {
+   "n": 995,
+   "r": -0.0131,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Tool_Median_RT_Target": {
+   "n": 973,
+   "r": 0.0355,
+   "family": "task_performance"
+  },
+  "WM_Task_2bk_Tool_Median_RT_Nontarget": {
+   "n": 995,
+   "r": -0.0016,
+   "family": "task_performance"
+  },
+  "Endurance_Unadj": {
+   "n": 1001,
+   "r": 0.3169,
+   "family": "motor_sensory"
+  },
+  "Endurance_AgeAdj": {
+   "n": 1001,
+   "r": 0.3009,
+   "family": "motor_sensory"
+  },
+  "GaitSpeed_Comp": {
+   "n": 1003,
+   "r": 0.1299,
+   "family": "motor_sensory"
+  },
+  "Dexterity_Unadj": {
+   "n": 1003,
+   "r": 0.1163,
+   "family": "motor_sensory"
+  },
+  "Dexterity_AgeAdj": {
+   "n": 1003,
+   "r": 0.1205,
+   "family": "motor_sensory"
+  },
+  "Strength_Unadj": {
+   "n": 1002,
+   "r": 0.5952,
+   "family": "motor_sensory"
+  },
+  "Strength_AgeAdj": {
+   "n": 1002,
+   "r": 0.6184,
+   "family": "motor_sensory"
+  },
+  "NEOFAC_A": {
+   "n": 1001,
+   "r": 0.1527,
+   "family": "personality"
+  },
+  "NEOFAC_O": {
+   "n": 1001,
+   "r": 0.3013,
+   "family": "personality"
+  },
+  "NEOFAC_C": {
+   "n": 1001,
+   "r": 0.0907,
+   "family": "personality"
+  },
+  "NEOFAC_N": {
+   "n": 1001,
+   "r": 0.1003,
+   "family": "personality"
+  },
+  "NEOFAC_E": {
+   "n": 1001,
+   "r": 0.1552,
+   "family": "personality"
+  },
+  "Noise_Comp": {
+   "n": 996,
+   "r": 0.082,
+   "family": "other"
+  },
+  "Odor_Unadj": {
+   "n": 1001,
+   "r": -0.0194,
+   "family": "motor_sensory"
+  },
+  "Odor_AgeAdj": {
+   "n": 1001,
+   "r": -0.0265,
+   "family": "motor_sensory"
+  },
+  "PainIntens_RawScore": {
+   "n": 999,
+   "r": 0.0136,
+   "family": "other"
+  },
+  "PainInterf_Tscore": {
+   "n": 1002,
+   "r": -0.0076,
+   "family": "other"
+  },
+  "Taste_Unadj": {
+   "n": 998,
+   "r": 0.0059,
+   "family": "motor_sensory"
+  },
+  "Taste_AgeAdj": {
+   "n": 998,
+   "r": 0.0036,
+   "family": "motor_sensory"
+  },
+  "Mars_Log_Score": {
+   "n": 1000,
+   "r": -0.0121,
+   "family": "motor_sensory"
+  },
+  "Mars_Errs": {
+   "n": 998,
+   "r": 0.0048,
+   "family": "motor_sensory"
+  },
+  "Mars_Final": {
+   "n": 998,
+   "r": -0.0287,
+   "family": "motor_sensory"
+  },
+  "Gender": {
+   "n": 1003,
+   "r": 0.813,
+   "family": "demographic"
+  },
+  "AgeBand": {
+   "n": 994,
+   "r": 0.4385,
+   "family": "demographic"
+  }
+ },
+ "by_family": {
+  "other": {
+   "n_targets": 27,
+   "median_r": 0.082,
+   "max_r": 0.7148
+  },
+  "cognition": {
+   "n_targets": 60,
+   "median_r": 0.1355,
+   "max_r": 0.4075
+  },
+  "sleep": {
+   "n_targets": 25,
+   "median_r": 0.033,
+   "max_r": 0.179
+  },
+  "wellbeing": {
+   "n_targets": 17,
+   "median_r": 0.0379,
+   "max_r": 0.1319
+  },
+  "brain_volume": {
+   "n_targets": 52,
+   "median_r": 0.4062,
+   "max_r": 0.7403
+  },
+  "brain_morphometry": {
+   "n_targets": 136,
+   "median_r": 0.274,
+   "max_r": 0.6074
+  },
+  "task_performance": {
+   "n_targets": 101,
+   "median_r": 0.049,
+   "max_r": 0.3516
+  },
+  "motor_sensory": {
+   "n_targets": 14,
+   "median_r": 0.0611,
+   "max_r": 0.6184
+  },
+  "personality": {
+   "n_targets": 5,
+   "median_r": 0.1527,
+   "max_r": 0.3013
+  },
+  "demographic": {
+   "n_targets": 2,
+   "median_r": 0.6258,
+   "max_r": 0.813
+  }
+ },
+ "top20": [
+  {
+   "target": "Gender",
+   "n": 1003,
+   "r": 0.813,
+   "family": "demographic"
+  },
+  {
+   "target": "FS_Mask_Vol",
+   "n": 1003,
+   "r": 0.7403,
+   "family": "brain_volume"
+  },
+  {
+   "target": "FS_BrainSeg_Vol",
+   "n": 1003,
+   "r": 0.7213,
+   "family": "brain_volume"
+  },
+  {
+   "target": "FS_BrainSeg_Vol_No_Vent_Surf",
+   "n": 1003,
+   "r": 0.7148,
+   "family": "other"
+  },
+  {
+   "target": "FS_BrainSeg_Vol_No_Vent",
+   "n": 1003,
+   "r": 0.7146,
+   "family": "other"
+  },
+  {
+   "target": "FS_Total_GM_Vol",
+   "n": 1003,
+   "r": 0.7134,
+   "family": "brain_volume"
+  },
+  {
+   "target": "FS_SupraTentorial_Vol",
+   "n": 1003,
+   "r": 0.7124,
+   "family": "brain_volume"
+  },
+  {
+   "target": "FS_RCort_GM_Vol",
+   "n": 1003,
+   "r": 0.7059,
+   "family": "brain_volume"
+  },
+  {
+   "target": "FS_TotCort_GM_Vol",
+   "n": 1003,
+   "r": 0.697,
+   "family": "brain_volume"
+  },
+  {
+   "target": "FS_LCort_GM_Vol",
+   "n": 1003,
+   "r": 0.6776,
+   "family": "brain_volume"
+  },
+  {
+   "target": "FS_IntraCranial_Vol",
+   "n": 1003,
+   "r": 0.6732,
+   "family": "brain_volume"
+  },
+  {
+   "target": "FS_L_WM_Vol",
+   "n": 1003,
+   "r": 0.6648,
+   "family": "brain_volume"
+  },
+  {
+   "target": "FS_Tot_WM_Vol",
+   "n": 1003,
+   "r": 0.664,
+   "family": "brain_volume"
+  },
+  {
+   "target": "FS_R_WM_Vol",
+   "n": 1003,
+   "r": 0.6618,
+   "family": "brain_volume"
+  },
+  {
+   "target": "Strength_AgeAdj",
+   "n": 1002,
+   "r": 0.6184,
+   "family": "motor_sensory"
+  },
+  {
+   "target": "FS_L_Cerebellum_Cort_Vol",
+   "n": 1003,
+   "r": 0.6081,
+   "family": "brain_volume"
+  },
+  {
+   "target": "FS_R_Superiorfrontal_Area",
+   "n": 1003,
+   "r": 0.6074,
+   "family": "brain_morphometry"
+  },
+  {
+   "target": "FS_R_Cerebellum_Cort_Vol",
+   "n": 1003,
+   "r": 0.5996,
+   "family": "brain_volume"
+  },
+  {
+   "target": "Strength_Unadj",
+   "n": 1002,
+   "r": 0.5952,
+   "family": "motor_sensory"
+  },
+  {
+   "target": "FS_L_Superiorfrontal_Area",
+   "n": 1003,
+   "r": 0.582,
+   "family": "brain_morphometry"
+  }
+ ],
+ "bottom10": [
+  {
+   "target": "PSQI_Comp5",
+   "n": 1003,
+   "r": -0.0501,
+   "family": "sleep"
+  },
+  {
+   "target": "SCPT_TP",
+   "n": 1000,
+   "r": -0.0508,
+   "family": "cognition"
+  },
+  {
+   "target": "SCPT_FN",
+   "n": 1000,
+   "r": -0.0508,
+   "family": "cognition"
+  },
+  {
+   "target": "SCPT_SEN",
+   "n": 1000,
+   "r": -0.0508,
+   "family": "cognition"
+  },
+  {
+   "target": "Social_Task_Random_Median_RT_Unsure",
+   "n": 368,
+   "r": -0.0516,
+   "family": "task_performance"
+  },
+  {
+   "target": "ER40FEAR",
+   "n": 1000,
+   "r": -0.0525,
+   "family": "cognition"
+  },
+  {
+   "target": "3T_tMRI_PctCompl",
+   "n": 1003,
+   "r": -0.0631,
+   "family": "other"
+  },
+  {
+   "target": "fMRI_Lang_PctCompl",
+   "n": 1003,
+   "r": -0.0704,
+   "family": "other"
+  },
+  {
+   "target": "Gambling_Task_Punish_Perc_Larger",
+   "n": 1001,
+   "r": -0.0804,
+   "family": "task_performance"
+  },
+  {
+   "target": "Gambling_Task_Punish_Perc_Smaller",
+   "n": 1001,
+   "r": -0.0804,
+   "family": "task_performance"
+  }
+ ]
+}

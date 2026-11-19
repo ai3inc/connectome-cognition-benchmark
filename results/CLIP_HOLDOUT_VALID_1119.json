@@ -1,0 +1,115 @@
+{
+ "n_train_pool": 728,
+ "n_test": 246,
+ "seeds": 30,
+ "note": "one extraction pipeline throughout (the 999-subject block), so train and test share a representation -- unlike the earlier invalid attempt",
+ "none": {
+  "r_mean": 0.238,
+  "r_per_seed": [
+   0.2557,
+   0.2192,
+   0.2122,
+   0.2304,
+   0.1741,
+   0.2509,
+   0.2332,
+   0.2764,
+   0.2581,
+   0.1937,
+   0.2926,
+   0.2216,
+   0.1868,
+   0.2779,
+   0.2526,
+   0.2679,
+   0.278,
+   0.2345,
+   0.2279,
+   0.2779,
+   0.2485,
+   0.2706,
+   0.292,
+   0.2015,
+   0.1926,
+   0.224,
+   0.2292,
+   0.2438,
+   0.1943,
+   0.2208
+  ],
+  "sd": 0.0329
+ },
+ "clip": {
+  "r_mean": 0.1548,
+  "r_per_seed": [
+   0.1914,
+   0.1297,
+   0.1407,
+   0.1548,
+   0.0781,
+   0.1478,
+   0.1457,
+   0.2103,
+   0.1718,
+   0.0895,
+   0.2116,
+   0.1272,
+   0.1259,
+   0.1959,
+   0.1315,
+   0.1894,
+   0.1687,
+   0.1689,
+   0.1335,
+   0.2268,
+   0.152,
+   0.1896,
+   0.1927,
+   0.1188,
+   0.0908,
+   0.1202,
+   0.1466,
+   0.1885,
+   0.1466,
+   0.1588
+  ],
+  "sd": 0.0374
+ },
+ "clip_abs_err_gain": {
+  "mean": -0.0285,
+  "ci95": [
+   -0.0427,
+   -0.0142
+  ],
+  "p_two_sided": 0.0
+ },
+ "clip_minus_none_r": {
+  "mean": -0.0832,
+  "wins": "0/30"
+ },
+ "date": "2026-11-19",
+ "prereg": "PREREG_CLIP_HOLDOUT_233.md (commit 8aaeea7, written and committed before this file existed)",
+ "verdict": "NOT CONFIRMED. The pre-registered rule was: CONFIRMED only if the 95% bootstrap CI lower bound of (clip - canonical) > 0. The gain is -0.0285 with CI [-0.0427, -0.0142]: the lower bound is negative, and the point estimate is negative too.",
+ "what_happened": "clip is much WORSE out of sample: r 0.1548 against 0.2380 for the canonical chain, a drop of 0.083. The in-fold +0.008 does not merely fail to replicate -- it reverses.",
+ "why_this_is_the_answer_not_a_bug_check": "one extraction pipeline throughout (the 999-subject block), train on 728 benchmark subjects, test on 246 held-out subjects, covariates in-fold, 30 random training subsets. The design was fixed in the pre-registration before the numbers were seen.",
+ "interpretation": "clipping removes variance that carries individual differences. Within the 753 the clipping and the KRR fit compensate for each other; on new subjects the removed variance is simply gone. This is the same shape as the motor-drop result, but larger and with the sign against the transform.",
+ "standing_of_clip_after_this": {
+  "in_fold": "+0.0081 fixed / +0.0071 fold-chosen, NOT significant under the exact NB t (p 0.12 / 0.15)",
+  "out_of_sample": "NEGATIVE (-0.0285 abs-err, r -0.083)",
+  "headline_use": "do not use 0.7296 as a headline; clip is an in-fold effect that reverses out of sample"
+ },
+ "_INVALID_1119": {
+  "verdict": "INVALID EXECUTION \u2014 the pre-registered hypothesis was NOT tested.",
+  "reasons": [
+   "1. all six modality kernels were built from the same resting-state features: the loop is `for m in MODS: E = bpp.astype(...)` and never uses m, so the \"canonical\" arm is one resting-state feature set added six times, not the certified six-modality chain. The r 0.238 against CANON_HOLDOUT_233 D1 0.7721 on the same kind of split is the giveaway.",
+   "2. clip was applied to P (before the alpha re-weight), while the in-fold +0.0081 was measured on Pa/F (after alpha). Different transform.",
+   "3. no covariate regression, although the pre-registration requires age band + sex fitted on the training set.",
+   "4. training set was frac=0.6 (437 of 728 per seed), not all benchmark subjects in the block.",
+   "5. decision metric was absolute error only; the pre-registration asks for a bootstrap CI on the pooled r difference. The r difference has no CI in this file.",
+   "6. evaluated on 246 subjects rather than 233, because subjects without task FC were included."
+  ],
+  "retraction": "the claims \"clip reverses out of sample (-0.083 r)\" and \"same shape as the motor-drop mechanism\" are WITHDRAWN \u2014 both rested on this invalid run.",
+  "clip_standing_now": "in-fold +0.007~0.008, not significant under the exact NB t (p 0.12-0.15), out-of-sample UNTESTED.",
+  "why_not_rerun": "at 246 subjects the bootstrap half-width is ~0.018 (cf. the RELATIONAL holdout: +0.011 with CI [-0.006, +0.029]). An effect of +0.008 would almost certainly read \"not confirmed\" even if real, so a rerun adds a number and no information."
+ }
+}

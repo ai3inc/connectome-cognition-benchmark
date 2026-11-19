@@ -1,0 +1,27 @@
+{
+ "question": "at their cohort size, with twins controlled and one preprocessing, how far from their published resting-state number are we?",
+ "design": "the retuned resting-state setting (g=0.85, no alpha, no filter), one identical preprocessing, two cohort sizes, 60 seeds, their folds",
+ "results": {
+  "753_set": {
+   "n": 728,
+   "r": 0.5768
+  },
+  "955_leak_controlled": {
+   "n": 955,
+   "r": 0.6194
+  }
+ },
+ "paired": {
+  "diff": 0.0427,
+  "wins": "60/60",
+  "t": 23.8
+ },
+ "vs_their_published": {
+  "their": 0.627,
+  "ours_at_955": 0.6194,
+  "shortfall": 0.0076
+ },
+ "verdict": "THE RESTING-STATE GAP IS ESSENTIALLY CLOSED. At n=955 with twins controlled, our chain reaches 0.6194 against their 0.627 -- a shortfall of 0.0076, down from the 0.051 that stood for this whole project.",
+ "what_explains_it": "cohort size, not method or preprocessing: the identical pipeline on 728 subjects gives 0.5768. The whole difference is the 227 extra leak-controlled subjects.",
+ "honest_caveat": "the 955 are OUR pool subjects, not their cohort; their number comes from their preprocessing and their exact subject set. So this says the gap is consistent with a population effect, not that we match them subject for subject."
+}

@@ -1,0 +1,22 @@
+{
+ "n": 961,
+ "pairs": {
+  "rs_lang": 0.314,
+  "rs_social": 0.3217,
+  "rs_gamb": 0.2904,
+  "rs_motor": 0.2779,
+  "rs_wm": 0.2878,
+  "lang_social": 0.4452,
+  "lang_gamb": 0.3403,
+  "lang_motor": 0.3309,
+  "lang_wm": 0.3631,
+  "social_gamb": 0.3357,
+  "social_motor": 0.3373,
+  "social_wm": 0.3526,
+  "gamb_motor": 0.4178,
+  "gamb_wm": 0.4488,
+  "motor_wm": 0.4379
+ },
+ "mean": 0.3534,
+ "max": 0.4488
+}

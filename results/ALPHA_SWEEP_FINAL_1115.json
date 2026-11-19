@@ -1,0 +1,41 @@
+{
+ "date": "2026-11-15",
+ "n": 974,
+ "target": "Ooi-2022 varimax_cog",
+ "global_alpha_sweep_nested": {
+  "0.30": 0.6159,
+  "0.35": 0.6169,
+  "0.40": 0.6178,
+  "0.45": 0.6178,
+  "0.50": 0.6179
+ },
+ "sd": "0.0090-0.0103 across seeds",
+ "interpretation": "flat plateau from 0.35 to 0.50; differences are within 1 sd. alpha=0.35 is the published value and therefore the honest choice: r=0.6169.",
+ "published_sota": 0.627,
+ "gap": 0.01,
+ "per_block_alpha": {
+  "15": 0.3,
+  "25": 0.5,
+  "50": 0.5,
+  "100": 0.35,
+  "200": 0.3,
+  "300": 0.4
+ },
+ "per_block_single_best": {
+  "d15": 0.3921,
+  "d25": 0.4324,
+  "d50": 0.3828,
+  "d100": 0.5065,
+  "d200": 0.5878,
+  "d300": 0.6134
+ },
+ "alpha_gain_vs_raw": {
+  "d15": 0.039,
+  "d25": 0.01,
+  "d50": 0.037,
+  "d100": 0.039,
+  "d200": 0.072,
+  "d300": 0.077
+ },
+ "finding": "the alpha gain grows monotonically with edge count (105 to 44,850 edges): +0.039 to +0.077"
+}

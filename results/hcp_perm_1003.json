@@ -1,0 +1,29 @@
+{
+ "CogFluidComp_AgeAdj": {
+  "n": 992,
+  "perm_mean": 0.0015431833342750801,
+  "perm_sd": 0.03999818392532737,
+  "perm_max": 0.0803092107781222,
+  "observed_r": 0.275,
+  "z": 6.84,
+  "ratio_to_perm_max": 3.42
+ },
+ "CogTotalComp_AgeAdj": {
+  "n": 991,
+  "perm_mean": 0.0014045090318339259,
+  "perm_sd": 0.0383563216894998,
+  "perm_max": 0.05559783084245395,
+  "observed_r": 0.4535,
+  "z": 11.79,
+  "ratio_to_perm_max": 8.16
+ },
+ "PMAT24_A_CR": {
+  "n": 999,
+  "perm_mean": -0.0012301995356789551,
+  "perm_sd": 0.041819513027280264,
+  "perm_max": 0.09611335595001719,
+  "observed_r": 0.3548,
+  "z": 8.51,
+  "ratio_to_perm_max": 3.69
+ }
+}

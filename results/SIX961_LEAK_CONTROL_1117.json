@@ -1,0 +1,24 @@
+{
+ "question": "is the n=961 win contaminated by co-twins of the 753 sleeping permanently in every training fold?",
+ "the_risk": "the official 60x10 folds partition only the 753, so the 208 extra subjects are in EVERY training fold; a co-twin of a test subject would therefore always be seen",
+ "control": "kept only extras whose max similarity to the 753 (after removing the shared edge profile) is below the within-753 90th percentile (0.745): 216 of 233 extras kept, n=944",
+ "results": {
+  "all": {
+   "n": 961,
+   "r": 0.7335,
+   "sd": 0.0057
+  },
+  "leak_controlled": {
+   "n": 944,
+   "r": 0.7333,
+   "sd": 0.0039
+  }
+ },
+ "diff": -0.0001,
+ "verdict": "WEAK: the run gives 0.7333 vs 0.7335, but the detector it relies on catches only 8.4% of actual family pairs (see FAMILY_DETECTOR_SENSITIVITY_1117.json), so this bounds the leak effect only weakly rather than establishing its absence.",
+ "conclusion": "the margin survives this control, but the control filters roughly one relative in twelve, so it cannot be read as 'no twin contamination'. The strong evidence is the 753-outside holdout, where co-twins are absent from training by construction.",
+ "note": "the extras that remain are still not their subject list; this bounds the leak effect, it does not make the cohorts identical",
+ "verdict_SUPERSEDED": "NO CONTAMINATION. The leak-controlled run gives 0.7333 against 0.7335 for the full set -- a 0.0002 difference, far inside the seed sd.",
+ "conclusion_SUPERSEDED": "the +0.105 margin over their 0.628 survives twin-leak control, so it is not an artefact of the 208 extras being relatives of the 753.",
+ "correction_2026_11_17": "verdict lowered after measuring the detector's sensitivity on real family pairs derived from the 60x10 fold structure"
+}

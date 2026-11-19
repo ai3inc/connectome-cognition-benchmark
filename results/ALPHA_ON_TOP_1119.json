@@ -1,0 +1,40 @@
+{
+ "n": 753,
+ "seeds": 60,
+ "exponent": 0.35,
+ "hypothesis": "C: F-BERT alpha (ev^0.35) on the correlation matrix, on top of the current chain",
+ "certified_chain": 0.7326,
+ "alpha_only": {
+  "r": 0.7247,
+  "diff": -0.0079,
+  "wins": "0/60",
+  "NB_t": -1.99,
+  "p": 0.0464
+ },
+ "mix_0.50": {
+  "r": 0.73,
+  "diff": -0.0025,
+  "wins": "0/60",
+  "NB_t": -1.28,
+  "p": 0.2006
+ },
+ "mix_0.25": {
+  "r": 0.7316,
+  "diff": -0.0009,
+  "wins": "2/60",
+  "NB_t": -0.94,
+  "p": 0.3491
+ },
+ "mix_0.10": {
+  "r": 0.7323,
+  "diff": -0.0003,
+  "wins": "2/60",
+  "NB_t": -0.73,
+  "p": 0.4675
+ },
+ "date": "2026-11-19",
+ "origin": "the instruction C hypothesis, which died on <pod> at 2026-11-15 on a broadcasting bug (V * clip(ev)**0.35, shapes (753,400,400) x (753,400)) and was never retried. It also targeted the old 0.6927 chain; this runs it against the current 0.7326.",
+ "verdict": "FAILS AT EVERY WEIGHT. Raising the correlation matrix eigenvalues to 0.35 (F-BERT exponent) and mixing into the certified kernel is monotonically worse as its weight grows: -0.0003 at 10 %, -0.0009 at 25 %, -0.0025 at 50 %, -0.0079 alone (0/60, p 0.046).",
+ "why": "the certified chain already passes the correlation edges through a partial-correlation inverse and then a kernel spectral filter. An alpha exponent on the CORRELATION matrix is a weaker, differently-shaped version of what the filter already does, so it adds nothing and dilutes: the filter keeps the top 150 components, while ev^0.35 keeps all 400 with a smooth decay.",
+ "chain_baseline_check": "certified reproduces 0.7326 exactly, so these arms are on the certified scale."
+}

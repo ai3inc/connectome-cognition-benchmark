@@ -1,0 +1,16 @@
+{
+ "date": "2026-11-15",
+ "experiment": "top-k block selection vs dimension weighting",
+ "n": 974,
+ "nested_lambda": true,
+ "seeds": 3,
+ "results": {
+  "uniform": 0.6161,
+  "dimlog": 0.6285,
+  "dimsqrt": 0.6407,
+  "topk4": 0.5924,
+  "topk6": 0.5946,
+  "topk8": 0.6094
+ },
+ "finding": "Selecting a subset of blocks by inner CV is WORSE than using all twelve with sqrt(edges) weights: 0.592-0.609 vs 0.641. Every resolution contributes; the right move is to weight, not to prune."
+}

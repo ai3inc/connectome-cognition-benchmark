@@ -1,0 +1,38 @@
+{
+ "date": "2026-11-18",
+ "question": "the RELATIONAL gain is +0.009 on 233 subjects with P=0.82-0.94 -- too weak to claim. Can power be improved without more subjects?",
+ "how": "the cohort cannot be enlarged (972 = 753 + 263 with overlap). But a single 728->233 prediction includes the choice of training set. Repeat 20 times with a different random 90% of the training set each time (holdout always disjoint), average, bootstrap over the repeats.",
+ "results": {
+  "reps": 20,
+  "five_mean": 0.7657,
+  "relational_without_motor_mean": 0.7741,
+  "diff_mean": 0.0084,
+  "diff_sd": 0.0029,
+  "diff_ci95": [
+   0.0072,
+   0.0096
+  ],
+  "p_gt_0": 1.0
+ },
+ "verdict": "THE GAIN IS NOW SEPARATED FROM ZERO. +0.0084 with 95% CI [0.0072, 0.0096] and every one of the 20 repeats positive. The single-split P of 0.82 was low power, not the absence of an effect: averaging over training-set choices removes the variance that dominated the single test.",
+ "why_averaging_over_training_sets_is_valid": "every repeat still trains on subjects disjoint from the 233 holdout, so the holdout is never seen. The repeats differ only in WHICH training subjects are used, which is a nuisance parameter -- averaging over it is the standard way to reduce variance without touching the test set.",
+ "what_is_still_true_from_yesterday": "the single fixed training set (all 728) gives +0.0086 at P=0.82, and the six-with-relational arm gives +0.0099 at P=0.94. Those are the numbers for one realisation; this is the number for the ensemble of realisations. Both belong in the record, and the latter is the one to quote for the effect size.",
+ "caveat_that_remains": "the 0.001 CI half-width reflects only training-set variance. It does not include family structure (random 90% subsets ignore it) or cohort selection. So the effect is robust to training-set choice, not proven for every possible cohort.",
+ "source": "/workspace/relrep.py + RELREP.json on <pod>",
+ "CORRECTION_2026_11_18": {
+  "what_was_wrong": "the 95% CI [0.0072, 0.0096] and P=1.000 held the 233 holdout subjects FIXED across all 20 repeats. It measured training-set variance only -- the same 233 people every time -- so it is a pseudo-replicate and does not speak to generalisation to new subjects. Raised by the parallel session and correct.",
+  "the_valid_test": "bag the 20 predictions per subject, then bootstrap over the 233 SUBJECTS (which is where the real uncertainty lives).",
+  "valid_result": {
+   "bagged_five": 0.7718,
+   "bagged_rel_no_motor": 0.7827,
+   "diff": 0.0109,
+   "ci95": [
+    -0.0061,
+    0.0287
+   ],
+   "p_gt_0": 0.884
+  },
+  "corrected_statement": "RELATIONAL adds about +0.011 to the holdout prediction (bagged), 95% CI [-0.006, +0.029], P = 0.88. POSITIVE BUT NOT CONFIRMED. The earlier 'P=1.000, power problem solved' claim is withdrawn -- the point estimate barely moved (+0.0084 -> +0.0109), only the (wrong) interval did.",
+  "the_lesson": "repeating over training sets cannot reduce holdout sampling noise by construction. Only more or different TEST subjects can do that, and this cohort has no more."
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "addendum": "N (SOTA system)",
+ "cohort": "abide",
+ "n": 1035,
+ "cells": {
+  "dx": {
+   "metric": "auc",
+   "mean": {
+    "A8": 0.730685410050439,
+    "OURS": 0.7833157108163646,
+    "SOTA": 0.7833157108163646
+   },
+   "picks": {
+    "A8": 0,
+    "OURS": 200,
+    "HYB": 0
+   },
+   "SOTA_vs_A8": {
+    "mean_diff": 0.05263030076592563,
+    "positive": 20,
+    "of": 20
+   },
+   "SOTA_vs_OURS": {
+    "mean_diff": 0.0,
+    "positive": 0,
+    "of": 20
+   }
+  },
+  "fiq": {
+   "metric": "r",
+   "mean": {
+    "A8": 0.20088494856226108,
+    "OURS": 0.25463162967821434,
+    "SOTA": 0.2500981476620541
+   },
+   "picks": {
+    "A8": 0,
+    "OURS": 187,
+    "HYB": 13
+   },
+   "SOTA_vs_A8": {
+    "mean_diff": 0.049213199099793006,
+    "positive": 20,
+    "of": 20
+   },
+   "SOTA_vs_OURS": {
+    "mean_diff": -0.004533482016160266,
+    "positive": 0,
+    "of": 20
+   }
+  }
+ },
+ "seconds": 1599.2742772102356
+}

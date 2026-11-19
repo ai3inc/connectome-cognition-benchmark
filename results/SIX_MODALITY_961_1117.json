@@ -1,0 +1,20 @@
+{
+ "question": "at their cohort size with ALL SIX modalities, do we beat their FC^alpha* 0.628?",
+ "how": "downloaded the 7 task fMRI dtseries for 972 of the 974 pool subjects (aws hcp-openaccess), built Schaefer-400 FC for each at the same parcellation, and ran the certified six-modality chain",
+ "n": 961,
+ "r": 0.7205,
+ "sd": 0.006,
+ "seeds": 60,
+ "vs_their_alpha": {
+  "theirs": 0.628,
+  "ours": 0.7205,
+  "margin": 0.0925
+ },
+ "vs_their_best": {
+  "theirs": 0.6779,
+  "ours": 0.7205,
+  "margin": 0.0426
+ },
+ "verdict": "WE WIN AT THEIR COHORT SIZE TOO. With all six modalities on 961 subjects -- near their 955 -- our chain gives 0.7205 against their FC^alpha* 0.628, a margin of +0.0925. The earlier '-0.009 at 955' was purely because we could only run the resting arm there; with the task features the margin is the largest of any comparison in this project.",
+ "note": "the 961 is 972 subjects with complete five-task data, of which 961 also have the HCP behavioural composite. Their 955 is their own subject list, not identical to ours."
+}

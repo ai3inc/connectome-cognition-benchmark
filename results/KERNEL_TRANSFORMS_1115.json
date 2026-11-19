@@ -1,0 +1,17 @@
+{
+ "date": "2026-11-15",
+ "experiment": "kernel post-transforms on the saved ensemble kernel",
+ "seeds": 15,
+ "n": 974,
+ "results": {
+  "base_sqrtweighted": 0.6339,
+  "eig_a0.70": 0.6299,
+  "eig_a0.50": 0.6217,
+  "rbf_g3": 0.5792,
+  "rbf_g1": 0.5163,
+  "sharpen_g2": 0.5015,
+  "sharpen_g4": 0.1335
+ },
+ "finding": "Every post-transform of the averaged kernel LOSES information. Eigenvalue recalibration at the ensemble level (0.6217-0.6299) is the least damaging but still below base; smoothing and sharpening are far worse. The raw sqrt-weighted kernel average is already near-optimal, which is consistent with the per-subject recalibration having already done the work.",
+ "count": "14th representation idea tried; still only sqrt weighting has ever helped."
+}

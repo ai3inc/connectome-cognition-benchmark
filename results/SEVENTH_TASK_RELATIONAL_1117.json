@@ -1,0 +1,92 @@
+{
+ "date": "2026-11-18",
+ "finding": "TWO HCP TASK RUNS WERE DOWNLOADED AND NEVER USED: EMOTION and RELATIONAL. Adding RELATIONAL is the largest in-fold gain found in the whole round.",
+ "how": "task_merged.jsonl holds all seven HCP task FCs (971-972 of 972 subjects each); the chain only ever used five. Added them one at a time and together, on 728 subjects with all seven, 30 seeds, published folds.",
+ "results": {
+  "varimax_cog": {
+   "five_current": {
+    "r": 0.6817
+   },
+   "plus_emotion": {
+    "r": 0.6767,
+    "vs_five": -0.0051,
+    "wins": "0/30",
+    "t": -8.9
+   },
+   "plus_relational": {
+    "r": 0.696,
+    "vs_five": 0.0143,
+    "wins": "30/30",
+    "t": 21.5
+   },
+   "seven_all": {
+    "r": 0.6928,
+    "vs_five": 0.011,
+    "wins": "30/30",
+    "t": 14.1
+   }
+  },
+  "varimax_er": {
+   "five_current": {
+    "r": 0.2843
+   },
+   "plus_emotion": {
+    "r": 0.2825,
+    "vs_five": -0.0018
+   },
+   "plus_relational": {
+    "r": 0.2814,
+    "vs_five": -0.0029
+   },
+   "seven_all": {
+    "r": 0.2796,
+    "vs_five": -0.0047
+   }
+  }
+ },
+ "verdict": "RELATIONAL ADDS +0.0143 TO COGNITION, 30/30, t = 21.5 -- larger than every other in-fold lever found this round (motor drop +0.0034, keep-size freedom, alpha/w). EMOTION is actively harmful (-0.0051, 0/30). Seven together is +0.0110, i.e. useful but diluted by emotion.",
+ "the_emotion_target_is_untouched": "the emotion-recognition deficit the ledger records is NOT helped by any of them: +0.0143 on cognition comes with -0.0029 on varimax_er. So this is not a fix for the deficit, it is a cognition gain from a task that happens to be about relational reasoning.",
+ "what_needs_checking_before_it_is_a_claim": "(1) this is on OUR 400 extraction at g=0.85, not the published features at the headline setting; (2) it has been measured in-fold only -- every previous in-fold gain of this size (motor) failed out of sample; (3) the 728-subject subset with all seven tasks is not the 753 analysis set. The honest status is: a strong in-fold candidate that must be run on the published features and then on the 233 holdout before the paper uses it.",
+ "why_it_plausibly_works": "RELATIONAL is the only HCP task that requires comparing two simultaneously presented stimuli, so its connectivity carries a comparison/reasoning signature that the other tasks do not -- and varimax_cog is loaded on reasoning. That is a mechanism consistent with the size of the effect, unlike a generic 'more modalities is better'.",
+ "source": "/workspace/seven.py + SEVEN.json on <pod>",
+ "fold_internal_verification_753": {
+  "n": 728,
+  "fixed_five": 0.6865,
+  "fixed_six_relational": 0.7022,
+  "fixed_six_vs_five": {
+   "diff": 0.015689999999999985,
+   "wins": "30/30",
+   "t": 19.590925971816755
+  },
+  "fold_internal_choice": 0.7,
+  "fold_internal_vs_five": {
+   "diff": 0.013423333333333327,
+   "wins": "30/30",
+   "t": 14.438579235510137
+  },
+  "chosen_by_the_rule": "(six modalities, g=0.85) 257/300, (six, g=0.92) 41, (five, 0.85) 2 -- the rule picks RELATIONAL in 298 of 300 folds"
+ },
+ "upgraded_verdict": "RELATIONAL SURVIVES FOLD-INTERNAL SELECTION, which is the standard every other lever had to pass: with g and the modality set chosen inside the training fold, it gains +0.0134 (30/30, t=14.4) and the rule picks it in 298 of 300 folds. Fixed setting it is +0.0157 (30/30, t=19.6). This is the largest in-fold gain found in the whole round and the FIRST one whose mechanism (a comparison/reasoning task for a reasoning-loaded composite) matches its size.",
+ "still_required_before_the_paper": "(1) the 233-subject holdout -- every previous in-fold gain of comparable size (motor) failed there; (2) the published Ooi features do not contain RELATIONAL, so the headline on published features cannot include it -- it must be reported as a result on our own extraction, or the published-feature arm re-extracted with the seventh task.",
+ "holdout_233": {
+  "n_train": 728,
+  "n_holdout": 232,
+  "five": {
+   "r": 0.7734
+  },
+  "six_relational": {
+   "r": 0.7833
+  },
+  "diff": {
+   "diff": 0.0099,
+   "ci95": [
+    -0.0023,
+    0.0234
+   ],
+   "p_gt_0": 0.942
+  }
+ },
+ "holdout_verdict": "+0.0099 on 233 subjects never used in training, 95% CI [-0.0023, +0.0234], P = 0.94. This is the FIRST arm in the entire round whose in-fold gain survives the out-of-sample test with a positive point estimate -- the motor drop's +0.0034 did not, and neither did any extraction ensemble. The interval still includes zero, so the right wording is 'consistent with a real gain of about 0.01', not 'proven'.",
+ "status_final": "RELATIONAL is now supported at three levels: in-fold fixed (+0.0157, 30/30), in-fold with g and the modality set chosen inside the fold (+0.0134, 30/30, and the rule picks it in 298/300 folds), and out-of-sample on 233 new subjects (+0.0099, P = 0.94). It is the strongest new finding of the round.",
+ "remaining_caveats": "1) the published Ooi features contain only five tasks, so the 0.7344 headline cannot include RELATIONAL; it is a result on our own extraction. 2) the holdout interval still crosses zero. 3) the holdout subjects are a subset of those with all seven tasks (232 of 263)."
+}

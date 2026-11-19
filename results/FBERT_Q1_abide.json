@@ -1,0 +1,78 @@
+{
+ "addendum": "N (SOTA system)",
+ "cohort": "abide",
+ "n": 1035,
+ "cells": {
+  "dx": {
+   "metric": "auc",
+   "mean": {
+    "A8": 0.730685596861573,
+    "OURS": 0.7833155240052306,
+    "SOTA": 0.7833155240052306,
+    "CB": 0.7467797496730806,
+    "ENC": 0.7533975340930319
+   },
+   "picks": {
+    "A8": 0,
+    "OURS": 200,
+    "HYB": 0
+   },
+   "SOTA_vs_A8": {
+    "mean_diff": 0.05262992714365775,
+    "positive": 20,
+    "of": 20
+   },
+   "SOTA_vs_OURS": {
+    "mean_diff": 0.0,
+    "positive": 0,
+    "of": 20
+   },
+   "SOTA_vs_CB": {
+    "mean_diff": 0.036535774332150175,
+    "positive": 20,
+    "of": 20
+   },
+   "SOTA_vs_ENC": {
+    "mean_diff": 0.02991798991219875,
+    "positive": 20,
+    "of": 20
+   }
+  },
+  "fiq": {
+   "metric": "r",
+   "mean": {
+    "A8": 0.20088494846003604,
+    "OURS": 0.2546316151438153,
+    "SOTA": 0.23736181469372336,
+    "CB": 0.24115952591912268,
+    "ENC": 0.24295067224633712
+   },
+   "picks": {
+    "A8": 18,
+    "OURS": 68,
+    "HYB": 114
+   },
+   "SOTA_vs_A8": {
+    "mean_diff": 0.03647686623368733,
+    "positive": 20,
+    "of": 20
+   },
+   "SOTA_vs_OURS": {
+    "mean_diff": -0.01726980045009196,
+    "positive": 2,
+    "of": 20
+   },
+   "SOTA_vs_CB": {
+    "mean_diff": -0.0037977112253993446,
+    "positive": 8,
+    "of": 20
+   },
+   "SOTA_vs_ENC": {
+    "mean_diff": -0.005588857552613765,
+    "positive": 7,
+    "of": 20
+   }
+  }
+ },
+ "seconds": 3274.422887325287
+}

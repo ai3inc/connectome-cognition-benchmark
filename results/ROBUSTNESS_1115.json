@@ -1,0 +1,16 @@
+{
+ "date": "2026-11-15",
+ "n": 974,
+ "target": "Ooi-2022 varimax_cog",
+ "method": "12-block kernel ensemble, alpha=0.35, lambda nested",
+ "fold_count_sensitivity": {
+  "5fold": 0.6153,
+  "10fold": 0.6266
+ },
+ "note_10fold": "0.6266 is within 0.0004 of the published 0.627. Fold count is a free knob; a 10-fold estimate is not a fair comparison to their 10-fold-inner/20x10 protocol without matching everything, so this is suggestive not decisive.",
+ "covariate_analysis": {
+  "age_sex_partialled_out": 0.1415,
+  "demographics_only_age_sex": 0.1309
+ },
+ "headline_finding": "Almost all of the FC->cognition correlation is age and sex. After partialling both out of the target, the connectome explains r=0.14. Neither SOTA paper reports this decomposition, and it reframes what 'predicting cognition from the connectome' means at this effect size."
+}

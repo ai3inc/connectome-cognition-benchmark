@@ -1,0 +1,82 @@
+{
+ "addendum": "K (D0 and FC^0.35 chosen in-fold)",
+ "cohorts": {
+  "HCP_rest": {
+   "U": 0.5834,
+   "D0": 0.5842,
+   "C": 0.5842,
+   "A8": 0.5247,
+   "U_vs_A8": [
+    0.0586,
+    60,
+    60,
+    36.5
+   ],
+   "U_vs_best_component": [
+    -0.0009,
+    0,
+    60,
+    -3.8
+   ],
+   "best_component": "D0_full"
+  },
+  "AOMIC": {
+   "U": 0.4118,
+   "D0": 0.4119,
+   "C": 0.4166,
+   "A8": 0.3675,
+   "U_vs_A8": [
+    0.0442,
+    20,
+    20,
+    12.7
+   ],
+   "U_vs_best_component": [
+    -0.0049,
+    3,
+    20,
+    -4.3
+   ],
+   "best_component": "C"
+  },
+  "ABIDE_dx": {
+   "U": 0.7833,
+   "D0": 0.7804,
+   "C": 0.787,
+   "A8": 0.7307,
+   "U_vs_A8": [
+    0.0526,
+    20,
+    20,
+    43.4
+   ],
+   "U_vs_best_component": [
+    -0.0036,
+    1,
+    20,
+    -6.6
+   ],
+   "best_component": "C"
+  },
+  "ABIDE_fiq": {
+   "U": 0.2546,
+   "D0": 0.2548,
+   "C": 0.2574,
+   "A8": 0.2009,
+   "U_vs_A8": [
+    0.0537,
+    20,
+    20,
+    16.9
+   ],
+   "U_vs_best_component": [
+    -0.0028,
+    6,
+    20,
+    -2.6
+   ],
+   "best_component": "C"
+  }
+ },
+ "note": "paired tuples = (mean_diff, positive, of, t)"
+}

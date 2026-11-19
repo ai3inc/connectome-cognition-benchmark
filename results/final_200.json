@@ -1,0 +1,64 @@
+{
+ "pca": 200,
+ "n": 1003,
+ "targets": {
+  "CogFluidComp_AgeAdj": {
+   "fc": {
+    "r": 0.2455,
+    "err_red_pct": 3.7
+   },
+   "all3": {
+    "r": 0.2979,
+    "err_red_pct": 4.7
+   }
+  },
+  "CogCrystalComp_AgeAdj": {
+   "fc": {
+    "r": 0.4864,
+    "err_red_pct": 13.5
+   },
+   "all3": {
+    "r": 0.4849,
+    "err_red_pct": 13.1
+   }
+  },
+  "CogTotalComp_AgeAdj": {
+   "fc": {
+    "r": 0.3968,
+    "err_red_pct": 8.2
+   },
+   "all3": {
+    "r": 0.4607,
+    "err_red_pct": 11.3
+   }
+  },
+  "PMAT24_A_CR": {
+   "fc": {
+    "r": 0.3219,
+    "err_red_pct": 5.8
+   },
+   "all3": {
+    "r": 0.3914,
+    "err_red_pct": 9.8
+   }
+  }
+ },
+ "structure": {
+  "FS_Mask_Vol": {
+   "r": 0.7647,
+   "err_red_pct": 37.8
+  },
+  "FS_BrainSeg_Vol": {
+   "r": 0.7461,
+   "err_red_pct": 34.8
+  },
+  "FS_IntraCranial_Vol": {
+   "r": 0.6976,
+   "err_red_pct": 30.6
+  },
+  "FS_TotCort_GM_Vol": {
+   "r": 0.7258,
+   "err_red_pct": 32.6
+  }
+ }
+}

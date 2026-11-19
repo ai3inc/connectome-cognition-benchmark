@@ -1,0 +1,31 @@
+{
+ "n_train": 728,
+ "n_holdout": 233,
+ "inner_r": {
+  "B": 0.6822,
+  "C": 0.7414,
+  "BC": 0.7248
+ },
+ "chosen": "C",
+ "B": {
+  "holdout_r": 0.7489,
+  "pred": "<removed: subject-level>"
+ },
+ "C": {
+  "holdout_r": 0.7795,
+  "pred": "<removed: subject-level>"
+ },
+ "BC": {
+  "holdout_r": 0.7827,
+  "pred": "<removed: subject-level>"
+ },
+ "fold_internal": {
+  "r": 0.7795,
+  "chose": "C",
+  "pred": "<removed: subject-level>"
+ },
+ "y_holdout": {
+  "removed": "subject-level",
+  "n": 233
+ }
+}

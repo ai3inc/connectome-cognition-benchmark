@@ -1,0 +1,15 @@
+{
+ "question": "does resting-state performance rise with cohort size, and by how much?",
+ "data": "the 974-subject pool in pool.npz (resting FC + varimax_cog), the same 60x10 folds restricted to whichever subjects a cohort contains",
+ "results": {
+  "n728_in_the_753_set": 0.5734,
+  "n974_pool": 0.6102,
+  "gain": 0.0368,
+  "wins": "60/60",
+  "t": 21.1
+ },
+ "verdict": "COHORT SIZE BUYS +0.037 on resting-state alone (0.5734 -> 0.6102), winning every seed.",
+ "significance": "their published resting-state number is 0.627 and our faithful reproduction sat at 0.576, a gap of 0.051. Cohort size alone explains 73% of that gap (0.037 of 0.051), and at n=974 our chain reaches 0.6102 against their 0.627 -- only 0.017 short.",
+ "what_this_corrects": "the earlier learning-curve estimate put the cohort effect at 'at most half the gap, extrapolating to about 0.60'. Measured directly it is larger and lands at 0.610, closer to their number than extrapolation suggested.",
+ "honest_note": "the 974 pool and their 955 cohort are not the same subject set, and their number comes from their own preprocessing, so this bounds the cohort effect rather than equating the two."
+}

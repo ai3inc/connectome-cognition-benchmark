@@ -1,0 +1,155 @@
+{
+ "n_fs_targets": 195,
+ "top25": [
+  {
+   "target": "FS_Mask_Vol",
+   "n": 1003,
+   "r": 0.7555,
+   "err_red_pct": 36.2
+  },
+  {
+   "target": "FS_BrainSeg_Vol",
+   "n": 1003,
+   "r": 0.7319,
+   "err_red_pct": 32.6
+  },
+  {
+   "target": "FS_Total_GM_Vol",
+   "n": 1003,
+   "r": 0.7259,
+   "err_red_pct": 32.0
+  },
+  {
+   "target": "FS_BrainSeg_Vol_No_Vent",
+   "n": 1003,
+   "r": 0.7256,
+   "err_red_pct": 31.8
+  },
+  {
+   "target": "FS_BrainSeg_Vol_No_Vent_Surf",
+   "n": 1003,
+   "r": 0.7259,
+   "err_red_pct": 31.8
+  },
+  {
+   "target": "FS_SupraTentorial_Vol",
+   "n": 1003,
+   "r": 0.7218,
+   "err_red_pct": 31.3
+  },
+  {
+   "target": "FS_RCort_GM_Vol",
+   "n": 1003,
+   "r": 0.714,
+   "err_red_pct": 31.0
+  },
+  {
+   "target": "FS_TotCort_GM_Vol",
+   "n": 1003,
+   "r": 0.7078,
+   "err_red_pct": 30.3
+  },
+  {
+   "target": "FS_LCort_GM_Vol",
+   "n": 1003,
+   "r": 0.6915,
+   "err_red_pct": 29.4
+  },
+  {
+   "target": "FS_IntraCranial_Vol",
+   "n": 1003,
+   "r": 0.6767,
+   "err_red_pct": 29.2
+  },
+  {
+   "target": "FS_L_WM_Vol",
+   "n": 1003,
+   "r": 0.6737,
+   "err_red_pct": 26.9
+  },
+  {
+   "target": "FS_Tot_WM_Vol",
+   "n": 1003,
+   "r": 0.6724,
+   "err_red_pct": 26.8
+  },
+  {
+   "target": "FS_R_WM_Vol",
+   "n": 1003,
+   "r": 0.6697,
+   "err_red_pct": 26.6
+  },
+  {
+   "target": "FS_L_Cerebellum_Cort_Vol",
+   "n": 1003,
+   "r": 0.6334,
+   "err_red_pct": 23.9
+  },
+  {
+   "target": "FS_R_Cerebellum_Cort_Vol",
+   "n": 1003,
+   "r": 0.6199,
+   "err_red_pct": 22.7
+  },
+  {
+   "target": "FS_R_Superiorfrontal_Area",
+   "n": 1003,
+   "r": 0.598,
+   "err_red_pct": 21.9
+  },
+  {
+   "target": "FS_R_Middletemporal_Area",
+   "n": 1003,
+   "r": 0.5838,
+   "err_red_pct": 21.8
+  },
+  {
+   "target": "FS_R_Rostralmiddlefrontal_Area",
+   "n": 1003,
+   "r": 0.5742,
+   "err_red_pct": 21.8
+  },
+  {
+   "target": "FS_L_Precuneus_Area",
+   "n": 1003,
+   "r": 0.5931,
+   "err_red_pct": 19.9
+  },
+  {
+   "target": "FS_L_Superiorfrontal_Area",
+   "n": 1003,
+   "r": 0.5853,
+   "err_red_pct": 19.8
+  },
+  {
+   "target": "FS_SubCort_GM_Vol",
+   "n": 1003,
+   "r": 0.59,
+   "err_red_pct": 19.4
+  },
+  {
+   "target": "FS_L_Lateralorbitofrontal_Area",
+   "n": 1003,
+   "r": 0.5716,
+   "err_red_pct": 18.6
+  },
+  {
+   "target": "FS_L_Superiortemporal_Area",
+   "n": 1003,
+   "r": 0.5539,
+   "err_red_pct": 18.2
+  },
+  {
+   "target": "FS_R_Fusiform_Area",
+   "n": 1003,
+   "r": 0.5532,
+   "err_red_pct": 17.8
+  },
+  {
+   "target": "FS_L_Rostralmiddlefrontal_Area",
+   "n": 1003,
+   "r": 0.5479,
+   "err_red_pct": 17.2
+  }
+ ]
+}

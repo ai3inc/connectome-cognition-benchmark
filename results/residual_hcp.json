@@ -1,0 +1,57 @@
+{
+ "n_subjects": 1003,
+ "n_volume_features": 56,
+ "connectome_dims": 300,
+ "targets": {
+  "CogFluidComp_AgeAdj": {
+   "n": 992,
+   "volume_only": 0.1448,
+   "volume_sd": 0.0067,
+   "connectome_only": 0.2515,
+   "connectome_sd": 0.0245,
+   "both": 0.2901,
+   "connectome_after_volume": 0.1704,
+   "gain_from_connectome": 0.1453
+  },
+  "CogCrystalComp_AgeAdj": {
+   "n": 998,
+   "volume_only": 0.2914,
+   "volume_sd": 0.0066,
+   "connectome_only": 0.4549,
+   "connectome_sd": 0.0119,
+   "both": 0.4649,
+   "connectome_after_volume": 0.261,
+   "gain_from_connectome": 0.1735
+  },
+  "CogTotalComp_AgeAdj": {
+   "n": 991,
+   "volume_only": 0.2665,
+   "volume_sd": 0.0087,
+   "connectome_only": 0.4067,
+   "connectome_sd": 0.0205,
+   "both": 0.4212,
+   "connectome_after_volume": 0.2481,
+   "gain_from_connectome": 0.1547
+  },
+  "PMAT24_A_CR": {
+   "n": 999,
+   "volume_only": 0.2867,
+   "volume_sd": 0.004,
+   "connectome_only": 0.2822,
+   "connectome_sd": 0.007,
+   "both": 0.3529,
+   "connectome_after_volume": 0.0921,
+   "gain_from_connectome": 0.0663
+  },
+  "age": {
+   "n": 994,
+   "volume_only": 0.4444,
+   "volume_sd": 0.0043,
+   "connectome_only": 0.485,
+   "connectome_sd": 0.0145,
+   "both": 0.5272,
+   "connectome_after_volume": 0.0692,
+   "gain_from_connectome": 0.0828
+  }
+ }
+}

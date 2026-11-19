@@ -1,0 +1,10 @@
+# rebuild the numbers index and figures from results/ (paper/build_numbers.py --figs)
+numpy>=2.0
+scipy>=1.13
+matplotlib>=3.9
+# rerun the analyses
+threadpoolctl>=3.5
+# F-BERT / Brain-JEPA forward passes and feature extraction only
+torch>=2.3
+nibabel>=5.2
+pandas>=2.2
